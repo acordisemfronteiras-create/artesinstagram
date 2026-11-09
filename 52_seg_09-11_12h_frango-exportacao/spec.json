@@ -1,0 +1,29 @@
+{
+ "kicker": "Agro · Proteína animal",
+ "date": "09.11.2026",
+ "headline_html": "Exportação de frango<br>chega a <em style=\"white-space:nowrap\">512,8 mil t</em><br>em outubro.",
+ "sub": "Maior volume mensal de 2026. Receita sobe 14,9% em dólar, e Santa Catarina é o segundo maior exportador do mês.",
+ "cells": [
+  {
+   "label": "Volume em outubro",
+   "value": "512,8 mil t",
+   "note": "+2,3% sobre outubro de 2025"
+  },
+  {
+   "label": "Receita em outubro",
+   "value": "US$ 994,1 mi",
+   "note": "+14,9% sobre outubro de 2025"
+  },
+  {
+   "label": "Santa Catarina",
+   "value": "113,4 mil t",
+   "note": "+1,5%, atrás só do Paraná"
+  },
+  {
+   "label": "Receita no ano",
+   "value": "US$ 9,7 bi",
+   "note": "+20,4%, de janeiro a outubro"
+  }
+ ],
+ "source": "ABPA, CNN Brasil"
+}
