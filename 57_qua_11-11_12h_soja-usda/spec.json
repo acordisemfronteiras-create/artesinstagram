@@ -1,0 +1,8 @@
+{"kicker":"Agro · Soja e milho","date":"11.11.2026",
+"headline_html":"Soja sobe <em>3%</em> em Chicago após o USDA.",
+"sub":"O USDA cortou o estoque final de soja dos EUA na safra 2026/27, quando o mercado esperava aumento.",
+"cells":[{"label":"Estoque final EUA","value":"300 mi bu","arrow":"↓","note":"soja 2026/27 · antes: 315 mi"},
+{"label":"Soja em Chicago","value":"US$ 12,34","arrow":"↑","note":"por bushel, março · alta acima de 3%"},
+{"label":"Exportação dos EUA","value":"1,72 bi bu","arrow":"↑","note":"+25 milhões de bushels"},
+{"label":"Brasil 2026/27","value":"186 mi t","arrow":"→","note":"soja mantida · milho sobe a 141 mi t"}],
+"source":"USDA, Safras, Folha Agrícola"}
