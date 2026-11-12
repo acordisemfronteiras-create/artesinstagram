@@ -1,0 +1,132 @@
+{
+ "cenas": [
+  {
+   "id": "gancho",
+   "ini": 0,
+   "fim": 11.536
+  },
+  {
+   "id": "governo",
+   "ini": 11.536,
+   "fim": 19.25
+  },
+  {
+   "id": "investidor",
+   "ini": 19.25,
+   "fim": 26.965
+  },
+  {
+   "id": "balanca",
+   "ini": 26.965,
+   "fim": 41.67
+  },
+  {
+   "id": "efeitos",
+   "ini": 41.67,
+   "fim": 50.976
+  },
+  {
+   "id": "resumo",
+   "ini": 50.976,
+   "fim": 58.11
+  },
+  {
+   "id": "cta",
+   "ini": 58.11,
+   "fim": 63.956
+  }
+ ],
+ "legendas": [
+  {
+   "cena": "gancho",
+   "ini": 0.6,
+   "fim": 5.697,
+   "texto": "Na quinta (12/11), o dólar subiu 1,6% e fechou a R$ 5,65."
+  },
+  {
+   "cena": "gancho",
+   "ini": 5.977,
+   "fim": 8.601,
+   "texto": "O maior nível desde junho de 2025."
+  },
+  {
+   "cena": "gancho",
+   "ini": 8.881,
+   "fim": 11.261,
+   "texto": "Mas por que a conta do governo mexe no dólar?"
+  },
+  {
+   "cena": "governo",
+   "ini": 11.811,
+   "fim": 15.05,
+   "texto": "Pense no governo como uma família que gasta mais do que arrecada."
+  },
+  {
+   "cena": "governo",
+   "ini": 15.33,
+   "fim": 18.975,
+   "texto": "Para fechar a conta, pega emprestado. E a dívida cresce."
+  },
+  {
+   "cena": "investidor",
+   "ini": 19.525,
+   "fim": 23.403,
+   "texto": "Quem empresta, inclusive o estrangeiro, passa a cobrar mais pelo risco."
+  },
+  {
+   "cena": "investidor",
+   "ini": 23.683,
+   "fim": 26.69,
+   "texto": "Se a confiança cai, parte do dinheiro sai do país."
+  },
+  {
+   "cena": "balanca",
+   "ini": 27.24,
+   "fim": 31.826,
+   "texto": "Para sair, vende reais e compra dólares. Mais procura, preço mais alto."
+  },
+  {
+   "cena": "balanca",
+   "ini": 32.106,
+   "fim": 37.133,
+   "texto": "O mercado avaliou como insuficiente o pacote fiscal para 2027."
+  },
+  {
+   "cena": "balanca",
+   "ini": 37.413,
+   "fim": 41.395,
+   "texto": "E apostas de juros mais altos nos EUA reforçaram o dólar."
+  },
+  {
+   "cena": "efeitos",
+   "ini": 41.945,
+   "fim": 46.38,
+   "texto": "Na prática, ficam mais caros importados, insumos e dívidas em dólar."
+  },
+  {
+   "cena": "efeitos",
+   "ini": 46.66,
+   "fim": 50.701,
+   "texto": "O produtor que exporta recebe mais reais, mas paga mais no fertilizante."
+  },
+  {
+   "cena": "resumo",
+   "ini": 51.251,
+   "fim": 54.803,
+   "texto": "Resumo: a confiança nas contas públicas ajuda a sustentar o real."
+  },
+  {
+   "cena": "resumo",
+   "ini": 55.083,
+   "fim": 57.835,
+   "texto": "Por isso, o mercado acompanha o pacote no Senado."
+  },
+  {
+   "cena": "cta",
+   "ini": 58.385,
+   "fim": 62.356,
+   "texto": "Quer entender o efeito no seu patrimônio? Fale comigo pelo link da bio."
+  }
+ ],
+ "duracao": 63.956
+}

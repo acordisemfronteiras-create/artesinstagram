@@ -1,0 +1,101 @@
+{
+ "titulo": "Por que o dólar dispara quando o fiscal preocupa?",
+ "kicker": "Entenda em 1 minuto",
+ "cenas": [
+  {
+   "id": "gancho",
+   "falas": [
+    {
+     "fala": "Na quinta, o dólar subiu um vírgula seis por cento e fechou a cinco reais e sessenta e cinco.",
+     "legenda": "Na quinta (12/11), o dólar subiu 1,6% e fechou a R$ 5,65."
+    },
+    {
+     "fala": "O maior nível desde junho de dois mil e vinte e cinco.",
+     "legenda": "O maior nível desde junho de 2025."
+    },
+    {
+     "fala": "Mas por que a conta do governo mexe no dólar?",
+     "legenda": "Mas por que a conta do governo mexe no dólar?"
+    }
+   ]
+  },
+  {
+   "id": "governo",
+   "falas": [
+    {
+     "fala": "Pense no governo como uma família que gasta mais do que arrecada.",
+     "legenda": "Pense no governo como uma família que gasta mais do que arrecada."
+    },
+    {
+     "fala": "Para fechar a conta, pega emprestado. E a dívida cresce.",
+     "legenda": "Para fechar a conta, pega emprestado. E a dívida cresce."
+    }
+   ]
+  },
+  {
+   "id": "investidor",
+   "falas": [
+    {
+     "fala": "Quem empresta, inclusive o estrangeiro, passa a cobrar mais pelo risco.",
+     "legenda": "Quem empresta, inclusive o estrangeiro, passa a cobrar mais pelo risco."
+    },
+    {
+     "fala": "E, se a confiança cai, parte do dinheiro sai do país.",
+     "legenda": "Se a confiança cai, parte do dinheiro sai do país."
+    }
+   ]
+  },
+  {
+   "id": "balanca",
+   "falas": [
+    {
+     "fala": "Para sair, vende reais e compra dólares. Mais procura, preço mais alto.",
+     "legenda": "Para sair, vende reais e compra dólares. Mais procura, preço mais alto."
+    },
+    {
+     "fala": "Foi o que se viu: o mercado avaliou como insuficiente o pacote fiscal para dois mil e vinte e sete.",
+     "legenda": "O mercado avaliou como insuficiente o pacote fiscal para 2027."
+    },
+    {
+     "fala": "E as apostas de juros mais altos nos Estados Unidos reforçaram o dólar.",
+     "legenda": "E apostas de juros mais altos nos EUA reforçaram o dólar."
+    }
+   ]
+  },
+  {
+   "id": "efeitos",
+   "falas": [
+    {
+     "fala": "Na prática, ficam mais caros os importados, os insumos e as dívidas em dólar.",
+     "legenda": "Na prática, ficam mais caros importados, insumos e dívidas em dólar."
+    },
+    {
+     "fala": "O produtor que exporta recebe mais reais, mas paga mais no fertilizante.",
+     "legenda": "O produtor que exporta recebe mais reais, mas paga mais no fertilizante."
+    }
+   ]
+  },
+  {
+   "id": "resumo",
+   "falas": [
+    {
+     "fala": "Resumo: a confiança nas contas públicas ajuda a sustentar o real.",
+     "legenda": "Resumo: a confiança nas contas públicas ajuda a sustentar o real."
+    },
+    {
+     "fala": "Por isso, o mercado acompanha o pacote no Senado.",
+     "legenda": "Por isso, o mercado acompanha o pacote no Senado."
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "falas": [
+    {
+     "fala": "Quer entender o efeito no seu patrimônio? Fale comigo pelo link da bio.",
+     "legenda": "Quer entender o efeito no seu patrimônio? Fale comigo pelo link da bio."
+    }
+   ]
+  }
+ ]
+}
