@@ -1,0 +1,31 @@
+{
+ "kicker": "Câmbio · Fechamento",
+ "date": "12.11.2026",
+ "headline_html": "Dólar sobe 1,6% e fecha a <em>R$ 5,65</em>.",
+ "sub": "Maior nível desde junho de 2025, com dúvidas sobre o pacote fiscal e apostas de alta de juros nos EUA.",
+ "cells": [
+  {
+   "label": "Dólar comercial",
+   "value": "R$ 5,65",
+   "arrow": "↑",
+   "note": "+1,6% no dia"
+  },
+  {
+   "label": "Maior nível desde",
+   "value": "Jun. 2025",
+   "note": "véspera: R$ 5,56"
+  },
+  {
+   "label": "Ibovespa",
+   "value": "171.324",
+   "arrow": "↓",
+   "note": "−0,43% no dia"
+  },
+  {
+   "label": "Pacote fiscal 2027",
+   "value": "R$ 50–60 bi",
+   "note": "texto em análise no Senado"
+  }
+ ],
+ "source": "B3, Gazeta do Povo, CNN Brasil"
+}
