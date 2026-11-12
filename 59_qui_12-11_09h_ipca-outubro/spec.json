@@ -1,0 +1,32 @@
+{
+ "kicker": "Inflação · IPCA de outubro",
+ "date": "12.11.2026",
+ "tag": "Urgente",
+ "headline_html": "IPCA desacelera a <em>0,14%</em> em outubro.",
+ "sub": "Abaixo do esperado pelo mercado, mas em 12 meses o índice segue acima do teto da meta.",
+ "cells": [
+  {
+   "label": "IPCA de outubro",
+   "value": "0,14%",
+   "arrow": "↓",
+   "note": "setembro: 0,82%"
+  },
+  {
+   "label": "Em 12 meses",
+   "value": "4,63%",
+   "note": "teto da meta: 4,5%"
+  },
+  {
+   "label": "Projeção mediana",
+   "value": "0,25%",
+   "note": "Reuters e Broadcast"
+  },
+  {
+   "label": "Alimentação e bebidas",
+   "value": "1,04%",
+   "arrow": "↑",
+   "note": "habitação −0,51%; transportes −0,59%"
+  }
+ ],
+ "source": "IBGE, Reuters, Exame, InfoMoney"
+}
