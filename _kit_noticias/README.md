@@ -20,5 +20,6 @@ Padrão aprovado pelo Tiago em 04/11/2026 (referência: `referencia_selic_04-11.
 - Política: só fatos, sem opinião sobre partidos ou candidatos.
 
 ## Publicação
-- Arte em `NN_dia_dd-mm_HHh_tema/arquivo.jpg` (JPG qualidade 94), commit e push na `main`; URL pública: `https://raw.githubusercontent.com/acordisemfronteiras-create/artesinstagram/main/<pasta>/<arquivo>.jpg`.
-- Agendamento pelo Metricool, brand 6721816, fuso America/Sao_Paulo, rede instagram, tipo POST, autoPublish true. **Só depois de aprovação explícita do Tiago.**
+- Arte em `NN_dia_dd-mm_HHh_tema/arquivo.jpg` (JPG qualidade 94), commit e push na `main`.
+- Publicação no Instagram (@tiagoassessorxp) pelo **HubPost**: upload do JPG (get_upload_url → PUT → confirm_upload) e create_post na conta Instagram, tipo POST, fuso America/Sao_Paulo.
+- Desde 12/11/2026 o Tiago deu **aprovação permanente** para os posts da tarefa de notícias: publicar direto, sem esperar resposta, desde que a validação de fontes e o compliance passem. Se algum dos dois falhar, não publicar: mandar como rascunho e explicar.
