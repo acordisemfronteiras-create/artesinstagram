@@ -93,7 +93,7 @@ def main():
                     "-i", str(pasta / "_trilha.wav"), "-filter_complex",
                     "[1:a]highpass=f=70,acompressor=threshold=-18dB:ratio=3:attack=5:release=120,volume=1.6[v];"
                     "[2:a]volume=0.16[m];[v][m]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95,"
-                    "aresample=48000[a]",
+                    "aresample=48000,loudnorm=I=-14:TP=-1.5:LRA=11[a]",
                     "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ac", "2",
                     "-movflags", "+faststart", "-shortest", str(final_tmp)], check=True)
     final_tmp.rename(pasta / "reels.mp4")
