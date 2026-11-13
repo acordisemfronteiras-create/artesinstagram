@@ -1,0 +1,30 @@
+{
+ "kicker": "Agro · Safra de grãos",
+ "date": "13.11.2026",
+ "headline_html": "Conab projeta safra de <em>366,1 milhões</em> de toneladas.",
+ "sub": "O 2º levantamento da safra 2026/27 aponta novo recorde, sustentado pela área maior.",
+ "cells": [
+  {
+   "label": "Grãos 2026/27",
+   "value": "366,1 mi t",
+   "arrow": "↑",
+   "note": "+1,3% sobre 2025/26"
+  },
+  {
+   "label": "Área plantada",
+   "value": "85,3 mi ha",
+   "note": "+1,9 milhão de hectares"
+  },
+  {
+   "label": "Soja",
+   "value": "181,6 mi t",
+   "note": "em 49,3 milhões de hectares"
+  },
+  {
+   "label": "Milho",
+   "value": "148 mi t",
+   "note": "soma das três safras"
+  }
+ ],
+ "source": "Conab, Agência Gov, CNN Brasil"
+}
