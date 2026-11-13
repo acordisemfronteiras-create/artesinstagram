@@ -14,7 +14,8 @@ Registro em ordem de data. Cada linha: o que ele pediu ou comentou, e a regra qu
 | 12/11/2026 | Mandou a referência 02 (texto cinético, etapas numeradas, barra de status): "gostei desse vídeo aqui também... pra você estudar" | Formato C criado em `formatos.md`; motor ganhou o texto palavra por palavra (`.cin`) e a opção de esconder a legenda de baixo |
 
 | 13/11/2026 | Pediu um motion do fechamento do dia com as skills novas e disse que ele mesmo grava o áudio para subirmos em cima; quer o vídeo e o texto separados | Novo modo "voz do Tiago": entregar vídeo sem voz (trilha + efeitos), versão com voz-guia para ritmo e o texto com marcas de tempo; quando o áudio chegar, refazer a linha do tempo a partir da gravação dele e filmar de novo |
+| 13/11/2026 | Aprovou o Reels do fechamento com a voz dele ("Gostei"), pediu para postar na hora e compartilhar nos stories | Formato C validado. Modo "voz do Tiago" validado (voz_gravada.py). Depois de publicar um Reels aprovado, postar também um STORY com o mesmo vídeo (até 60 s) pelo HubPost; o compartilhamento nativo do Reels nos stories, com toque para abrir, só pelo app |
 
 ## Em aberto (aguardando retorno dele)
 
-- **Estrear o formato C.** Ele ainda não viu um Reels nosso nesse estilo. O próximo Reels cujo assunto seja um processo em etapas deve usar o formato C (veja as pautas em `ideias.md`) e, na mensagem de aprovação, dizer que é a estreia do estilo da referência 02.
+- ~~Estrear o formato C~~: estreou em 13/11/2026 (fechamento da semana em 4 números) e foi aprovado.
