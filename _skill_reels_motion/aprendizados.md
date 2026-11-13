@@ -10,8 +10,8 @@ Registro em ordem de data. Cada linha: o que ele pediu ou comentou, e a regra qu
 | 12/11/2026 | Quer receber sempre a legenda completa com hashtags para ler e dar o OK | Pedido de aprovação começa com a legenda exata que vai ao ar |
 | 12/11/2026 | Aprovou o piloto (dólar e fiscal): "aprovadíssimo, gostei" | Formato B validado |
 | 12/11/2026 | Mandou a referência dos quadradinhos: gostou muito da voz, da estrutura, de tudo; pediu para treinar esse estilo, somar à nossa estratégia e guardar as ideias no GitHub para virar uma skill | Formato A criado; motor ganhou deixas por palavra, câmera contínua, efeitos sonoros e voz mais natural; esta pasta |
+| 12/11/2026 | Aprovou a demo dos quadradinhos ("Gostei") e pediu para programar para o início da semana seguinte | Formato A validado, com a voz nova (Kokoro `pm_alex`) e a legenda da fala na tela; agendado para seg 16/11 12h. Reels aprovado pode ser agendado para dias à frente, não só "agora" |
 
 ## Em aberto (aguardando retorno dele)
 
-- Voz nova (Kokoro `pm_alex`, mais natural e mais rápida) no lugar da voz do piloto (Piper `faber`): ele ainda não ouviu e comparou.
-- Legenda da fala na tela no formato A: a referência não usa; nós mantivemos, menor.
+- Nada no momento. A voz nova foi no vídeo que ele aprovou; se ele comentar a voz depois de ouvir de novo, registre aqui.

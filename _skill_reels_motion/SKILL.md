@@ -59,7 +59,7 @@ Descreva o que aconteceu e o efeito; não diga o que fazer. Fica de fora: sugeri
 
 ## Som
 
-- **Voz:** uma só por estilo, sempre a mesma. Estilo atual: Kokoro `pm_alex`, velocidade 1,06 (`"voz"` no roteiro). O piloto de 12/11 usou Piper `faber`. Trocar de voz é decisão do Tiago; veja o que está em aberto em `aprendizados.md`.
+- **Voz:** uma só por estilo, sempre a mesma. Estilo atual: Kokoro `pm_alex`, velocidade 1,06 (`"voz"` no roteiro). O Tiago aprovou a demo com essa voz em 12/11/2026; o piloto do mesmo dia usou Piper `faber`. Trocar de voz é decisão dele.
 - **Efeitos** no campo `"sfx"`, presos às deixas: `whoosh` em movimento de câmera, `impacto` em número forte, `riser` antes dele, `pop` quando algo aparece, `varredura` e `contagem` em ondas e contadores, `brilho` em conclusão, `bip` em "presta atenção". Um efeito por batida basta; som demais cansa e briga com a voz.
 - Trilha e efeitos são sintetizados em `som.py`. Não baixe música nem efeito de terceiros.
 - Você não ouve o resultado. Confira o que dá: transcreva a narração de volta para checar se as palavras saíram certas (números e siglas são onde a voz erra), e meça o volume. Diga isso ao Tiago quando o som for novidade.
