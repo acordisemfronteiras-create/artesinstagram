@@ -17,7 +17,7 @@ descreve só o motor.
   (estilo atual; `"voz": {"motor": "kokoro", "nome": "pm_alex", "velocidade": 1.06}`) ou Piper `faber` (piloto de
   12/11; é o padrão quando o roteiro não tem `"voz"`). `--alinhar` usa faster-whisper para acertar as deixas na palavra.
 - `base.css`, `base.js`, `personas.js`: animação declarativa (`data-in`, `data-at`, `data-out`, `data-count`,
-  `data-float`) e, para movimento contínuo, `window.onSeek(t)` com `cue('nome')` e `ease()`. Veja o topo do `base.js`.
+  `data-float`, `data-cin` para texto palavra por palavra) e, para movimento contínuo, `window.onSeek(t)` com `cue('nome')` e `ease()`. Veja o topo do `base.js`.
 - `som.py`: trilha e efeitos sintetizados (lista no topo do arquivo). Campo `"sfx"` do roteiro:
   `{"em": "@deixa-0.1", "tipo": "whoosh", "ganho": 1.0}`. Ajuste de volumes em `"mix": {"voz", "trilha", "sfx"}`.
 - `render.py PASTA --quadros t1,t2` (conferência) · `render.py PASTA` (vídeo, em 2 partes paralelas, ~3 min por

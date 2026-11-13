@@ -22,7 +22,7 @@ Reels só vai ao ar com o OK do Tiago, por escrito, na mesma conversa. Ele pediu
 1. **Sincronize e leia.** `git fetch origin main && git reset --hard origin/main`. Leia esta pasta, `_kit_reels/historico.md` e o fim de `_kit_noticias/historico.md` para não repetir assunto dos últimos 10 dias.
 2. **Escolha a pauta.** O que está em alta no mercado agora e interessa a quem tem patrimônio: um conceito por trás da notícia da semana, um dado que surpreende, uma regra que mudou. Pesquise em fontes de qualidade (BC, IBGE, Tesouro, CVM, B3, ANBIMA, Fed, Agência Brasil, InfoMoney, Valor, Estadão, Folha, Reuters, Bloomberg Línea, Exame, Canal Rural).
 3. **Valide os números.** Cada número na tela ou na fala precisa de fonte primária oficial ou de duas fontes independentes que batem. Se divergirem, fique com a primária ou tire o dado. Guarde os links em `"fontes"` no `roteiro.json`. Conta derivada (ex.: 36 − 19 = 17) só quando a própria fonte confirma o resultado.
-4. **Escolha o formato** em `formatos.md` pelo tipo de assunto: proporção ou distribuição pede o formato A (metáfora única); causa e efeito pede o B (personas). Alterne quando der.
+4. **Escolha o formato** em `formatos.md` pelo tipo de assunto: proporção ou distribuição pede o formato A (metáfora única); causa e efeito pede o B (personas); processo em etapas ou lista pede o C (texto cinético). Alterne quando der, e veja em `aprendizados.md` se há formato esperando estreia.
 5. **Escreva o roteiro** (seção abaixo) e rode `python3 _kit_reels/voz.py PASTA --alinhar`. Mire em 50 a 62 s. Se passar, corte frases, não acelere a voz.
 6. **Anime** em `PASTA/pagina.html`, com desenho novo para o tema.
 7. **Confira antes de filmar:** `python3 _kit_reels/render.py PASTA --quadros t1,t2,...` em 8 a 14 instantes, incluindo os de troca de texto. Abra as imagens. Procure texto sobre texto, texto sobre desenho, corte nas bordas, número diferente do verificado. Corrija e repita. Filmar custa minutos; um quadro custa segundos.
@@ -55,6 +55,7 @@ Descreva o que aconteceu e o efeito; não diga o que fazer. Fica de fora: sugeri
 - Quando o desenho passa por trás do texto, use véus (gradientes escuros) no alto e embaixo, como no exemplo do formato A.
 - Um bloco de texto sai antes de o próximo entrar (`data-out` uns 0,3 s antes da deixa seguinte). É o defeito mais comum; os quadros de conferência pegam.
 - Mantemos a legenda da fala, menor, mesmo quando a referência não usa: boa parte do público assiste sem som.
+- Texto palavra por palavra no centro (formato C): `<div class="cin" data-cin="L2">... <em>destaque</em></div>`; com ele, desligue a legenda de baixo (`"legenda_na_tela": false`).
 - Animação: `data-in`, `data-at` (`"1.2"`, `"L2+0.3"` ou `"@deixa+0.2"`), `data-out`, `data-count`; para movimento contínuo (câmera, grade), `window.onSeek(t)` com `cue('nome')` e `ease()`. Detalhes no topo de `base.js`.
 
 ## Som
@@ -74,4 +75,4 @@ Descreva o que aconteceu e o efeito; não diga o que fazer. Fica de fora: sugeri
 
 ## Quando o Tiago manda uma referência nova
 
-É assim que esta skill melhora. Assista de verdade: extraia quadros (1 por segundo, em folhas de contato), transcreva a narração, leia o que aparecer de texto na tela. Escreva a análise em `referencias/NN_nome.md` no modelo da 01: o que acontece segundo a segundo, por que funciona, o que adaptamos e o que mudamos de propósito. Se trouxer uma estrutura nova, acrescente em `formatos.md`; se trouxer pautas, em `ideias.md`; registre o pedido em `aprendizados.md`. Depois prove que aprendeu: um Reels de demonstração no nicho dele, para aprovação. O vídeo de terceiro não entra no repositório.
+É assim que esta skill melhora. Assista de verdade: extraia quadros (1 por segundo, em folhas de contato), transcreva a narração, leia o que aparecer de texto na tela. Escreva a análise em `referencias/NN_nome.md` no modelo da 01: o que acontece segundo a segundo, por que funciona, o que adaptamos e o que mudamos de propósito. Se trouxer uma estrutura nova, acrescente em `formatos.md`; se trouxer pautas, em `ideias.md`; registre o pedido em `aprendizados.md`. Se o motor não faz o que a referência faz, acrescente a peça que falta em `_kit_reels/` e teste com quadros. Depois mostre que aprendeu: se ele pedir, um Reels de demonstração na hora; se só pediu para estudar, anote em `aprendizados.md` ("Em aberto") que o formato espera estreia e use-o no próximo Reels em que o assunto couber. O vídeo de terceiro não entra no repositório.

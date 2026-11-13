@@ -6,6 +6,8 @@
 //   data-out="L3"    some nesse instante (opcional)
 //   data-float="8"   flutua em loop (amplitude px)
 //   data-at também aceita "@deixa+0.2" (deixa = {nome} marcado dentro da fala no roteiro.json)
+//   data-cin="L2" (classe .cin): texto cinético, palavra a palavra no ritmo da fala; <em> = palavra de destaque;
+//       data-cin-hold (s na tela depois da fala) ou data-cin-out="@deixa"; "legenda_na_tela": false no roteiro esconde a legenda de baixo
 //   window.onSeek(t): função opcional da página, chamada a cada quadro (câmera, grades, partículas)
 //   data-count="5.65" data-from="5.56" data-dec="2" data-pre="R$ " data-suf=""  contador
 // O render.py chama window.seek(t) a cada quadro.
@@ -39,7 +41,7 @@
     'tilt': [{ transform: 'rotate(0deg)' }, { transform: 'rotate(-9deg)' }],
     'zoom': [{ opacity: 0, transform: 'scale(1.25)' }, { opacity: 1, transform: 'scale(1)' }],
   };
-  const counters = [];
+  const counters = [], cins = [];
   function setup() {
     // moldura
     const st = document.getElementById('stage');
@@ -72,6 +74,29 @@
         dec: parseInt(el.dataset.dec || 0), pre: el.dataset.pre || '', suf: el.dataset.suf || ''
       }));
     });
+    // texto cinético: <div class="cin" data-cin="L2">imagina uma equipe inteira de <em>agentes</em></div>
+    // as palavras entram uma a uma no ritmo da fala L2 da cena (ou data-cin="@deixa" data-cin-dur="2.4")
+    document.querySelectorAll('.scene').forEach(sc => sc.querySelectorAll('[data-cin]').forEach(el => {
+      const spec = el.dataset.cin, m = spec.match(/^L(\d+)$/);
+      let ini, fim;
+      if (m) { const l = legs(sc.id)[+m[1] - 1]; ini = l.ini; fim = l.fim; }
+      else { ini = at(sc.id, spec); fim = ini + parseFloat(el.dataset.cinDur || 2); }
+      const words = [];
+      (function split(node) {
+        [...node.childNodes].forEach(n => {
+          if (n.nodeType === 3) {
+            const frag = document.createDocumentFragment();
+            n.textContent.split(/(\s+)/).forEach(w => {
+              if (!w.trim()) { frag.appendChild(document.createTextNode(w)); return; }
+              const sp = document.createElement('span'); sp.className = 'w'; sp.textContent = w; frag.appendChild(sp); words.push(sp);
+            });
+            n.replaceWith(frag);
+          } else if (n.nodeType === 1 && n.tagName !== 'BR') split(n);
+        });
+      })(el);
+      const sai = el.dataset.cinOut ? at(sc.id, el.dataset.cinOut) : fim + parseFloat(el.dataset.cinHold || 0.3);
+      cins.push({ el, words, ini, fim, sai });
+    }));
     document.getAnimations().forEach(a => a.pause());
   }
   const fmt = (v, d) => v.toLocaleString('pt-BR', { minimumFractionDigits: d, maximumFractionDigits: d });
@@ -111,6 +136,18 @@
       const e = 1 - Math.pow(1 - k, 3);
       c.el.textContent = c.pre + fmt(c.from + (c.to - c.from) * e, c.dec) + c.suf;
     });
+    cins.forEach(c => {
+      const vis = t >= c.ini - 0.05 && t < c.sai + 0.2;
+      c.el.style.opacity = !vis ? 0 : Math.max(0, Math.min(1, (c.sai + 0.2 - t) / 0.2));
+      if (!vis) return;
+      const span = Math.max(0.3, c.fim - c.ini - 0.15);
+      c.words.forEach((w, i) => {
+        const k = Math.max(0, Math.min(1, (t - (c.ini + span * i / c.words.length)) / 0.16));
+        const e = 1 - Math.pow(1 - k, 3);
+        w.style.opacity = e; w.style.transform = `translateY(${(1 - e) * 26}px)`; w.style.filter = k < 1 ? `blur(${(1 - e) * 7}px)` : 'none';
+      });
+    });
+    if (TL.sem_legenda) document.getElementById('cap').style.display = 'none';
     caption(t);
     document.querySelector('#bar i').style.width = (100 * Math.min(1, t / TL.duracao)) + '%';
     if (window.onSeek) window.onSeek(t);   // gancho para animação contínua (câmera, grade etc.)

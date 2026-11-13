@@ -24,6 +24,7 @@ def carregar(pasta):
     tl = json.loads((pasta / "timeline.json").read_text())
     rot = json.loads((pasta / "roteiro.json").read_text())
     tl["kicker"] = rot.get("kicker", "Entenda em 1 minuto")
+    tl["sem_legenda"] = rot.get("legenda_na_tela", True) is False
     return tl, rot
 
 

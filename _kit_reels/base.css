@@ -37,3 +37,10 @@ svg .tl{transform-box:fill-box;transform-origin:0% 50%}
 #cap p span{transition:none}
 #cap p span.on{color:#f6eedf}
 #cap p span.hl{color:var(--gold2)}
+
+/* texto cinético (formato C): frase grande no centro, palavra a palavra; <em> = destaque em serifa dourada */
+.cin{position:absolute;left:70px;right:70px;text-align:center;font-size:74px;line-height:1.14;font-weight:500;letter-spacing:-.015em;color:#f6eedf;opacity:0}
+.cin .w{display:inline-block;will-change:transform,opacity}
+.cin em{font-family:"Fraunces",serif;font-style:italic;font-weight:400;color:var(--gold2)}
+.cin.claro{color:#17140f}.cin.claro em{color:#8f6a1f}
+.num-etapa{font-family:"Fraunces",serif;font-weight:500;font-size:300px;line-height:1;color:var(--gold)}

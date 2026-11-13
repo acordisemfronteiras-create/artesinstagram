@@ -22,6 +22,14 @@ Pautas que cabem na estratégia do Tiago (alta renda, empreendedores, produtores
 - [ ] Por que juros nos EUA mexem com a bolsa brasileira
 - [ ] Hedge cambial para quem exporta: o conceito, sem produto
 
+## Formato C (texto cinético com etapas)
+
+- [ ] As 5 etapas de um planejamento sucessório (conceito, sem produto): inventário do patrimônio, regime de bens, instrumentos, tributos, governança
+- [ ] Do Copom ao seu financiamento: os passos entre a decisão da Selic e a taxa na ponta
+- [ ] 3 perguntas antes de pensar em holding familiar
+- [ ] O caminho de uma saca de soja até virar reais: preço em Chicago, prêmio, câmbio, frete
+- [ ] O que um assessor olha primeiro numa carteira: liquidez, concentração, prazo, moeda (descritivo)
+
 ## Candidatos a outros formatos
 
 - [ ] Linha do tempo: a Selic de 2020 até hoje, em 60 s

@@ -19,9 +19,17 @@ Cada formato é uma estrutura de roteiro + um jeito de animar. Escolha pelo tipo
 - **Exemplo:** `61_reels_qui_12-11_rascunho_dolar-fiscal` (aprovado e publicado em 12/11/2026).
 - **Para evoluir com o que aprendemos na referência 01:** menos texto por cena, um número grande por batida, deixas `{}` para sincronizar com a palavra, efeitos sonoros, fala mais rápida e coloquial.
 
+## C. Texto cinético com etapas ("barra de status")
+
+- **Quando usar:** o assunto é um processo em passos, uma lista ou um "como funciona" (as etapas de um planejamento sucessório, o caminho de uma decisão do Copom até o crédito, 3 perguntas antes de montar uma holding, o que olhar num balanço).
+- **Estrutura:** frase de abertura que fala com "você" → um número enorme quando o número é o argumento → "são N etapas" → cada etapa com número gigante, título e uma mini-interface (pergunta, opções, documento) → fecho com a virada para patrimônio → pergunta por comentário → cartão final.
+- **Visual:** quase sem cenário. A fala aparece no centro, palavra por palavra (`.cin`), com uma palavra de destaque em dourado itálico; o fundo alterna escuro e claro a cada ideia; uma barra de status fixa embaixo mostra "etapa 2 de 5" com uma persona e um brilho que muda de cor.
+- **Referência:** `referencias/02_texto-cinetico-etapas.md` (tem a receita de como montar no nosso motor) · **Exemplo nosso:** ainda não há; o primeiro Reels neste formato vira o exemplo.
+- **Cuidados:** uma `fala` por linha de tela (2 a 7 palavras); desligue a legenda de baixo (`"legenda_na_tela": false`); no máximo 5 etapas em 60 s.
+
 ## Candidatos (ainda sem exemplo nosso)
 
-- **C. Linha do tempo com câmera:** um gráfico que se desenha enquanto a câmera viaja por ele, parando em 3 ou 4 datas (Selic desde 2020, dólar no ano, soja na safra).
-- **D. "Quanto custa esperar" / conta na tela:** uma conta simples montada passo a passo, sem prometer rentabilidade (ex.: como a inflação corrói R$ 100 em 10 anos, com IPCA realizado).
-- **E. Mito ou verdade:** 3 afirmações rápidas, cada uma carimbada, com o dado que sustenta.
-- **F. Antes e depois de uma regra:** o que mudou com uma lei ou decisão (ITCMD, isenção de IR, VR/VA), em duas colunas que se transformam.
+- **D. Linha do tempo com câmera:** um gráfico que se desenha enquanto a câmera viaja por ele, parando em 3 ou 4 datas (Selic desde 2020, dólar no ano, soja na safra).
+- **E. "Quanto custa esperar" / conta na tela:** uma conta simples montada passo a passo, sem prometer rentabilidade (ex.: como a inflação corrói R$ 100 em 10 anos, com IPCA realizado).
+- **F. Mito ou verdade:** 3 afirmações rápidas, cada uma carimbada, com o dado que sustenta.
+- **G. Antes e depois de uma regra:** o que mudou com uma lei ou decisão (ITCMD, isenção de IR, VR/VA), em duas colunas que se transformam.
