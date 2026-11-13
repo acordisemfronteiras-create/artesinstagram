@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../_kit_reels/base.css">
+<script src="../_kit_reels/base.js"></script>
+<style>
+/* Formato C (texto cinético + etapas + barra de status) — estreia: sexta-feira 13, a semana em 4 números */
+.claro-bg{position:absolute;inset:0;background:radial-gradient(ellipse 900px 800px at 50% 35%,#f6f1e6 0%,#ebe3d3 70%,#e2d8c5 100%)}
+.cin{top:850px;font-size:76px}
+.cin em{font-weight:400}
+.ctr{position:absolute;left:60px;right:60px;text-align:center}
+.num-etapa{position:absolute;left:0;right:0;top:250px;text-align:center;font-family:"Fraunces",serif;font-weight:500;font-size:560px;line-height:1;color:var(--gold);letter-spacing:-.04em}
+.claro .num-etapa{color:#a47c2f}
+.etq{position:absolute;left:80px;top:262px;display:flex;align-items:baseline;gap:22px}
+.etq b{font-family:"Fraunces",serif;font-weight:500;font-size:84px;color:var(--gold);line-height:1}
+.etq span{font-size:30px;letter-spacing:.3em;text-transform:uppercase;color:#8f8a82;font-weight:600}
+.claro .etq b{color:#a47c2f}.claro .etq span{color:#6d665b}
+.mega{font-family:"Fraunces",serif;font-weight:500;font-size:200px;line-height:1;letter-spacing:-.03em;color:#f6eedf}
+.claro .mega{color:#17140f}
+.pill{display:inline-block;border-radius:999px;padding:12px 30px;font-size:34px;font-weight:600}
+.pill.g{background:rgba(201,164,92,.16);color:#e6c88a;border:1.5px solid rgba(201,164,92,.6)}
+.claro .pill.g{background:#17140f;color:#e6c88a;border:none}
+.lbl{font-size:26px;letter-spacing:.3em;text-transform:uppercase;color:#8f8a82;font-weight:600}
+.claro .lbl{color:#6d665b}
+/* calendário */
+#cal{position:absolute;left:390px;top:330px;width:300px;height:340px;border-radius:30px;overflow:hidden;background:#f3ecdf;box-shadow:0 40px 90px rgba(0,0,0,.6);transform:rotate(-4deg)}
+#cal .t{height:86px;background:#8f2f24;color:#f3ecdf;font-size:34px;font-weight:700;letter-spacing:.3em;display:flex;align-items:center;justify-content:center}
+#cal .n{font-family:"Fraunces",serif;font-size:190px;color:#17140f;text-align:center;line-height:1.1;margin-top:6px}
+#cal .m{font-size:28px;letter-spacing:.34em;color:#6d665b;text-align:center;font-weight:600;margin-top:-12px}
+#cal .rings{position:absolute;top:-14px;left:70px;right:70px;display:flex;justify-content:space-between}
+/* placar */
+.placar{position:absolute;left:0;right:0;top:390px;display:flex;justify-content:center;align-items:flex-end;gap:70px}
+.placar .c{text-align:center}
+.placar .v{font-family:"Fraunces",serif;font-weight:500;font-size:230px;line-height:1}
+.placar .x{font-family:"Fraunces",serif;font-size:90px;color:#5f5a52;padding-bottom:50px}
+/* trilha de etapas do projeto */
+.trilho{position:absolute;left:110px;right:110px;top:1065px;display:flex;justify-content:space-between;align-items:flex-start}
+.trilho .p{width:250px;text-align:center}
+.trilho .d{width:44px;height:44px;border-radius:50%;margin:0 auto 14px;border:3px solid #5f5a52;background:#0a0a0a}
+.trilho .d.ok{background:var(--gold);border-color:var(--gold)}
+.trilho .d.ag{border-color:var(--gold)}
+.trilho .tx{font-size:27px;color:#cfc6b6;line-height:1.25;font-weight:500}
+.trilho .ln{position:absolute;left:125px;right:125px;top:21px;height:3px;background:#3a352c;z-index:-1}
+/* comparação do varejo */
+.cmp{position:absolute;left:120px;right:120px;top:360px}
+.cmp .row{display:flex;align-items:center;gap:30px;margin-bottom:56px}
+.cmp .k{width:270px;font-size:30px;letter-spacing:.24em;text-transform:uppercase;color:#8f8a82;font-weight:600}
+.cmp .bar{height:110px;border-radius:18px;display:flex;align-items:center;padding:0 34px;font-family:"Fraunces",serif;font-size:78px;transform-origin:0 50%}
+.risk{position:absolute;left:290px;width:250px;top:50px;height:10px;background:#d98a6c;border-radius:5px;transform-origin:0 50%}
+/* barra de status (fio do formato C) */
+#status{position:absolute;left:150px;right:150px;top:1215px;height:96px;border-radius:999px;background:rgba(16,15,13,.92);border:1.5px solid #3a3328;display:flex;align-items:center;padding:0 34px 0 18px;gap:24px;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+#glow{position:absolute;left:250px;right:250px;top:1170px;height:190px;border-radius:50%;filter:blur(60px);opacity:.55}
+#status .ic{width:62px;height:62px;border-radius:50%;background:#1d1a14;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;flex:none}
+#status .ic svg{width:38px;height:38px}
+#status .tx{font-size:29px;color:#efe6d6;font-weight:500;flex:1}
+#status .tx i{font-style:normal;color:#8f8a82}
+#status .dots{display:flex;gap:10px}
+#status .dots s{width:14px;height:14px;border-radius:50%;background:#3a352c;display:block}
+#status .dots s.on{background:var(--gold)}
+.st{position:absolute;inset:0;display:flex;align-items:center;gap:24px;padding:0 34px 0 18px;opacity:0}
+/* fim */
+.fim{position:absolute;left:90px;right:90px;top:1000px;text-align:center}
+.fim .nm{font-family:"Fraunces",serif;font-size:66px;color:#f1e8d8}
+.fim .rl{font-size:24px;letter-spacing:.26em;color:#8f8a82;text-transform:uppercase;margin-top:10px}
+.fim .hd{font-family:"Fraunces",serif;font-size:46px;color:var(--gold);margin-top:22px}
+.fim .bio{font-size:30px;color:#cfc6b6;margin-top:16px}
+.fim .disc{font-size:22px;color:#8f8a82;margin-top:34px;line-height:1.45}
+.chips4{position:absolute;left:70px;right:70px;top:330px;display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.chips4 div{border:1.5px solid #3a3328;border-radius:26px;padding:26px 30px;background:#13120f}
+.chips4 b{font-family:"Fraunces",serif;font-size:72px;color:var(--gold);font-weight:500;line-height:1}
+.chips4 span{display:block;font-size:30px;color:#efe6d6;margin-top:8px;font-weight:500}
+.chips4 small{display:block;font-size:24px;color:#8f8a82;margin-top:4px}
+</style></head>
+<body><div id="stage">
+
+<!-- ABERTURA: sexta-feira 13 -->
+<div class="scene" id="abre">
+  <div id="cal" data-in="pop" data-at="@treze-0.15" data-dur=".45" data-out="@quatro-0.25">
+    <div class="t">SEXTA</div><div class="n">13</div><div class="m">NOVEMBRO</div>
+  </div>
+  <div class="num-etapa" style="top:300px;font-size:480px" data-in="zoom" data-at="@quatro" data-dur=".4" data-out="@presta+1.2">4</div>
+  <div class="ctr" style="top:780px" data-in="fade" data-at="@quatro+0.3" data-dur=".3" data-out="@presta+1.2"><span class="lbl">números da semana</span></div>
+  <div class="cin" data-cin="L1" data-cin-hold="0">Sexta-feira <em>13</em> no mercado.</div>
+  <div class="cin" data-cin="L2" data-cin-hold="0">Superstição à parte,</div>
+  <div class="cin" data-cin="L3" data-cin-hold="0">a semana deixou <em>4 números.</em></div>
+  <div class="cin" data-cin="L4" data-cin-hold="0.6">Presta <em>atenção</em> neles.</div>
+</div>
+
+<!-- 1: DÓLAR (fundo claro) -->
+<div class="scene claro" id="n1">
+  <div class="claro-bg" data-in="fade" data-at="0" data-dur=".12"></div>
+  <div class="num-etapa" data-in="zoom" data-at="@n1-0.05" data-dur=".35" data-out="@d565-0.25">1</div>
+  <div class="etq" data-in="left" data-at="@d565-0.2" data-dur=".4"><b>1</b><span>Dólar</span></div>
+  <div class="ctr" style="top:390px" data-in="fade-up" data-at="@d565-0.1" data-dur=".35">
+    <div class="lbl">Dólar à vista · sexta</div>
+    <div class="mega" style="margin-top:18px" data-count="5.65" data-from="5.51" data-dec="2" data-pre="R$ " data-at="@d565" data-dur="1.3">R$ 5,65</div>
+  </div>
+  <div class="ctr" style="top:660px" data-in="pop" data-at="@d26" data-dur=".4"><span class="pill g">↑ 2,6% na semana</span></div>
+  <div class="ctr" style="top:760px" data-in="fade" data-at="@jun" data-dur=".3"><span class="lbl" style="color:#8f6a1f">maior nível desde jun/2025</span></div>
+  <div class="cin claro" data-cin="L1" data-cin-hold="0">Número 1: o <em>dólar.</em></div>
+  <div class="cin claro" data-cin="L2" data-cin-hold="0">Fechou a sexta em <em>R$ 5,65.</em></div>
+  <div class="cin claro" data-cin="L3" data-cin-hold="0">Subiu mais de <em>2,5%</em> na semana.</div>
+  <div class="cin claro" data-cin="L4" data-cin-hold="0.4">É o maior nível desde <em>junho</em> do ano passado.</div>
+</div>
+
+<!-- 2: SENADO (escuro) -->
+<div class="scene" id="n2">
+  <div class="num-etapa" data-in="zoom" data-at="@n2-0.05" data-dur=".35" data-out="@placar+0.25">2</div>
+  <div class="etq" data-in="left" data-at="@placar+0.3" data-dur=".4"><b>2</b><span>Senado</span></div>
+  <div class="placar">
+    <div class="c" data-in="pop" data-at="@placar+0.45" data-dur=".4"><div class="v gold" data-count="45" data-from="0" data-at="@placar+0.45" data-dur=".9">45</div><div class="lbl" style="margin-top:14px">sim</div></div>
+    <div class="x" data-in="fade" data-at="@placar+0.7" data-dur=".3">×</div>
+    <div class="c" data-in="pop" data-at="@placar+0.95" data-dur=".4"><div class="v" style="color:#8a8378" data-count="31" data-from="0" data-at="@placar+0.95" data-dur=".9">31</div><div class="lbl" style="margin-top:14px">não</div></div>
+  </div>
+  <div class="ctr" style="top:700px" data-in="fade" data-at="@ajuste" data-dur=".3"><span class="pill g">texto-base do ajuste fiscal</span></div>
+  <div class="trilho" data-in="fade-up" data-at="@destaques-0.1" data-dur=".4">
+    <div class="ln"></div>
+    <div class="p"><div class="d ok"></div><div class="tx">Texto-base<br>12/11</div></div>
+    <div class="p"><div class="d ag" data-in="pop" data-at="@destaques+0.1" data-dur=".4"></div><div class="tx">4 destaques<br>terça, 17/11</div></div>
+    <div class="p" data-in="fade" data-at="@camara" data-dur=".35"><div class="d"></div><div class="tx">Câmara dos<br>Deputados</div></div>
+  </div>
+  <div class="cin" data-cin="L1" data-cin-hold="0">Número 2: <em>45 a 31.</em></div>
+  <div class="cin" data-cin="L2" data-cin-hold="0">Foi o placar do <em>Senado</em></div>
+  <div class="cin" data-cin="L3" data-cin-hold="0">no texto-base do <em>ajuste fiscal.</em></div>
+  <div class="cin" data-cin="L4" data-cin-hold="0">Faltam <em>4 destaques,</em> na terça.</div>
+  <div class="cin" data-cin="L5" data-cin-hold="0.4">Depois, segue para a <em>Câmara.</em></div>
+</div>
+
+<!-- 3: BOLSA (fundo claro) -->
+<div class="scene claro" id="n3">
+  <div class="claro-bg" data-in="fade" data-at="0" data-dur=".12"></div>
+  <div class="num-etapa" data-in="zoom" data-at="@n3-0.05" data-dur=".35" data-out="@pontos+0.35">3</div>
+  <div class="etq" data-in="left" data-at="@pontos+0.4" data-dur=".4"><b>3</b><span>Ibovespa</span></div>
+  <div class="ctr" style="top:380px" data-in="fade-up" data-at="@pontos+0.45" data-dur=".35">
+    <div class="mega"><span data-count="172" data-from="168" data-at="@pontos+0.45" data-dur="1.1">172</span> mil</div>
+    <div class="lbl" style="margin-top:10px">pontos no fechamento</div>
+  </div>
+  <svg class="abs" style="left:150px;top:600px;width:780px;height:200px" viewBox="0 0 780 200">
+    <!-- fechamentos da semana: 168.498 (sex 6/11), 172.236, 171.337, 172.060, 171.324, 172.257 -->
+    <line x1="0" y1="190" x2="780" y2="190" stroke="#c9bfa9" stroke-width="2"/>
+    <path id="spark" d="M10 170 L164 30 L318 71 L472 38 L626 72 L770 30" fill="none" stroke="#a47c2f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" data-in="draw" data-at="@meio-0.2" data-dur="1.4"/>
+    <circle cx="770" cy="30" r="13" fill="#a47c2f" data-in="pop" data-at="@meio+1.1" data-dur=".35" class="tc"/>
+  </svg>
+  <div class="abs" style="left:110px;right:110px;top:808px;display:flex;justify-content:space-between;font-size:22px;letter-spacing:.2em;color:#6d665b;font-weight:600" data-in="fade" data-at="@meio" data-dur=".3"><span>6/11</span><span>SEG</span><span>TER</span><span>QUA</span><span>QUI</span><span>SEX</span></div>
+  <div class="cin claro" data-cin="L1" data-cin-hold="0">Número 3: <em>172 mil</em> pontos.</div>
+  <div class="cin claro" data-cin="L2" data-cin-hold="0">A bolsa subiu <em>0,5%</em> hoje</div>
+  <div class="cin claro" data-cin="L3" data-cin-hold="0.4">e fechou a semana <em>no positivo.</em></div>
+</div>
+
+<!-- 4: VAREJO (escuro) -->
+<div class="scene" id="n4">
+  <div class="num-etapa" data-in="zoom" data-at="@n4-0.05" data-dur=".35" data-out="@queda-0.4">4</div>
+  <div class="etq" data-in="left" data-at="@queda-0.35" data-dur=".4"><b>4</b><span>Varejo · setembro</span></div>
+  <div class="cmp">
+    <div class="row" data-in="fade-up" data-at="@queda" data-dur=".35" style="position:relative">
+      <div class="k">Esperado</div>
+      <div class="bar" style="background:#1d1b18;color:#8a8378;border:1.5px dashed #4a443a">−0,2%</div>
+      <div class="risk" data-in="grow-x" data-at="@subiram+0.3" data-dur=".35"></div>
+    </div>
+    <div class="row" data-in="fade-up" data-at="@subiram" data-dur=".35">
+      <div class="k" style="color:#e6c88a">Realizado</div>
+      <div class="bar" style="background:var(--gold);color:#17140f" data-in="grow-x" data-at="@subiram" data-dur=".5">+0,2%</div>
+    </div>
+  </div>
+  <div class="ctr" style="top:740px" data-in="fade" data-at="@subiram+0.6" data-dur=".3"><span class="lbl">vendas no varejo · IBGE</span></div>
+  <div class="cin" data-cin="L1" data-cin-hold="0">Número 4: o <em>varejo.</em></div>
+  <div class="cin" data-cin="L2" data-cin-hold="0">O mercado esperava <em>queda</em> em setembro.</div>
+  <div class="cin" data-cin="L3" data-cin-hold="0.4">As vendas <em>subiram 0,2%.</em></div>
+</div>
+
+<!-- barra de status: só durante as 4 etapas -->
+<div id="glow"></div>
+<div id="status">
+  <div class="st" data-n="1"><div class="ic"><svg viewBox="0 0 100 100"><text x="50" y="68" font-size="58" text-anchor="middle" fill="#c9a45c" font-family="Fraunces,serif">$</text></svg></div><div class="tx">Dólar <i>· número 1 de 4</i></div><div class="dots"><s class="on"></s><s></s><s></s><s></s></div></div>
+  <div class="st" data-n="2"><div class="ic"><svg viewBox="0 0 100 100"><path d="M14 66h72M24 66 Q50 34 76 66M50 34V18M20 80h60" fill="none" stroke="#c9a45c" stroke-width="6" stroke-linecap="round"/></svg></div><div class="tx">Senado <i>· número 2 de 4</i></div><div class="dots"><s class="on"></s><s class="on"></s><s></s><s></s></div></div>
+  <div class="st" data-n="3"><div class="ic"><svg viewBox="0 0 100 100"><path d="M14 74 L36 50 L52 60 L84 26" fill="none" stroke="#c9a45c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="tx">Ibovespa <i>· número 3 de 4</i></div><div class="dots"><s class="on"></s><s class="on"></s><s class="on"></s><s></s></div></div>
+  <div class="st" data-n="4"><div class="ic"><svg viewBox="0 0 100 100"><path d="M26 34h48l6 50H20z M38 34 Q38 16 50 16 Q62 16 62 34" fill="none" stroke="#c9a45c" stroke-width="6" stroke-linejoin="round"/></svg></div><div class="tx">Varejo <i>· número 4 de 4</i></div><div class="dots"><s class="on"></s><s class="on"></s><s class="on"></s><s class="on"></s></div></div>
+</div>
+
+<!-- VIRADA -->
+<div class="scene" id="virada">
+  <div class="claro-bg" id="vclaro"></div>
+  <div class="chips4" data-in="fade" data-at="@ouseja" data-dur=".35" data-out="@patrimonio-0.3">
+    <div><b>R$ 5,65</b><span>Dólar</span><small>+2,6% na semana</small></div>
+    <div><b>45 × 31</b><span>Senado</span><small>texto-base aprovado</small></div>
+    <div><b>172 mil</b><span>Ibovespa</span><small>semana no positivo</small></div>
+    <div><b>+0,2%</b><span>Varejo</span><small>esperado: −0,2%</small></div>
+  </div>
+  <div class="cin" data-cin="L1" data-cin-hold="0">Ou seja: a economia ainda <em>anda,</em></div>
+  <div class="cin" data-cin="L2" data-cin-hold="0">mas o câmbio <em>cobra</em> pela dúvida fiscal.</div>
+  <div class="abs" style="left:0;right:0;top:420px;display:flex;justify-content:center;gap:60px" data-in="fade" data-at="@sorte-0.1" data-dur=".3" data-out="@quanto-0.3">
+    <div style="position:relative"><span class="pill" style="background:#17140f;color:#e6c88a;font-size:44px;padding:18px 44px">sorte</span><i class="risk" style="left:-10px;width:calc(100% + 20px);top:44px" data-in="grow-x" data-at="@sorte+0.6" data-dur=".3"></i></div>
+    <div style="position:relative"><span class="pill" style="background:#17140f;color:#e6c88a;font-size:44px;padding:18px 44px">azar</span><i class="risk" style="left:-10px;width:calc(100% + 20px);top:44px" data-in="grow-x" data-at="@sorte+0.9" data-dur=".3"></i></div>
+  </div>
+  <svg class="abs" style="left:340px;top:300px;width:400px;height:400px" viewBox="0 0 400 400" data-in="pop" data-at="@quanto-0.1" data-dur=".45">
+    <circle cx="200" cy="200" r="150" fill="none" stroke="#d8ccb4" stroke-width="54"/>
+    <circle cx="200" cy="200" r="150" fill="none" stroke="#a47c2f" stroke-width="54" stroke-dasharray="300 643" transform="rotate(-90 200 200)"/>
+    <circle cx="200" cy="200" r="150" fill="none" stroke="#17140f" stroke-width="54" stroke-dasharray="170 773" stroke-dashoffset="-310" transform="rotate(-90 200 200)"/>
+    <text x="200" y="192" text-anchor="middle" font-family="Fraunces,serif" font-size="44" fill="#17140f">seu</text>
+    <text x="200" y="240" text-anchor="middle" font-family="Fraunces,serif" font-style="italic" font-size="44" fill="#8f6a1f">patrimônio</text>
+  </svg>
+  <div class="ctr" style="top:720px;display:flex;justify-content:center;gap:40px;font-size:26px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:#6d665b" data-in="fade" data-at="@quanto+0.4" data-dur=".3"><span style="color:#8f6a1f">● câmbio</span><span style="color:#17140f">● juros</span><span>● o resto</span></div>
+  <div class="cin claro" style="top:850px" data-cin="L3" data-cin-hold="0">E pra quem tem <em>patrimônio,</em></div>
+  <div class="cin claro" style="top:850px" data-cin="L4" data-cin-hold="0">a pergunta não é <em>sorte</em> ou azar.</div>
+  <div class="cin claro" style="top:850px" data-cin="L5" data-cin-hold="0.5">É <em>quanto dele</em> sente esse movimento.</div>
+</div>
+
+<!-- CTA + cartão final -->
+<div class="scene" id="cta">
+  <div class="cin" style="top:330px" data-cin="L1" data-cin-hold="0.1">Me conta aqui embaixo:</div>
+  <div class="cin" style="top:330px" data-cin="L2" data-cin-out="L2+60">qual <em>número</em> pesou mais pra você?</div>
+  <div class="abs" style="left:110px;right:110px;top:560px;display:flex;justify-content:space-between" >
+    <span class="chip" data-in="pop" data-at="@numero+0.3" data-dur=".35">1 · Dólar</span>
+    <span class="chip" data-in="pop" data-at="@numero+0.5" data-dur=".35">2 · Senado</span>
+  </div>
+  <div class="abs" style="left:110px;right:110px;top:660px;display:flex;justify-content:space-between">
+    <span class="chip" data-in="pop" data-at="@numero+0.7" data-dur=".35">3 · Ibovespa</span>
+    <span class="chip" data-in="pop" data-at="@numero+0.9" data-dur=".35">4 · Varejo</span>
+  </div>
+  <div class="fim" data-in="fade-up" data-at="@numero+1.2" data-dur=".5">
+    <div class="nm">Tiago Acordi</div>
+    <div class="rl">Assessor Alta Renda da XP Investimentos</div>
+    <div class="hd">@tiagoassessorxp</div>
+    <div class="bio">Fale comigo pelo link da bio</div>
+    <div class="disc">Conteúdo informativo. Não é recomendação de investimento.<br>Fontes: B3, IBGE, Agência Senado, Reuters.</div>
+  </div>
+</div>
+
+</div>
+<script>
+// barra de status e brilho: aparecem nas 4 etapas, trocam de texto e de cor a cada número
+const ETAPAS = [['n1', '#c9a45c'], ['n2', '#7d8fb0'], ['n3', '#7fa36b'], ['n4', '#c07a5a']];
+window.onSeek = function (t) {
+  const cen = id => TL.cenas.find(c => c.id === id);
+  const ini = cen('n1').ini + 0.2, fim = cen('n4').fim - 0.1;
+  const vis = Math.max(0, Math.min(1, (t - ini) / 0.3, (fim - t) / 0.3));
+  const st = document.getElementById('status'), gl = document.getElementById('glow');
+  st.style.opacity = vis; gl.style.opacity = 0.55 * vis;
+  st.style.transform = `translateY(${(1 - ease(vis)) * 40}px)`;
+  let k = 0;
+  ETAPAS.forEach(([id], i) => { if (t >= cen(id).ini) k = i; });
+  document.querySelectorAll('#status .st').forEach((el, i) => {
+    const c = cen(ETAPAS[i][0]);
+    const o = Math.max(0, Math.min(1, (t - c.ini) / 0.25, (c.fim + 0.1 - t) / 0.2));
+    el.style.opacity = (i === ETAPAS.length - 1) ? Math.max(0, Math.min(1, (t - c.ini) / 0.25)) : o;
+  });
+  gl.style.background = ETAPAS[k][1];
+  // virada: o fundo claro entra na deixa "patrimônio"
+  const v = document.getElementById('vclaro');
+  v.style.opacity = t >= cue('patrimonio', -0.25) ? 1 : 0;
+};
+</script>
+</body></html>

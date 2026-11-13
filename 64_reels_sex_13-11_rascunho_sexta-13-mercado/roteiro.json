@@ -1,0 +1,77 @@
+{
+ "titulo": "Sexta-feira 13 no mercado: a semana em 4 números",
+ "kicker": "Fechamento da semana",
+ "formato": "texto-cinetico",
+ "legenda_na_tela": false,
+ "voz": {"motor": "kokoro", "nome": "pm_alex", "velocidade": 1.06},
+ "ritmo": {"pausa_fala": 0.12, "pausa_cena": 0.3, "intro": 0.4, "final": 2.8},
+ "fontes": [
+  "Dólar R$ 5,6550 (+0,05%), +2,66% na semana — Money Times: https://www.moneytimes.com.br/dolar-13-11-2026/",
+  "Dólar R$ 5,6567 (+0,11%), +2,63% na semana — Reuters via Investing.com: https://br.investing.com/news/forex-news/dolar-a-vista-fecha-em-alta-de-011-a-r56567-na-venda-2127030",
+  "Dólar R$ 5,6549, maior patamar desde junho de 2025; Ibovespa 172.257 (+0,54%) — O Sul: https://www.osul.com.br/dolar-fecha-em-leve-alta-a-r-565-com-pacote-fiscal-no-radar-bolsa-avanca/",
+  "Dólar no maior nível em 17 meses; Ibovespa perto de 172,3 mil, varejo +0,2% (esperado -0,2%) — InvestNews: https://investnews.com.br/investimentos/ibovespa-pacote-fiscal-nao-anima/",
+  "Varejo set. +0,2% m/m (IBGE), esperado -0,2%; Ibovespa +1,68% na semana até quinta — InfoMoney: https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-13112026/",
+  "Senado 45 x 31, quatro destaques em 17/11, depois Câmara — Agência Senado: https://www12.senado.leg.br/noticias/materias/2026/11/12/mesmo-com-urgencia-projeto-de-ajuste-fiscal-foi-alterado-por-emendas"
+ ],
+ "cenas": [
+  {"id": "abre", "falas": [
+   {"fala": "Sexta-feira {treze} treze no mercado.", "legenda": "Sexta-feira 13 no mercado."},
+   {"fala": "Superstição à parte,", "legenda": "Superstição à parte,"},
+   {"fala": "a semana deixou {quatro} quatro números.", "legenda": "a semana deixou 4 números."},
+   {"fala": "{presta} Presta atenção neles.", "legenda": "Presta atenção neles."}
+  ]},
+  {"id": "n1", "falas": [
+   {"fala": "{n1} Número um: o dólar.", "legenda": "Número 1: o dólar."},
+   {"fala": "Fechou a sexta {d565} em cinco e sessenta e cinco.", "legenda": "Fechou a sexta em R$ 5,65."},
+   {"fala": "Subiu {d26} mais de dois e meio por cento na semana.", "legenda": "Subiu mais de 2,5% na semana."},
+   {"fala": "É o maior nível desde {jun} junho do ano passado.", "legenda": "É o maior nível desde junho do ano passado."}
+  ]},
+  {"id": "n2", "falas": [
+   {"fala": "{n2} Número dois: {placar} quarenta e cinco a trinta e um.", "legenda": "Número 2: 45 a 31."},
+   {"fala": "Foi o placar do {senado} Senado", "legenda": "Foi o placar do Senado"},
+   {"fala": "no texto-base do {ajuste} ajuste fiscal.", "legenda": "no texto-base do ajuste fiscal."},
+   {"fala": "Faltam {destaques} quatro destaques, na terça.", "legenda": "Faltam 4 destaques, na terça."},
+   {"fala": "Depois, {camara} segue para a Câmara.", "legenda": "Depois, segue para a Câmara."}
+  ]},
+  {"id": "n3", "falas": [
+   {"fala": "{n3} Número três: {pontos} cento e setenta e dois mil pontos.", "legenda": "Número 3: 172 mil pontos."},
+   {"fala": "A bolsa subiu {meio} meio por cento hoje", "legenda": "A bolsa subiu 0,5% hoje"},
+   {"fala": "e fechou a semana {positivo} no positivo.", "legenda": "e fechou a semana no positivo."}
+  ]},
+  {"id": "n4", "falas": [
+   {"fala": "{n4} Número quatro: o varejo.", "legenda": "Número 4: o varejo."},
+   {"fala": "O mercado esperava {queda} queda em setembro.", "legenda": "O mercado esperava queda em setembro."},
+   {"fala": "As vendas {subiram} subiram zero vírgula dois por cento.", "legenda": "As vendas subiram 0,2%."}
+  ]},
+  {"id": "virada", "falas": [
+   {"fala": "{ouseja} Ou seja: a economia ainda anda,", "legenda": "Ou seja: a economia ainda anda,"},
+   {"fala": "mas o câmbio {cobra} cobra pela dúvida fiscal.", "legenda": "mas o câmbio cobra pela dúvida fiscal."},
+   {"fala": "E pra quem tem {patrimonio} patrimônio,", "legenda": "E pra quem tem patrimônio,"},
+   {"fala": "a pergunta não é {sorte} sorte ou azar.", "legenda": "a pergunta não é sorte ou azar."},
+   {"fala": "É {quanto} quanto dele sente esse movimento.", "legenda": "É quanto dele sente esse movimento."}
+  ]},
+  {"id": "cta", "falas": [
+   {"fala": "{cta} Me conta aqui embaixo:", "legenda": "Me conta aqui embaixo:"},
+   {"fala": "qual {numero} número pesou mais pra você?", "legenda": "qual número pesou mais pra você?"}
+  ]}
+ ],
+ "sfx": [
+  {"em": "@treze-0.9", "tipo": "riser", "ganho": 0.7},
+  {"em": "@treze", "tipo": "impacto"},
+  {"em": "@quatro", "tipo": "impacto", "ganho": 0.8},
+  {"em": "@presta", "tipo": "bip"},
+  {"em": "@n1-0.15", "tipo": "whoosh"},
+  {"em": "@d565", "tipo": "contagem"},
+  {"em": "@jun", "tipo": "pop"},
+  {"em": "@n2-0.15", "tipo": "whoosh"},
+  {"em": "@placar", "tipo": "impacto", "ganho": 0.8},
+  {"em": "@destaques", "tipo": "pop"},
+  {"em": "@n3-0.15", "tipo": "whoosh"},
+  {"em": "@pontos", "tipo": "varredura"},
+  {"em": "@n4-0.15", "tipo": "whoosh"},
+  {"em": "@subiram", "tipo": "pop"},
+  {"em": "@ouseja-0.1", "tipo": "whoosh", "ganho": 0.7},
+  {"em": "@quanto", "tipo": "brilho"},
+  {"em": "@cta", "tipo": "pop"}
+ ]
+}

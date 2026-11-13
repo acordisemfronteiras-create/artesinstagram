@@ -1,0 +1,227 @@
+{
+ "cenas": [
+  {
+   "id": "abre",
+   "ini": 0.0,
+   "fim": 7.593
+  },
+  {
+   "id": "n1",
+   "ini": 7.593,
+   "fim": 17.072
+  },
+  {
+   "id": "n2",
+   "ini": 17.072,
+   "fim": 27.125
+  },
+  {
+   "id": "n3",
+   "ini": 27.125,
+   "fim": 34.234
+  },
+  {
+   "id": "n4",
+   "ini": 34.234,
+   "fim": 41.08
+  },
+  {
+   "id": "virada",
+   "ini": 41.08,
+   "fim": 51.703
+  },
+  {
+   "id": "cta",
+   "ini": 51.703,
+   "fim": 58.184
+  }
+ ],
+ "legendas": [
+  {
+   "cena": "abre",
+   "ini": 0.4,
+   "fim": 2.169,
+   "texto": "Sexta-feira 13 no mercado."
+  },
+  {
+   "cena": "abre",
+   "ini": 2.289,
+   "fim": 3.708,
+   "texto": "Superstição à parte,"
+  },
+  {
+   "cena": "abre",
+   "ini": 3.828,
+   "fim": 5.811,
+   "texto": "a semana deixou 4 números."
+  },
+  {
+   "cena": "abre",
+   "ini": 5.931,
+   "fim": 7.443,
+   "texto": "Presta atenção neles."
+  },
+  {
+   "cena": "n1",
+   "ini": 7.743,
+   "fim": 9.0,
+   "texto": "Número 1: o dólar."
+  },
+  {
+   "cena": "n1",
+   "ini": 9.12,
+   "fim": 11.487,
+   "texto": "Fechou a sexta em R$ 5,65."
+  },
+  {
+   "cena": "n1",
+   "ini": 11.607,
+   "fim": 14.345,
+   "texto": "Subiu mais de 2,5% na semana."
+  },
+  {
+   "cena": "n1",
+   "ini": 14.465,
+   "fim": 16.921,
+   "texto": "É o maior nível desde junho do ano passado."
+  },
+  {
+   "cena": "n2",
+   "ini": 17.221,
+   "fim": 19.542,
+   "texto": "Número 2: 45 a 31."
+  },
+  {
+   "cena": "n2",
+   "ini": 19.662,
+   "fim": 21.075,
+   "texto": "Foi o placar do Senado"
+  },
+  {
+   "cena": "n2",
+   "ini": 21.195,
+   "fim": 23.19,
+   "texto": "no texto-base do ajuste fiscal."
+  },
+  {
+   "cena": "n2",
+   "ini": 23.31,
+   "fim": 25.289,
+   "texto": "Faltam 4 destaques, na terça."
+  },
+  {
+   "cena": "n2",
+   "ini": 25.409,
+   "fim": 26.975,
+   "texto": "Depois, segue para a Câmara."
+  },
+  {
+   "cena": "n3",
+   "ini": 27.275,
+   "fim": 29.908,
+   "texto": "Número 3: 172 mil pontos."
+  },
+  {
+   "cena": "n3",
+   "ini": 30.028,
+   "fim": 32.06,
+   "texto": "A bolsa subiu 0,5% hoje"
+  },
+  {
+   "cena": "n3",
+   "ini": 32.18,
+   "fim": 34.084,
+   "texto": "e fechou a semana no positivo."
+  },
+  {
+   "cena": "n4",
+   "ini": 34.384,
+   "fim": 35.903,
+   "texto": "Número 4: o varejo."
+  },
+  {
+   "cena": "n4",
+   "ini": 36.023,
+   "fim": 38.173,
+   "texto": "O mercado esperava queda em setembro."
+  },
+  {
+   "cena": "n4",
+   "ini": 38.293,
+   "fim": 40.93,
+   "texto": "As vendas subiram 0,2%."
+  },
+  {
+   "cena": "virada",
+   "ini": 41.23,
+   "fim": 43.09,
+   "texto": "Ou seja: a economia ainda anda,"
+  },
+  {
+   "cena": "virada",
+   "ini": 43.21,
+   "fim": 45.481,
+   "texto": "mas o câmbio cobra pela dúvida fiscal."
+  },
+  {
+   "cena": "virada",
+   "ini": 45.601,
+   "fim": 47.288,
+   "texto": "E pra quem tem patrimônio,"
+  },
+  {
+   "cena": "virada",
+   "ini": 47.408,
+   "fim": 49.334,
+   "texto": "a pergunta não é sorte ou azar."
+  },
+  {
+   "cena": "virada",
+   "ini": 49.454,
+   "fim": 51.553,
+   "texto": "É quanto dele sente esse movimento."
+  },
+  {
+   "cena": "cta",
+   "ini": 51.853,
+   "fim": 53.359,
+   "texto": "Me conta aqui embaixo:"
+  },
+  {
+   "cena": "cta",
+   "ini": 53.479,
+   "fim": 55.384,
+   "texto": "qual número pesou mais pra você?"
+  }
+ ],
+ "cues": {
+  "treze": 1.14,
+  "quatro": 4.808,
+  "presta": 5.931,
+  "n1": 7.743,
+  "d565": 9.4,
+  "d26": 11.907,
+  "jun": 15.625,
+  "n2": 17.221,
+  "placar": 17.561,
+  "senado": 20.502,
+  "ajuste": 22.175,
+  "destaques": 23.67,
+  "camara": 25.809,
+  "n3": 27.275,
+  "pontos": 27.575,
+  "meio": 30.428,
+  "positivo": 33.14,
+  "n4": 34.384,
+  "queda": 37.023,
+  "subiram": 38.413,
+  "ouseja": 41.23,
+  "cobra": 43.89,
+  "patrimonio": 46.461,
+  "sorte": 48.268,
+  "quanto": 49.574,
+  "cta": 51.853,
+  "numero": 53.619
+ },
+ "duracao": 58.184
+}
