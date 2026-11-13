@@ -1,0 +1,202 @@
+{
+ "titulo": "Se o Brasil fosse 100 quadradinhos: quem investe?",
+ "kicker": "O Brasil em 100 quadradinhos",
+ "formato": "metafora-unica",
+ "voz": {
+  "motor": "kokoro",
+  "nome": "pm_alex",
+  "velocidade": 1.06
+ },
+ "fontes": [
+  "ANBIMA, Raio X do Investidor Brasileiro, 9ª edição (abr/2026): https://www.anbima.com.br/data/files/BE/05/B0/55/1EABD91008E6DAD9F82BA2A8/Raio-X-do-Investidor-9-edicao.pdf",
+  "ANBIMA, nota de lançamento (23/04/2026): https://www.anbima.com.br/pt_br/noticias/anbima-lanca-a-nona-edicao-do-raio-x-do-investidor-brasileiro-36-da-populacao-aplica-em-produtos-financeiros.htm"
+ ],
+ "cenas": [
+  {
+   "id": "mundo",
+   "falas": [
+    {
+     "fala": "Esse quadradinho {voce} é você, {mais} e mais quase um milhão e setecentos mil brasileiros.",
+     "legenda": "Esse quadradinho é você, e mais quase 1,7 milhão de brasileiros."
+    },
+    {
+     "fala": "Junta {cem} cem deles {brasil} e você tem o Brasil inteiro com mais de dezesseis anos: {total} cento e sessenta e oito milhões de pessoas.",
+     "legenda": "Junta 100 deles e você tem o Brasil com mais de 16 anos: 168 milhões de pessoas."
+    },
+    {
+     "fala": "{atencao} Agora presta atenção.",
+     "legenda": "Agora presta atenção."
+    },
+    {
+     "fala": "{cinzas} Todos esses cinzas não têm nenhum investimento financeiro. {c64} Sessenta e quatro em cada cem.",
+     "legenda": "Todos esses cinzas não têm nenhum investimento financeiro. 64 em cada 100."
+    },
+    {
+     "fala": "{azuis} Os azuis investem, mas só na poupança. {c19} São dezenove.",
+     "legenda": "Os azuis investem, mas só na poupança. São 19."
+    },
+    {
+     "fala": "{dourados} Os dourados diversificam em mais de um produto. {c17} Dezessete.",
+     "legenda": "Os dourados diversificam em mais de um produto. 17."
+    },
+    {
+     "fala": "{verdes} E esses dois verdinhos aqui? {acoes} São os que investem em ações. {c2} Dois em cada cem.",
+     "legenda": "E esses dois verdinhos aqui? São os que investem em ações. 2 em cada 100."
+    },
+    {
+     "fala": "{ouseja} Ou seja: se você tem qualquer investimento, {frente} já está à frente de cento e sete milhões de brasileiros.",
+     "legenda": "Ou seja: se você tem qualquer investimento, já está à frente de 107 milhões de brasileiros."
+    },
+    {
+     "fala": "{naopouco} Não é pouco. {minoria} Você faz parte da minoria que já começou.",
+     "legenda": "Não é pouco. Você faz parte da minoria que já começou."
+    },
+    {
+     "fala": "{patrimonio} E pra quem já construiu patrimônio, a pergunta muda. {nao_se} Não é mais se investe. {como} É como ele está organizado.",
+     "legenda": "E pra quem já construiu patrimônio, a pergunta muda. Não é mais se investe. É como ele está organizado."
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "falas": [
+    {
+     "fala": "{cta} Agora me conta nos comentários: {cor} qual é a cor do seu quadradinho?",
+     "legenda": "Agora me conta nos comentários: qual é a cor do seu quadradinho?"
+    }
+   ]
+  }
+ ],
+ "sfx": [
+  {
+   "em": "@voce",
+   "tipo": "riser",
+   "ganho": 0.8
+  },
+  {
+   "em": "@voce",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@mais+0.7",
+   "tipo": "contagem"
+  },
+  {
+   "em": "@cem",
+   "tipo": "whoosh",
+   "ganho": 1.2
+  },
+  {
+   "em": "@cem+0.1",
+   "tipo": "varredura",
+   "ganho": 0.8
+  },
+  {
+   "em": "@total",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@atencao",
+   "tipo": "bip"
+  },
+  {
+   "em": "@cinzas",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@cinzas+0.1",
+   "tipo": "varredura"
+  },
+  {
+   "em": "@c64",
+   "tipo": "pop"
+  },
+  {
+   "em": "@azuis",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@azuis+0.1",
+   "tipo": "varredura",
+   "ganho": 0.7
+  },
+  {
+   "em": "@c19",
+   "tipo": "pop"
+  },
+  {
+   "em": "@dourados",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@dourados+0.1",
+   "tipo": "brilho"
+  },
+  {
+   "em": "@c17",
+   "tipo": "pop"
+  },
+  {
+   "em": "@verdes",
+   "tipo": "whoosh",
+   "ganho": 1.2
+  },
+  {
+   "em": "@acoes",
+   "tipo": "pop"
+  },
+  {
+   "em": "@c2",
+   "tipo": "pop"
+  },
+  {
+   "em": "@ouseja",
+   "tipo": "whoosh",
+   "ganho": 1.2
+  },
+  {
+   "em": "@frente",
+   "tipo": "riser",
+   "ganho": 0.6
+  },
+  {
+   "em": "@frente",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@minoria",
+   "tipo": "brilho"
+  },
+  {
+   "em": "@patrimonio",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@nao_se",
+   "tipo": "tique"
+  },
+  {
+   "em": "@como",
+   "tipo": "impacto",
+   "ganho": 0.8
+  },
+  {
+   "em": "@como+0.1",
+   "tipo": "brilho",
+   "ganho": 0.8
+  },
+  {
+   "em": "@cta",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@cor",
+   "tipo": "pop"
+  },
+  {
+   "em": "@cor+2.4",
+   "tipo": "brilho",
+   "ganho": 0.7
+  }
+ ]
+}

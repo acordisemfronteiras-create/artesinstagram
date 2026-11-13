@@ -1,0 +1,109 @@
+{
+ "cenas": [
+  {
+   "id": "mundo",
+   "ini": 0.0,
+   "fim": 45.217
+  },
+  {
+   "id": "cta",
+   "ini": 45.217,
+   "fim": 51.417
+  }
+ ],
+ "legendas": [
+  {
+   "cena": "mundo",
+   "ini": 0.45,
+   "fim": 4.782,
+   "texto": "Esse quadradinho é você, e mais quase 1,7 milhão de brasileiros."
+  },
+  {
+   "cena": "mundo",
+   "ini": 4.942,
+   "fim": 11.605,
+   "texto": "Junta 100 deles e você tem o Brasil com mais de 16 anos: 168 milhões de pessoas."
+  },
+  {
+   "cena": "mundo",
+   "ini": 11.765,
+   "fim": 13.336,
+   "texto": "Agora presta atenção."
+  },
+  {
+   "cena": "mundo",
+   "ini": 13.496,
+   "fim": 18.561,
+   "texto": "Todos esses cinzas não têm nenhum investimento financeiro. 64 em cada 100."
+  },
+  {
+   "cena": "mundo",
+   "ini": 18.721,
+   "fim": 21.862,
+   "texto": "Os azuis investem, mas só na poupança. São 19."
+  },
+  {
+   "cena": "mundo",
+   "ini": 22.022,
+   "fim": 25.452,
+   "texto": "Os dourados diversificam em mais de um produto. 17."
+  },
+  {
+   "cena": "mundo",
+   "ini": 25.612,
+   "fim": 29.969,
+   "texto": "E esses dois verdinhos aqui? São os que investem em ações. 2 em cada 100."
+  },
+  {
+   "cena": "mundo",
+   "ini": 30.129,
+   "fim": 36.112,
+   "texto": "Ou seja: se você tem qualquer investimento, já está à frente de 107 milhões de brasileiros."
+  },
+  {
+   "cena": "mundo",
+   "ini": 36.272,
+   "fim": 39.35,
+   "texto": "Não é pouco. Você faz parte da minoria que já começou."
+  },
+  {
+   "cena": "mundo",
+   "ini": 39.51,
+   "fim": 45.042,
+   "texto": "E pra quem já construiu patrimônio, a pergunta muda. Não é mais se investe. É como ele está organizado."
+  },
+  {
+   "cena": "cta",
+   "ini": 45.392,
+   "fim": 48.817,
+   "texto": "Agora me conta nos comentários: qual é a cor do seu quadradinho?"
+  }
+ ],
+ "cues": {
+  "voce": 1.25,
+  "mais": 1.63,
+  "cem": 5.182,
+  "brasil": 5.382,
+  "total": 9.07,
+  "atencao": 11.765,
+  "cinzas": 13.496,
+  "c64": 15.916,
+  "azuis": 18.721,
+  "c19": 20.241,
+  "dourados": 22.022,
+  "c17": 24.042,
+  "verdes": 25.612,
+  "acoes": 27.012,
+  "c2": 28.892,
+  "ouseja": 30.129,
+  "frente": 32.729,
+  "naopouco": 36.272,
+  "minoria": 37.072,
+  "patrimonio": 39.51,
+  "nao_se": 42.45,
+  "como": 43.75,
+  "cta": 45.392,
+  "cor": 46.932
+ },
+ "duracao": 51.417
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../_kit_reels/base.css">
+<script src="../_kit_reels/base.js"></script>
+<style>
+/* Formato "metáfora única": um mundo de 100 quadradinhos, câmera contínua, números grandes no alto */
+#cap p{font-size:42px;line-height:1.24}
+#cap{top:1345px}
+#luz{position:absolute;left:0;right:0;top:420px;height:1000px;background:radial-gradient(ellipse 620px 480px at 50% 50%,rgba(201,164,92,.16),transparent 70%)}
+#persp{position:absolute;inset:0;perspective:1500px;perspective-origin:50% 48%}
+#world{position:absolute;left:540px;top:930px;width:0;height:0;transform-origin:0 0;transform-style:preserve-3d;will-change:transform}
+#veu-topo{position:absolute;left:0;right:0;top:0;height:720px;background:linear-gradient(180deg,rgba(11,11,10,.97) 0,rgba(11,11,10,.93) 560px,rgba(11,11,10,0) 720px)}
+#veu-base{position:absolute;left:0;right:0;top:1200px;bottom:0;background:linear-gradient(180deg,rgba(10,10,10,0) 0,rgba(10,10,10,.94) 130px,#0a0a0a 220px)}
+.sq{position:absolute;width:76px;height:76px;border-radius:17px}
+.hud{position:absolute;left:60px;right:60px;top:285px;text-align:center}
+.tagc{font-size:27px;letter-spacing:.34em;text-transform:uppercase;color:#cfc6b6;font-weight:600}
+.tagc i{display:inline-block;width:20px;height:20px;border-radius:6px;margin-right:16px;vertical-align:-1px}
+.num{font-family:"Fraunces",serif;font-weight:500;font-size:176px;line-height:1.02;letter-spacing:-.02em;color:#f6eedf}
+.num.m{font-size:128px;line-height:1.1}
+.sub{font-size:33px;color:#cfc6b6;margin-top:6px;line-height:1.3}
+.say{font-family:"Fraunces",serif;font-weight:500;font-size:104px;line-height:1.05;color:#f6eedf;margin-top:34px}
+.say.s{font-size:68px;line-height:1.12;margin-top:20px}
+.pre{font-size:30px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-top:10px}
+.risca{position:relative;display:inline-block}
+.risca b{position:absolute;left:-2%;right:-2%;top:54%;height:9px;background:#d98a6c;border-radius:5px;transform-origin:0 50%}
+.leg{position:absolute;top:610px;width:215px;text-align:center}
+.leg i{display:block;width:140px;height:140px;border-radius:30px;margin:0 auto 22px}
+.leg .n{font-family:"Fraunces",serif;font-size:36px;color:#f6eedf}
+.leg .d{font-size:23px;color:#a9a39a;margin-top:6px;line-height:1.25}
+</style></head>
+<body><div id="stage">
+
+<div class="scene" id="mundo">
+  <div id="luz"></div>
+  <div id="persp"><div id="world"></div></div>
+  <div id="veu-topo"></div><div id="veu-base"></div>
+
+  <div class="hud" data-in="fade" data-at="0.15" data-dur=".4" data-out="@voce-0.3"><div class="pre" style="margin-top:120px">Esse quadradinho</div></div>
+  <div class="hud" data-in="pop" data-at="@voce-0.05" data-dur=".35" data-out="@mais+0.45"><div class="say" style="margin-top:70px">é <span class="gold">você.</span></div></div>
+  <div class="hud" data-in="fade-up" data-at="@mais+0.7" data-dur=".35" data-out="@cem-0.3">
+    <div class="pre">e mais</div>
+    <div class="num m" data-count="1.7" data-from="0" data-dec="1" data-pre="≈ " data-suf=" milhão" data-at="@mais+0.7" data-dur="1.2">≈ 1,7 milhão</div>
+    <div class="sub">de brasileiros</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@cem" data-dur=".3" data-out="@cem+1.35">
+    <div class="num" data-count="100" data-from="1" data-at="@cem+0.05" data-dur="0.85">100</div>
+    <div class="sub">quadradinhos</div>
+  </div>
+  <div class="hud" data-in="pop" data-at="@cem+1.7" data-dur=".4" data-out="@total-0.3"><div class="say s" style="margin-top:60px">o <span class="gold">Brasil</span> com mais<br>de 16 anos</div></div>
+  <div class="hud" data-in="fade-up" data-at="@total" data-dur=".35" data-out="@atencao-0.3">
+    <div class="num m" data-count="168" data-from="100" data-suf=" milhões" data-at="@total" data-dur="1.1">168 milhões</div>
+    <div class="sub">de pessoas com 16 anos ou mais</div>
+  </div>
+  <div class="hud" data-in="pop" data-at="@atencao" data-dur=".4" data-out="@cinzas-0.3"><div class="say" style="margin-top:70px">presta <span class="gold">atenção.</span></div></div>
+
+  <div class="hud" data-in="fade-up" data-at="@cinzas" data-dur=".35" data-out="@azuis-0.3">
+    <div class="tagc"><i style="background:#55555a"></i>Cinzas</div>
+    <div class="num" data-count="64" data-from="0" data-at="@cinzas+0.2" data-dur="1.7">64</div>
+    <div class="sub">sem nenhum investimento financeiro</div>
+    <div class="sub gold" style="font-weight:600" data-in="pop" data-at="@c64" data-dur=".4">64 em cada 100</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@azuis" data-dur=".35" data-out="@dourados-0.3">
+    <div class="tagc"><i style="background:#4f8df0"></i>Azuis</div>
+    <div class="num" data-count="19" data-from="0" data-at="@azuis+0.2" data-dur="1.1">19</div>
+    <div class="sub">investem, mas só na poupança</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@dourados" data-dur=".35" data-out="@verdes-0.3">
+    <div class="tagc"><i style="background:#e6c88a"></i>Dourados</div>
+    <div class="num" data-count="17" data-from="0" data-at="@dourados+0.2" data-dur="1.1">17</div>
+    <div class="sub">diversificam em mais de um produto</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@verdes" data-dur=".35" data-out="@ouseja-0.3">
+    <div class="tagc"><i style="background:#3fd9a0"></i>Verdes</div>
+    <div class="num" data-in="pop" data-at="@acoes" data-dur=".45">2</div>
+    <div class="sub" data-in="fade" data-at="@acoes+0.1" data-dur=".4">em cada 100 investem em ações</div>
+  </div>
+
+  <div class="hud" data-in="fade-up" data-at="@ouseja" data-dur=".4" data-out="@frente-0.3"><div class="say s" style="margin-top:60px">se você tem <span class="gold">qualquer</span><br>investimento,</div></div>
+  <div class="hud" data-in="fade-up" data-at="@frente" data-dur=".35" data-out="@naopouco-0.3">
+    <div class="pre">já está à frente de</div>
+    <div class="num m" data-count="107" data-from="0" data-suf=" milhões" data-at="@frente" data-dur="1.2">107 milhões</div>
+    <div class="sub">de brasileiros</div>
+  </div>
+  <div class="hud" data-in="pop" data-at="@naopouco" data-dur=".4" data-out="@minoria-0.12"><div class="say" style="margin-top:70px">Não é pouco.</div></div>
+  <div class="hud" data-in="fade-up" data-at="@minoria+0.12" data-dur=".35" data-out="@patrimonio-0.3">
+    <div class="say s">Você faz parte da <span class="gold">minoria</span><br>que já começou.</div>
+    <div style="margin-top:26px" data-in="pop" data-at="@minoria+0.9" data-dur=".4"><span class="chip">36 em cada 100</span></div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@patrimonio" data-dur=".4" data-out="@nao_se-0.3"><div class="say s" style="margin-top:50px">E pra quem já construiu <span class="gold">patrimônio</span>,<br>a pergunta muda.</div></div>
+  <div class="hud" data-in="fade-up" data-at="@nao_se" data-dur=".3" data-out="@como-0.3">
+    <div class="pre" style="margin-top:40px">não é mais</div>
+    <div class="say"><span class="risca">se investe<b data-in="grow-x" data-at="@nao_se+0.55" data-dur=".4"></b></span></div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@como" data-dur=".35">
+    <div class="pre" style="margin-top:40px">é</div>
+    <div class="say s" style="margin-top:8px"><span class="gold">como</span> ele está<br>organizado.</div>
+  </div>
+</div>
+
+<div class="scene" id="cta">
+  <div class="hud">
+    <div class="pre" data-in="fade-up" data-at="@cta" data-dur=".35">Agora me conta</div>
+    <div class="say s" data-in="pop" data-at="@cor-0.1" data-dur=".45">Qual é a <span class="gold">cor</span> do<br>seu quadradinho?</div>
+  </div>
+  <div class="leg" style="left:65px" data-in="pop" data-at="@cta+0.2" data-dur=".4"><i style="background:#55555a"></i><div class="n">Cinza</div><div class="d">ainda não<br>investe</div></div>
+  <div class="leg" style="left:310px" data-in="pop" data-at="@cta+0.45" data-dur=".4"><i style="background:linear-gradient(160deg,#8db8ff,#4f8df0);box-shadow:0 0 40px rgba(79,141,240,.55)"></i><div class="n">Azul</div><div class="d">só na<br>poupança</div></div>
+  <div class="leg" style="left:555px" data-in="pop" data-at="@cta+0.7" data-dur=".4"><i style="background:linear-gradient(160deg,#f6e3b4,#c9a45c);box-shadow:0 0 40px rgba(230,200,138,.55)"></i><div class="n">Dourado</div><div class="d">diversifica</div></div>
+  <div class="leg" style="left:800px" data-in="pop" data-at="@cta+0.95" data-dur=".4"><i style="background:linear-gradient(160deg,#9af0cf,#3fd9a0);box-shadow:0 0 40px rgba(63,217,160,.55)"></i><div class="n">Verde</div><div class="d">investe<br>em ações</div></div>
+  <div class="abs" style="left:0;right:0;top:965px;text-align:center" data-in="pop" data-at="@cor+0.9" data-dur=".45"><span class="chip" style="font-size:36px;padding:16px 38px">Comenta a cor ↓</span></div>
+  <div class="abs" style="left:80px;right:80px;top:1085px;text-align:center" data-in="fade-up" data-at="@cor+1.5" data-dur=".5">
+    <div class="serif" style="font-size:50px">Tiago Acordi <span class="gold" style="font-size:36px;margin-left:14px">@tiagoassessorxp</span></div>
+    <div class="tagp" style="font-size:19px;margin-top:10px">Assessor Alta Renda da XP Investimentos</div>
+    <div class="mute" style="font-size:21px;line-height:1.45;margin-top:18px">Conteúdo informativo. Não é recomendação de investimento.<br>Fonte: ANBIMA, Raio X do Investidor Brasileiro, 9ª ed. (2026). População de 16 anos ou mais.</div>
+  </div>
+</div>
+
+</div>
+<script>
+(function () {
+  const N = 10, P = 90, S = 76, VOCE = { r: 4, c: 4 };
+  const CREME = [233, 223, 205], BRANCO = [255, 255, 255], CINZA = [62, 62, 66], AZUL = [79, 141, 240], OURO = [226, 192, 124], VERDE = [63, 217, 160];
+  const world = document.getElementById('world');
+  const cells = [];
+  for (let r = 0; r < N; r++) for (let c = 0; c < N; c++) {
+    const el = document.createElement('div'); el.className = 'sq';
+    el.style.left = (c * P + (P - S) / 2) + 'px'; el.style.top = (r * P + (P - S) / 2) + 'px';
+    world.appendChild(el);
+    cells.push({ el, r, c, d: Math.hypot(9 - c, 9 - r) + c * 1e-3 + r * 1e-4, dv: Math.hypot(c - VOCE.c, r - VOCE.r) });
+  }
+  // do mais longe ao mais perto do canto inferior direito: 64 cinzas, 19 azuis, 17 dourados (2 deles verdes)
+  [...cells].sort((a, b) => b.d - a.d).forEach((q, i) => {
+    q.rank = i;
+    q.g = i < 64 ? 'cinza' : i < 83 ? 'azul' : i < 98 ? 'ouro' : 'verde';
+    q.k = i < 64 ? i / 64 : i < 83 ? (i - 64) / 19 : (i - 83) / 17;
+  });
+  const voce = cells.find(q => q.r === VOCE.r && q.c === VOCE.c);
+  const maxdv = Math.max(...cells.map(q => q.dv));
+  const mix = (a, b, k) => a.map((v, i) => v + (b[i] - v) * k);
+  const lin = (t, t0, d) => Math.max(0, Math.min(1, (t - t0) / d));
+  const C = n => cue(n);
+
+  // câmera: [instante, duração do movimento, foco x, foco y, zoom, inclinação, giro]
+  const cx = VOCE.c * P + P / 2, cy = VOCE.r * P + P / 2;
+  const cam = [
+    [0, 0.01, cx, cy, 3.4, 0, 0],
+    [C('mais') - 0.1, 1.3, cx, cy, 2.5, 20, -6],
+    [C('cem') - 0.15, 1.9, 450, 450, 0.8, 42, -10],
+    [C('total') - 0.1, 1.5, 450, 450, 0.84, 36, -3],
+    [C('atencao') - 0.1, 1.2, 450, 450, 0.88, 30, 2],
+    [C('cinzas') - 0.15, 1.5, 380, 400, 0.98, 44, -13],
+    [C('azuis') - 0.15, 1.3, 610, 610, 1.5, 42, 10],
+    [C('dourados') - 0.15, 1.3, 750, 750, 1.95, 40, -8],
+    [C('verdes') - 0.15, 1.2, 838, 838, 3.2, 30, 6],
+    [C('ouseja') - 0.15, 1.7, 450, 450, 0.8, 40, -6],
+    [C('frente') - 0.1, 1.3, 450, 450, 0.86, 32, 1],
+    [C('patrimonio') - 0.15, 1.5, 700, 700, 1.6, 40, 8],
+    [C('como') - 0.1, 1.3, 690, 690, 1.45, 30, -2],
+  ];
+  function pose(t) {
+    let i = 0; while (i + 1 < cam.length && t >= cam[i + 1][0]) i++;
+    if (i === 0) return cam[0].slice(2);
+    const a = cam[i - 1].slice(2), b = cam[i].slice(2), k = ease((t - cam[i][0]) / cam[i][1]);
+    return a.map((v, j) => v + (b[j] - v) * k);
+  }
+  // quem está em foco em cada trecho (os outros escurecem)
+  const focos = [
+    [C('azuis'), C('dourados'), ['azul']], [C('dourados'), C('verdes'), ['ouro', 'verde']],
+    [C('verdes'), C('ouseja'), ['verde']], [C('ouseja'), C('patrimonio'), ['azul', 'ouro', 'verde']],
+    [C('patrimonio'), 1e9, ['ouro', 'verde']],
+  ];
+  const alvo = (q, t) => { const f = focos.find(f => t >= f[0] && t < f[1]); return !f ? [1, 0] : f[2].includes(q.g) ? [1, 1] : [0.3, 0]; };
+
+  const CORES = [CINZA, AZUL, OURO, VERDE];
+  window.onSeek = function (t) {
+    const [fx, fy, s, rx, rz] = pose(t);
+    const dz = 1 + 0.012 * Math.sin(t * 0.6);
+    world.style.transform = `rotateX(${rx + Math.sin(t * 0.37)}deg) rotateZ(${rz + 1.5 * Math.sin(t * 0.5)}deg) scale(${s * dz}) translate(${-fx}px,${-fy}px)`;
+    for (const q of cells) {
+      // entrada
+      const ka = q === voce ? 1 : ease(lin(t, C('cem') + 0.05 + (q.dv / maxdv) * 1.0, 0.4));
+      // cor
+      let col = q === voce ? mix(BRANCO, CREME, lin(t, C('cem'), 0.6)) : CREME;
+      if (q.g === 'cinza') col = mix(col, CINZA, lin(t, C('cinzas') + 0.2 + q.k * 1.5, 0.3));
+      if (q.g === 'azul') col = mix(col, AZUL, lin(t, C('azuis') + 0.2 + q.k * 0.9, 0.3));
+      if (q.g === 'ouro' || q.g === 'verde') col = mix(col, OURO, lin(t, C('dourados') + 0.2 + q.k * 0.9, 0.3));
+      if (q.g === 'verde') col = mix(col, VERDE, lin(t, C('verdes') + 0.35 + (q.rank - 98) * 0.3, 0.3));
+      // foco (média dos últimos 0,4 s para suavizar)
+      let op = 0, fo = 0; for (let j = 0; j < 5; j++) { const a = alvo(q, t - j * 0.1); op += a[0] / 5; fo += a[1] / 5; }
+      const cinza = q.g === 'cinza' ? lin(t, C('cinzas') + 0.2 + q.k * 1.5, 0.3) : 0;
+      const pulso = 1 + fo * 0.05 * Math.sin(2 * Math.PI * (t * 1.1 - q.rank * 0.07));
+      const abre = q === voce ? 1 + 0.03 * Math.sin(t * 5) * (1 - lin(t, C('cem'), 0.5)) : 1;
+      const luz = (1 - cinza) * (0.35 + 0.45 * fo) + (q === voce ? 0.6 * (1 - lin(t, C('cem'), 0.6)) : 0);
+      const c2 = mix(col, BRANCO, 0.35 * (1 - cinza));
+      q.el.style.opacity = ka * op;
+      q.el.style.transform = `scale(${(0.3 + 0.7 * ka) * pulso * abre})`;
+      q.el.style.background = `linear-gradient(160deg, rgb(${c2.map(Math.round)}), rgb(${col.map(Math.round)}))`;
+      const hal = q === voce ? mix(col, OURO, 0.55 * (1 - lin(t, C('cem'), 0.6))) : col;
+      q.el.style.boxShadow = luz > 0.02 ? `0 0 ${Math.round(18 + 34 * luz)}px rgba(${hal.map(Math.round)},${Math.min(.9, luz).toFixed(2)})` : 'none';
+    }
+  };
+})();
+</script>
+</body></html>

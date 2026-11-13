@@ -5,6 +5,8 @@
 //   data-dur="0.7"   duração (padrão 0,7 s)
 //   data-out="L3"    some nesse instante (opcional)
 //   data-float="8"   flutua em loop (amplitude px)
+//   data-at também aceita "@deixa+0.2" (deixa = {nome} marcado dentro da fala no roteiro.json)
+//   window.onSeek(t): função opcional da página, chamada a cada quadro (câmera, grades, partículas)
 //   data-count="5.65" data-from="5.56" data-dec="2" data-pre="R$ " data-suf=""  contador
 // O render.py chama window.seek(t) a cada quadro.
 (function () {
@@ -15,8 +17,15 @@
     spec = String(spec ?? '0');
     const m = spec.match(/^L(\d+)([+-][\d.]+)?$/);
     if (m) return legs(sid)[+m[1] - 1].ini + parseFloat(m[2] || 0);
+    const c = spec.match(/^@(\w+)([+-][\d.]+)?$/);   // "@deixa+0.2": deixa marcada com {deixa} na fala
+    if (c) {
+      if (!(c[1] in (TL.cues || {}))) throw new Error('deixa inexistente: ' + c[1]);
+      return TL.cues[c[1]] + parseFloat(c[2] || 0);
+    }
     return cena(sid).ini + parseFloat(spec);
   }
+  window.cue = (nome, d) => { if (!(nome in (TL.cues || {}))) throw new Error('deixa inexistente: ' + nome); return TL.cues[nome] + (d || 0); };
+  window.ease = k => { k = Math.max(0, Math.min(1, k)); return k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2; };
   const E = 'cubic-bezier(.2,.8,.2,1)';
   const FX = {
     'fade-up': [{ opacity: 0, transform: 'translateY(50px)' }, { opacity: 1, transform: 'translateY(0)' }],
@@ -49,7 +58,7 @@
         }
         el.animate(kf, { delay: t0 * 1000, duration: dur, fill: 'both', easing: E });
         if (el.dataset.out) {
-          el.animate([{ opacity: 1 }, { opacity: 0 }], { delay: at(sid, el.dataset.out) * 1000, duration: 350, fill: 'forwards', composite: 'replace' });
+          el.animate([{ opacity: 1 }, { opacity: 0 }], { delay: at(sid, el.dataset.out) * 1000, duration: 220, fill: 'forwards', composite: 'replace' });
         }
       });
       sc.querySelectorAll('[data-float]').forEach((el, i) => {
@@ -104,6 +113,7 @@
     });
     caption(t);
     document.querySelector('#bar i').style.width = (100 * Math.min(1, t / TL.duracao)) + '%';
+    if (window.onSeek) window.onSeek(t);   // gancho para animação contínua (câmera, grade etc.)
   };
   window.addEventListener('DOMContentLoaded', () => { setup(); window.seek(0); window.__ready = true; });
 })();

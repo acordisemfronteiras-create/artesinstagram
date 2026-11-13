@@ -8,7 +8,25 @@ como **rascunho** (create_post sem scheduledAt, kind REEL), mandar vídeo + lege
 Só agendar/publicar (edit_post com scheduledAt) depois que ele aprovar por escrito.
 No pedido de aprovação, mandar sempre a **legenda completa, exatamente como vai ao ar, já com as hashtags** (pedido do Tiago em 12/11/2026).
 
-## Estilo
+**Como fazer um Reels (roteiro, formatos, compliance, entrega): leia `_skill_reels_motion/SKILL.md`.** Este arquivo
+descreve só o motor.
+
+## O motor
+- `voz.py PASTA [--alinhar]`: narração + `timeline.json` (cenas, legendas e **deixas**). Em `fala`, `{nome}` marca uma
+  deixa no início da palavra seguinte; a página e o som usam `@nome` para sincronizar com ela. Vozes: Kokoro `pm_alex`
+  (estilo atual; `"voz": {"motor": "kokoro", "nome": "pm_alex", "velocidade": 1.06}`) ou Piper `faber` (piloto de
+  12/11; é o padrão quando o roteiro não tem `"voz"`). `--alinhar` usa faster-whisper para acertar as deixas na palavra.
+- `base.css`, `base.js`, `personas.js`: animação declarativa (`data-in`, `data-at`, `data-out`, `data-count`,
+  `data-float`) e, para movimento contínuo, `window.onSeek(t)` com `cue('nome')` e `ease()`. Veja o topo do `base.js`.
+- `som.py`: trilha e efeitos sintetizados (lista no topo do arquivo). Campo `"sfx"` do roteiro:
+  `{"em": "@deixa-0.1", "tipo": "whoosh", "ganho": 1.0}`. Ajuste de volumes em `"mix": {"voz", "trilha", "sfx"}`.
+- `render.py PASTA --quadros t1,t2` (conferência) · `render.py PASTA` (vídeo, em 2 partes paralelas, ~3 min por
+  minuto de vídeo) · `render.py PASTA --so-audio` (refaz só o som).
+- Dependências: `pip install piper-tts kokoro-onnx soundfile faster-whisper playwright numpy pillow --break-system-packages`.
+- Exemplos: `62_reels_...quadradinhos-investidor` (formato A, metáfora única) e `61_reels_...dolar-fiscal` (formato B,
+  personas; feito com a versão anterior do motor).
+
+## Notas do piloto de 12/11 (formato B)
 - 1080x1920, 30 fps, ~55–65 s. Paleta escura + dourado (#c9a45c), Fraunces + Inter (mesma dos posts).
 - Narração com **voz fixa**: Piper `pt_BR-faber-medium` (masculina, brasileira), `length_scale 0.9`. Não trocar a voz.
 - Trilha instrumental sintetizada no render.py (sem direitos autorais), baixa sob a voz.
