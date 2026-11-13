@@ -7,7 +7,7 @@
 //   data-float="8"   flutua em loop (amplitude px)
 //   data-at também aceita "@deixa+0.2" (deixa = {nome} marcado dentro da fala no roteiro.json)
 //   data-cin="L2" (classe .cin): texto cinético, palavra a palavra no ritmo da fala; <em> = palavra de destaque;
-//       data-cin-hold (s na tela depois da fala) ou data-cin-out="@deixa"; "legenda_na_tela": false no roteiro esconde a legenda de baixo
+//       data-cin-hold (s na tela depois da fala, ou "auto" = até a próxima fala) ou data-cin-out="@deixa"; "legenda_na_tela": false no roteiro esconde a legenda de baixo
 //   window.onSeek(t): função opcional da página, chamada a cada quadro (câmera, grades, partículas)
 //   data-count="5.65" data-from="5.56" data-dec="2" data-pre="R$ " data-suf=""  contador
 // O render.py chama window.seek(t) a cada quadro.
@@ -94,7 +94,11 @@
           } else if (n.nodeType === 1 && n.tagName !== 'BR') split(n);
         });
       })(el);
-      const sai = el.dataset.cinOut ? at(sc.id, el.dataset.cinOut) : fim + parseFloat(el.dataset.cinHold || 0.3);
+      let sai = el.dataset.cinOut ? at(sc.id, el.dataset.cinOut) : fim + parseFloat(el.dataset.cinHold || 0.3);
+      if (el.dataset.cinHold === 'auto') {   // fica na tela até a próxima fala começar (útil com voz gravada, que tem pausas maiores)
+        const prox = TL.legendas.find(l => l.ini > fim - 0.01);
+        sai = prox ? Math.max(fim, prox.ini - 0.18) : fim + 0.3;
+      }
       cins.push({ el, words, ini, fim, sai });
     }));
     document.getAnimations().forEach(a => a.pause());

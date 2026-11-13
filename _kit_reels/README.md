@@ -16,6 +16,10 @@ descreve só o motor.
   deixa no início da palavra seguinte; a página e o som usam `@nome` para sincronizar com ela. Vozes: Kokoro `pm_alex`
   (estilo atual; `"voz": {"motor": "kokoro", "nome": "pm_alex", "velocidade": 1.06}`) ou Piper `faber` (piloto de
   12/11; é o padrão quando o roteiro não tem `"voz"`). `--alinhar` usa faster-whisper para acertar as deixas na palavra.
+- `voz_gravada.py PASTA gravacao.m4a [--cortar ini-fim,...] [--pausa-max 0.42]`: usa a voz gravada pelo Tiago.
+  Edita (tira silêncio, corta regravações, encurta pausas longas), limpa (ruído, de-esser, EQ, compressão) e
+  realinha legendas e deixas pela transcrição, gerando `narracao.wav` + `timeline.json` como o `voz.py`. Na página,
+  use `data-cin-hold="auto"` para o texto ficar na tela até a próxima fala (a voz humana tem pausas maiores).
 - `base.css`, `base.js`, `personas.js`: animação declarativa (`data-in`, `data-at`, `data-out`, `data-count`,
   `data-float`, `data-cin` para texto palavra por palavra) e, para movimento contínuo, `window.onSeek(t)` com `cue('nome')` e `ease()`. Veja o topo do `base.js`.
 - `som.py`: trilha e efeitos sintetizados (lista no topo do arquivo). Campo `"sfx"` do roteiro:
