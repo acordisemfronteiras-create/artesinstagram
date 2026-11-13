@@ -6,6 +6,7 @@ Reels de ~60 s em motion, a cada 2 dias, sobre um tema do mercado financeiro que
 **Aprovação:** todo Reels precisa do OK do Tiago antes de ir ao ar. Fluxo: gerar o vídeo, subir no HubPost
 como **rascunho** (create_post sem scheduledAt, kind REEL), mandar vídeo + legenda para ele e esperar.
 Só agendar/publicar (edit_post com scheduledAt) depois que ele aprovar por escrito.
+No pedido de aprovação, mandar sempre a **legenda completa, exatamente como vai ao ar, já com as hashtags** (pedido do Tiago em 12/11/2026).
 
 ## Estilo
 - 1080x1920, 30 fps, ~55–65 s. Paleta escura + dourado (#c9a45c), Fraunces + Inter (mesma dos posts).
