@@ -1,0 +1,220 @@
+{
+ "titulo": "O juro sobe nos EUA. Por que isso mexe com o seu dinheiro aqui?",
+ "kicker": "Entenda em 1 minuto",
+ "formato": "personas",
+ "voz": {
+  "motor": "kokoro",
+  "nome": "pm_alex",
+  "velocidade": 1.06
+ },
+ "fontes": [
+  "Federal Reserve, comunicado do FOMC de 28/10/2026 (juros mantidos em 3,75%–4%; Cook e Hammack votaram por alta de 0,25 p.p.): https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+  "Al Jazeera (16/09/2026): Fed sobe 0,25 p.p. para 3,75%–4%, primeira alta em mais de três anos: https://www.aljazeera.com/news/2026/9/16/what-to-know-about-us-federal-reserves-first-interest-rate-hike-in-3-years",
+  "Nomad, análise do FOMC de outubro de 2026 (mercado projeta alta de 0,25 p.p. em dezembro): https://www.nomadglobal.com/portal/analises/analise-do-fomc-outubro-de-2026",
+  "Forbes Brasil/Reuters (10/11/2026): CPI de outubro +0,4% (esp. 0,3%); mercado já precificava alta em dezembro: https://forbes.com.br/forbes-money/2026/11/precos-ao-consumidor-nos-eua-sobem-mais-que-o-esperado-em-outubro/",
+  "Money Times (10/11/2026): CPI +0,4%; FedWatch com 100% de chance de alta em dezembro antes do dado: https://www.moneytimes.com.br/cpi-inflacao-eua-sobe-mais-que-esperado-outubro-jcav/",
+  "Federal Reserve, calendário de dezembro de 2026 (FOMC em 8 e 9/12): https://www.federalreserve.gov/newsevents/2026-december.htm",
+  "Dólar R$ 5,6550 em 13/11, maior desde jun/2025 — Money Times: https://www.moneytimes.com.br/dolar-13-11-2026/ e Reuters/Investing.com: https://br.investing.com/news/forex-news/dolar-a-vista-fecha-em-alta-de-011-a-r56567-na-venda-2127030",
+  "Copom mantém Selic em 13,75% em 04/11/2026, após cinco cortes de 0,25 p.p.; próxima reunião 8 e 9/12 — Rankia: https://rankia.com.br/proxima-reuniao-copom/ e Tribuna do Sertão: https://www.tribunadosertao.com.br/financas/2026/11/04/1013739-selic-permanece-em-1375-ao-ano-pelo-banco-central"
+ ],
+ "cenas": [
+  {
+   "id": "gancho",
+   "falas": [
+    {
+     "fala": "{fed} O banco central americano voltou a subir juros. {set} Em setembro, a primeira alta em mais de três anos.",
+     "legenda": "O banco central americano voltou a subir juros. Em setembro, a 1ª alta em mais de 3 anos."
+    },
+    {
+     "fala": "{faixa} Hoje, entre três vírgula setenta e cinco {quatro} e quatro por cento.",
+     "legenda": "Hoje, entre 3,75% e 4% ao ano."
+    },
+    {
+     "fala": "{dez} E o mercado já conta com mais uma em dezembro.",
+     "legenda": "E o mercado já conta com mais uma alta em dezembro."
+    },
+    {
+     "fala": "{pergunta} O que isso tem a ver com o seu dinheiro aqui?",
+     "legenda": "O que isso tem a ver com o seu dinheiro aqui?"
+    }
+   ]
+  },
+  {
+   "id": "ima",
+   "falas": [
+    {
+     "fala": "{peca1} Pensa no investidor global, escolhendo onde ficar.",
+     "legenda": "Pensa no investidor global escolhendo onde ficar."
+    },
+    {
+     "fala": "{eua} Se os Estados Unidos pagam mais, {seguro} num mercado visto como seguro, {puxa} o juro de lá puxa o dinheiro.",
+     "legenda": "Se os EUA pagam mais, num mercado visto como seguro, o juro de lá puxa o dinheiro."
+    }
+   ]
+  },
+  {
+   "id": "dolar",
+   "falas": [
+    {
+     "fala": "{peca2} Parte do dinheiro sai daqui: {vende} vende reais, compra dólares.",
+     "legenda": "Parte do dinheiro sai daqui: vende reais, compra dólares."
+    },
+    {
+     "fala": "{junto} Junto com o fiscal, isso ajuda a explicar {cotacao} o dólar a cinco e sessenta e cinco, {maior} o maior desde junho do ano passado.",
+     "legenda": "Junto com o fiscal, isso ajuda a explicar o dólar a R$ 5,65 (13/11), o maior desde junho de 2025."
+    }
+   ]
+  },
+  {
+   "id": "selic",
+   "falas": [
+    {
+     "fala": "{peca3} Para seguir atraente, {premio} o Brasil precisa pagar mais.",
+     "legenda": "Para seguir atraente, o Brasil precisa pagar mais."
+    },
+    {
+     "fala": "{cortes} Depois de cinco cortes, {parou} a Selic parou {taxa} em treze vírgula setenta e cinco.",
+     "legenda": "Depois de cinco cortes, a Selic parou em 13,75%."
+    }
+   ]
+  },
+  {
+   "id": "pratica",
+   "falas": [
+    {
+     "fala": "{pratica} Na prática: {divida} dívida em dólar pesa mais. {credito} Crédito caro por mais tempo. {exporta} E quem exporta recebe mais reais.",
+     "legenda": "Na prática: dívida em dólar pesa mais. Crédito caro por mais tempo. E quem exporta recebe mais reais."
+    },
+    {
+     "fala": "{patrimonio} Pra quem tem patrimônio, a pergunta é: {fora} quanto dele sente o que acontece lá fora?",
+     "legenda": "Pra quem tem patrimônio, a pergunta é: quanto dele sente o que acontece lá fora?"
+    }
+   ]
+  },
+  {
+   "id": "dia9",
+   "falas": [
+    {
+     "fala": "{dia9} Anota: nove de dezembro. {duas} Fed e Copom decidem no mesmo dia.",
+     "legenda": "Anota: 9 de dezembro. Fed e Copom decidem no mesmo dia."
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "falas": [
+    {
+     "fala": "{cta} E você: {qual} sente mais o dólar ou os juros? Comenta aí.",
+     "legenda": "E você: sente mais o dólar ou os juros? Comenta aí."
+    }
+   ]
+  }
+ ],
+ "sfx": [
+  {
+   "em": "@fed",
+   "tipo": "riser",
+   "ganho": 0.7
+  },
+  {
+   "em": "@set",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@faixa",
+   "tipo": "contagem"
+  },
+  {
+   "em": "@dez",
+   "tipo": "pop"
+  },
+  {
+   "em": "@pergunta",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@peca1",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@eua",
+   "tipo": "pop"
+  },
+  {
+   "em": "@puxa",
+   "tipo": "varredura",
+   "ganho": 0.8
+  },
+  {
+   "em": "@peca2",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@vende",
+   "tipo": "tique"
+  },
+  {
+   "em": "@cotacao-0.9",
+   "tipo": "riser",
+   "ganho": 0.6
+  },
+  {
+   "em": "@cotacao",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@peca3",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@cortes",
+   "tipo": "contagem",
+   "ganho": 0.8
+  },
+  {
+   "em": "@taxa",
+   "tipo": "impacto",
+   "ganho": 0.8
+  },
+  {
+   "em": "@pratica",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@divida",
+   "tipo": "pop"
+  },
+  {
+   "em": "@credito",
+   "tipo": "pop"
+  },
+  {
+   "em": "@exporta",
+   "tipo": "pop"
+  },
+  {
+   "em": "@patrimonio",
+   "tipo": "brilho"
+  },
+  {
+   "em": "@dia9",
+   "tipo": "bip"
+  },
+  {
+   "em": "@duas",
+   "tipo": "impacto",
+   "ganho": 0.7
+  },
+  {
+   "em": "@cta",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@qual+0.6",
+   "tipo": "pop"
+  }
+ ],
+ "ritmo": {
+  "final": 2.3
+ }
+}

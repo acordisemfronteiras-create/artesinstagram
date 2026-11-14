@@ -1,0 +1,158 @@
+{
+ "cenas": [
+  {
+   "id": "gancho",
+   "ini": 0.0,
+   "fim": 15.47
+  },
+  {
+   "id": "ima",
+   "ini": 15.47,
+   "fim": 23.993
+  },
+  {
+   "id": "dolar",
+   "ini": 23.993,
+   "fim": 33.95
+  },
+  {
+   "id": "selic",
+   "ini": 33.95,
+   "fim": 41.741
+  },
+  {
+   "id": "pratica",
+   "ini": 41.741,
+   "fim": 52.807
+  },
+  {
+   "id": "dia9",
+   "ini": 52.807,
+   "fim": 56.671
+  },
+  {
+   "id": "cta",
+   "ini": 56.671,
+   "fim": 61.914
+  }
+ ],
+ "legendas": [
+  {
+   "cena": "gancho",
+   "ini": 0.45,
+   "fim": 6.431,
+   "texto": "O banco central americano voltou a subir juros. Em setembro, a 1ª alta em mais de 3 anos."
+  },
+  {
+   "cena": "gancho",
+   "ini": 6.591,
+   "fim": 10.047,
+   "texto": "Hoje, entre 3,75% e 4% ao ano."
+  },
+  {
+   "cena": "gancho",
+   "ini": 10.207,
+   "fim": 12.838,
+   "texto": "E o mercado já conta com mais uma alta em dezembro."
+  },
+  {
+   "cena": "gancho",
+   "ini": 12.998,
+   "fim": 15.295,
+   "texto": "O que isso tem a ver com o seu dinheiro aqui?"
+  },
+  {
+   "cena": "ima",
+   "ini": 15.645,
+   "fim": 18.485,
+   "texto": "Pensa no investidor global escolhendo onde ficar."
+  },
+  {
+   "cena": "ima",
+   "ini": 18.645,
+   "fim": 23.818,
+   "texto": "Se os EUA pagam mais, num mercado visto como seguro, o juro de lá puxa o dinheiro."
+  },
+  {
+   "cena": "dolar",
+   "ini": 24.168,
+   "fim": 27.634,
+   "texto": "Parte do dinheiro sai daqui: vende reais, compra dólares."
+  },
+  {
+   "cena": "dolar",
+   "ini": 27.794,
+   "fim": 33.775,
+   "texto": "Junto com o fiscal, isso ajuda a explicar o dólar a R$ 5,65 (13/11), o maior desde junho de 2025."
+  },
+  {
+   "cena": "selic",
+   "ini": 34.125,
+   "fim": 37.232,
+   "texto": "Para seguir atraente, o Brasil precisa pagar mais."
+  },
+  {
+   "cena": "selic",
+   "ini": 37.392,
+   "fim": 41.566,
+   "texto": "Depois de cinco cortes, a Selic parou em 13,75%."
+  },
+  {
+   "cena": "pratica",
+   "ini": 41.916,
+   "fim": 48.122,
+   "texto": "Na prática: dívida em dólar pesa mais. Crédito caro por mais tempo. E quem exporta recebe mais reais."
+  },
+  {
+   "cena": "pratica",
+   "ini": 48.282,
+   "fim": 52.632,
+   "texto": "Pra quem tem patrimônio, a pergunta é: quanto dele sente o que acontece lá fora?"
+  },
+  {
+   "cena": "dia9",
+   "ini": 52.982,
+   "fim": 56.496,
+   "texto": "Anota: 9 de dezembro. Fed e Copom decidem no mesmo dia."
+  },
+  {
+   "cena": "cta",
+   "ini": 56.846,
+   "fim": 59.614,
+   "texto": "E você: sente mais o dólar ou os juros? Comenta aí."
+  }
+ ],
+ "cues": {
+  "fed": 0.45,
+  "set": 3.39,
+  "faixa": 6.591,
+  "quatro": 8.967,
+  "dez": 10.207,
+  "pergunta": 12.998,
+  "peca1": 15.645,
+  "eua": 18.645,
+  "seguro": 20.545,
+  "puxa": 22.325,
+  "peca2": 24.168,
+  "vende": 25.868,
+  "junto": 27.794,
+  "cotacao": 29.314,
+  "maior": 32.174,
+  "peca3": 34.125,
+  "premio": 35.385,
+  "cortes": 37.392,
+  "parou": 38.112,
+  "taxa": 38.932,
+  "pratica": 41.916,
+  "divida": 42.656,
+  "credito": 44.316,
+  "exporta": 45.896,
+  "patrimonio": 48.282,
+  "fora": 50.142,
+  "dia9": 52.982,
+  "duas": 54.462,
+  "cta": 56.846,
+  "qual": 57.386
+ },
+ "duracao": 61.914
+}
