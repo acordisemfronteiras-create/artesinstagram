@@ -1,0 +1,29 @@
+{
+ "kicker": "Santa Catarina · Clima e economia",
+ "date": "14.11.2026",
+ "headline_html": "SC lança pacote de <em>R$&nbsp;1,2&nbsp;bi</em> após os temporais.",
+ "sub": "Recupera SC III reúne alívio no ICMS, crédito a empresas e apoio a produtores rurais.",
+ "cells": [
+  {
+   "label": "Municípios atingidos",
+   "value": "120",
+   "note": "eventos de setembro a novembro"
+  },
+  {
+   "label": "ICMS adiado",
+   "value": "R$ 920 mi",
+   "note": "2 meses a mais para recolher"
+  },
+  {
+   "label": "Crédito a empresas",
+   "value": "R$ 100 mi",
+   "note": "até R$ 300 mil, carência de 12 meses"
+  },
+  {
+   "label": "Produtores rurais",
+   "value": "R$ 55 mi",
+   "note": "crédito sem juros e parcelas adiadas"
+  }
+ ],
+ "source": "Governo de SC, CNN Brasil, ND+"
+}
