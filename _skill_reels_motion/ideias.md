@@ -19,7 +19,7 @@ Pautas que cabem na estratégia do Tiago (alta renda, empreendedores, produtores
 - [ ] Como a Selic chega ao custeio da safra (crédito rural livre x controlado)
 - [ ] O que é curva de juros, e o que ela diz sobre o que o mercado espera
 - [ ] Holding familiar: o que é, o que resolve e o que não resolve (sem recomendar)
-- [ ] Por que juros nos EUA mexem com a bolsa brasileira
+- [x] Por que juros nos EUA mexem com o seu dinheiro aqui (dólar, Selic, crédito) — 14/11/2026
 - [ ] Hedge cambial para quem exporta: o conceito, sem produto
 
 ## Formato C (texto cinético com etapas)
