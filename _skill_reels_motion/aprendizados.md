@@ -15,6 +15,7 @@ Registro em ordem de data. Cada linha: o que ele pediu ou comentou, e a regra qu
 
 | 13/11/2026 | Pediu um motion do fechamento do dia com as skills novas e disse que ele mesmo grava o áudio para subirmos em cima; quer o vídeo e o texto separados | Novo modo "voz do Tiago": entregar vídeo sem voz (trilha + efeitos), versão com voz-guia para ritmo e o texto com marcas de tempo; quando o áudio chegar, refazer a linha do tempo a partir da gravação dele e filmar de novo |
 | 13/11/2026 | Aprovou o Reels do fechamento com a voz dele ("Gostei"), pediu para postar na hora e compartilhar nos stories | Formato C validado. Modo "voz do Tiago" validado (voz_gravada.py). Depois de publicar um Reels aprovado, postar também um STORY com o mesmo vídeo (até 60 s) pelo HubPost; o compartilhamento nativo do Reels nos stories, com toque para abrir, só pelo app |
+| 14/11/2026 | Aprovou o Reels dos juros nos EUA ("gostei, gostei"), pediu para postar no mesmo dia "num horário que fica interessante" e alinhar com os 2 posts de notícia do dia | Formato B evoluído (peças + um número grande por batida + deixas + efeitos) validado. Quando ele deixa o horário a nosso critério: encaixar o Reels entre os posts de notícia (manhã ~08:50, noite ~19:45); sábado ficou às 12:00. Story com o mesmo vídeo 5 min depois; se o Reels passar de 60 s, o story vai acelerado (até ~1,04x) para caber |
 
 ## Em aberto (aguardando retorno dele)
 
