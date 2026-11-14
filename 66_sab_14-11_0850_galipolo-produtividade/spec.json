@@ -1,0 +1,13 @@
+{
+ "kicker": "Banco Central · Atividade",
+ "date": "14.11.2026",
+ "headline_html": "Para o BC, crescer via consumo dá sinais de <em>fadiga</em>.",
+ "sub": "Galípolo diz que, com a economia em pleno emprego, crescer mais agora depende de produtividade.",
+ "cells": [
+  {"label": "Selic", "value": "13,75%", "note": "ao ano, mantida em novembro"},
+  {"label": "Produtividade", "value": "0,3% a.a.", "note": "média de 2020 a 2025 (FGV Ibre)"},
+  {"label": "Diagnóstico do BC", "value": "Pleno emprego", "note": "pouca folga para estímulos"},
+  {"label": "Próximo Copom", "value": "8 e 9/12", "note": "a última reunião de 2026"}
+ ],
+ "source": "Estadão Conteúdo, SBT, FGV Ibre"
+}
