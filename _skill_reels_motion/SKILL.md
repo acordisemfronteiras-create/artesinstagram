@@ -10,6 +10,7 @@ O Tiago atende empreendedores, produtores rurais e famílias com patrimônio con
 Esta skill mora no repositório `acordisemfronteiras-create/artesinstagram`:
 
 - `_skill_reels_motion/` — esta pasta: o que aprendemos. Leia `formatos.md` para escolher a estrutura, `referencias/` para ver os vídeos que o Tiago gostou e por quê, `ideias.md` para pautas, `aprendizados.md` para o que ele já pediu.
+- `_skill_motion_biblioteca/` — técnicas de motion das 240 entradas do prompt-motion.com, destiladas para nós: catálogo, regras de acabamento, lista do que evitar e checagem. Use no passo de animar e no de conferir.
 - `_kit_reels/` — o motor: `voz.py` (narração e linha do tempo), `base.css` / `base.js` / `personas.js` (animação), `som.py` (trilha e efeitos), `render.py` (vídeo), `historico.md`.
 - Pastas `NN_reels_...` — cada Reels, com `roteiro.json`, `pagina.html`, `timeline.json`, `legenda.txt` e `reels.mp4`. Os dois primeiros são os melhores exemplos de cada formato; abra o do formato escolhido antes de escrever.
 
@@ -24,8 +25,8 @@ Reels só vai ao ar com o OK do Tiago, por escrito, na mesma conversa. Ele pediu
 3. **Valide os números.** Cada número na tela ou na fala precisa de fonte primária oficial ou de duas fontes independentes que batem. Se divergirem, fique com a primária ou tire o dado. Guarde os links em `"fontes"` no `roteiro.json`. Conta derivada (ex.: 36 − 19 = 17) só quando a própria fonte confirma o resultado.
 4. **Escolha o formato** em `formatos.md` pelo tipo de assunto: proporção ou distribuição pede o formato A (metáfora única); causa e efeito pede o B (personas); processo em etapas ou lista pede o C (texto cinético). Alterne quando der, e veja em `aprendizados.md` se há formato esperando estreia.
 5. **Escreva o roteiro** (seção abaixo) e rode `python3 _kit_reels/voz.py PASTA --alinhar`. Mire em 50 a 62 s. Se passar, corte frases, não acelere a voz.
-6. **Anime** em `PASTA/pagina.html`, com desenho novo para o tema.
-7. **Confira antes de filmar:** `python3 _kit_reels/render.py PASTA --quadros t1,t2,...` em 8 a 14 instantes, incluindo os de troca de texto. Abra as imagens. Procure texto sobre texto, texto sobre desenho, corte nas bordas, número diferente do verificado. Corrija e repita. Filmar custa minutos; um quadro custa segundos.
+6. **Anime** em `PASTA/pagina.html`, com desenho novo para o tema. Escolha uma técnica do `_skill_motion_biblioteca/catalogo.md` (tabela "Técnica por tipo de assunto" no `SKILL.md` de lá), escreva o conceito em uma linha e siga o "Acabamento" de lá.
+7. **Confira antes de filmar** (e rode a "Checagem antes de filmar" da biblioteca de motion): `python3 _kit_reels/render.py PASTA --quadros t1,t2,...` em 8 a 14 instantes, incluindo os de troca de texto. Abra as imagens. Procure texto sobre texto, texto sobre desenho, corte nas bordas, número diferente do verificado. Corrija e repita. Filmar custa minutos; um quadro custa segundos.
 8. **Filme:** `python3 _kit_reels/render.py PASTA` → `reels.mp4`. Confira duração, volume e um quadro do meio. Para mexer só no som: `--so-audio`.
 9. **Legenda** em `PASTA/legenda.txt`, commit e push, rascunho no HubPost, pedido de aprovação (seção final).
 

@@ -12,6 +12,9 @@ Pautas que cabem na estratégia do Tiago (alta renda, empreendedores, produtores
 - [ ] 100 empresas familiares: quantas chegam à 2ª e à 3ª geração (só com pesquisa de fonte sólida, ex.: IBGC, PwC)
 - [ ] Os 365 dias do ano em quadradinhos: em quantos o Ibovespa subiu, caiu, ficou parado (B3)
 
+- [ ] O IPCA como um copo que se enche: os pesos de cada grupo no índice (IBGE), camada por camada (técnica "recipiente em camadas" da biblioteca de motion)
+- [ ] O que acontece em 1 dia no Pix (ou na B3): contadores com o dado oficial mais recente (BC / B3), técnica "o que acontece em X"
+
 ## Formato B (explicação com personas)
 
 - [x] Por que o dólar dispara quando o fiscal preocupa — 12/11/2026
@@ -31,6 +34,8 @@ Pautas que cabem na estratégia do Tiago (alta renda, empreendedores, produtores
 - [ ] O que um assessor olha primeiro numa carteira: liquidez, concentração, prazo, moeda (descritivo)
 
 ## Candidatos a outros formatos
+
+- [ ] Linha da vida em loop: o mesmo valor guardado em fases diferentes da vida, só com inflação realizada (IPCA), sem projetar rentabilidade
 
 - [ ] Linha do tempo: a Selic de 2020 até hoje, em 60 s
 - [ ] Mito ou verdade: "dólar alto é bom para o agro" (o lado da receita e o lado do custo)
