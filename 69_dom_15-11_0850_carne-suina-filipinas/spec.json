@@ -1,0 +1,29 @@
+{
+ "kicker": "Agro · Carne suína",
+ "date": "15.11.2026",
+ "headline_html": "Filipinas, destino de <em>21%</em> da carne suína, restringem compras.",
+ "sub": "Em Manila, governo e setor preparam a reunião bilateral desta segunda (16).",
+ "cells": [
+  {
+   "label": "Vendas às Filipinas",
+   "value": "US$ 530,9 mi",
+   "note": "carne in natura, jan. a set."
+  },
+  {
+   "label": "Volume embarcado",
+   "value": "222,7 mil t",
+   "note": "principal destino da carne in natura"
+  },
+  {
+   "label": "Santa Catarina",
+   "value": "52%",
+   "note": "da receita nacional, jan. a out."
+  },
+  {
+   "label": "Salvaguarda",
+   "value": "60 dias",
+   "note": "pode travar embarques até janeiro"
+  }
+ ],
+ "source": "Mapa, Agência Brasil, Epagri"
+}
