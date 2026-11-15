@@ -1,0 +1,13 @@
+{
+ "kicker": "Agenda da semana · Fiscal e juros",
+ "date": "15.11.2026",
+ "headline_html": "Ajuste fiscal volta ao Senado em semana de <em>4&nbsp;dias</em> úteis.",
+ "sub": "Alckmin, presidente em exercício, disse hoje esperar a análise da Câmara ainda nesta semana.",
+ "cells": [
+  {"label": "Prévia do PIB", "value": "Segunda, 16", "note": "IBC-Br de setembro, às 9h"},
+  {"label": "Senado", "value": "Terça, 17", "note": "4 destaques ao PLP 299/2026"},
+  {"label": "Ata do Fomc", "value": "Quarta, 18", "note": "às 16h, antes da reunião de dezembro"},
+  {"label": "Feriado nacional", "value": "Sexta, 20", "note": "Dia da Consciência Negra"}
+ ],
+ "source": "Agência Senado, Metrópoles"
+}

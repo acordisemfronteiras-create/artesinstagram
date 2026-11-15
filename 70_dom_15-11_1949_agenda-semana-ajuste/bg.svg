@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#11161e"/><stop offset="0.25" stop-color="#171d27"/>
+ <stop offset="0.36" stop-color="#1d1a16"/><stop offset="0.45" stop-color="#0d0d0d"/>
+ <stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.2" r="0.55">
+ <stop offset="0" stop-color="#c9a45c" stop-opacity="0.16"/><stop offset="1" stop-color="#c9a45c" stop-opacity="0"/></radialGradient>
+<linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#1c1f25"/><stop offset="1" stop-color="#121418"/></linearGradient>
+<linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#22262d"/><stop offset="1" stop-color="#171a1f"/></linearGradient>
+<linearGradient id="cardHi" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#2e2819"/><stop offset="1" stop-color="#1a1710"/></linearGradient>
+<linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#2a2118"/><stop offset="1" stop-color="#0f0d0b"/></linearGradient>
+<pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+ <line x1="0" y1="0" x2="0" y2="10" stroke="#3a3a3a" stroke-width="2"/></pattern>
+<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#0a0a0a" stop-opacity="0.35"/><stop offset="0.10" stop-color="#0a0a0a" stop-opacity="0"/>
+ <stop offset="0.335" stop-color="#0a0a0a" stop-opacity="0"/><stop offset="0.375" stop-color="#0a0a0a" stop-opacity="0.75"/>
+ <stop offset="0.43" stop-color="#0a0a0a" stop-opacity="1"/><stop offset="1" stop-color="#0a0a0a" stop-opacity="1"/></linearGradient>
+<radialGradient id="vign" cx="0.5" cy="0.3" r="0.8">
+ <stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.6"/></radialGradient>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000" flood-opacity="0.6"/></filter>
+</defs>
+<rect width="1080" height="1350" fill="url(#sky)"/>
+<rect width="1080" height="1350" fill="url(#glow)"/>
+<line x1="0" y1="0" x2="0" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="54" y1="0" x2="54" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="108" y1="0" x2="108" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="162" y1="0" x2="162" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="216" y1="0" x2="216" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="270" y1="0" x2="270" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="324" y1="0" x2="324" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="378" y1="0" x2="378" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="432" y1="0" x2="432" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="486" y1="0" x2="486" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="540" y1="0" x2="540" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="594" y1="0" x2="594" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="648" y1="0" x2="648" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="702" y1="0" x2="702" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="756" y1="0" x2="756" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="810" y1="0" x2="810" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="864" y1="0" x2="864" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="918" y1="0" x2="918" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="972" y1="0" x2="972" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<line x1="1026" y1="0" x2="1026" y2="470" stroke="#ffffff" stroke-opacity="0.025"/>
+<path d="M0 452 L1080 452 L1080 560 L0 560 Z" fill="url(#desk)"/>
+<line x1="0" y1="452" x2="1080" y2="452" stroke="#c9a45c" stroke-opacity="0.25"/>
+<g filter="url(#sh)"><rect x="96" y="162" width="888" height="282" rx="14" fill="url(#board)" stroke="#2f333a"/></g>
+<rect x="138" y="148" width="8" height="30" rx="4" fill="#8f7a4e"/>
+<circle cx="142" cy="184" r="5" fill="#0b0c0e"/>
+<rect x="199" y="148" width="8" height="30" rx="4" fill="#8f7a4e"/>
+<circle cx="203" cy="184" r="5" fill="#0b0c0e"/>
+<rect x="260" y="148" width="8" height="30" rx="4" fill="#8f7a4e"/>
+<circle cx="264" cy="184" r="5" fill="#0b0c0e"/>
+<rect x="321" y="148" width="8" height="30" rx="4" fill="#8f7a4e"/>
+<circle cx="325" cy="184" r="5" fill="#0b0c0e"/>
+<rect x="382" y="148" width="8" height="30" rx="4" fill="#8f7a4e"/>
+<circle cx="386" cy="184" r="5" fill="#0b0c0e"/>
+<rect x="443" y="148" width="8" height="30" rx="4" fill="#8f7a4e"/>
+<circle cx="447" cy="184" r="5" fill="#0b0c0e"/>
+<rect x="504" y="148" width="8" height="30" rx="4" fill="#8f7a4e"/>
+<circle cx="508" cy="184" r="5" fill="#0b0c0e"/>
+<rect x="565" y="148" width="8" height="30" rx="4" fill="#8f7a4e"/>
+<circle cx="569" cy="184" r="5" fill="#0b0c0e"/>
+<rect x="626" y="148" width="8" height="30" rx="4" fill="#8f7a4e"/>
+<circle cx="630" cy="184" r="5" fill="#0b0c0e"/>
+<rect x="687" y="148" width="8" height="30" rx="4" fill="#8f7a4e"/>
+<circle cx="691" cy="184" r="5" fill="#0b0c0e"/>
+<rect x="748" y="148" width="8" height="30" rx="4" fill="#8f7a4e"/>
+<circle cx="752" cy="184" r="5" fill="#0b0c0e"/>
+<rect x="809" y="148" width="8" height="30" rx="4" fill="#8f7a4e"/>
+<circle cx="813" cy="184" r="5" fill="#0b0c0e"/>
+<rect x="870" y="148" width="8" height="30" rx="4" fill="#8f7a4e"/>
+<circle cx="874" cy="184" r="5" fill="#0b0c0e"/>
+<rect x="931" y="148" width="8" height="30" rx="4" fill="#8f7a4e"/>
+<circle cx="935" cy="184" r="5" fill="#0b0c0e"/>
+<text x="540.0" y="224" text-anchor="middle" font-family="Georgia,serif" font-size="22" letter-spacing="9" fill="#c9a45c" fill-opacity="0.85">NOVEMBRO · 2026</text>
+<line x1="136" y1="242" x2="944" y2="242" stroke="#c9a45c" stroke-opacity="0.3"/>
+<rect x="124.0" y="254" width="152" height="170" rx="8" fill="url(#card)" stroke="#30343b" stroke-width="1"/>
+<text x="200.0" y="284" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" letter-spacing="5" fill="#a9a39a">SEG</text>
+<text x="200.0" y="342" text-anchor="middle" font-family="Georgia,serif" font-size="58" fill="#e6dccb">16</text>
+<rect x="170.0" y="386" width="10" height="18" fill="#8d877d" fill-opacity="0.55"/><rect x="186.0" y="378" width="10" height="26" fill="#8d877d" fill-opacity="0.55"/><rect x="202.0" y="382" width="10" height="22" fill="#8d877d" fill-opacity="0.55"/><rect x="218.0" y="370" width="10" height="34" fill="#8d877d" fill-opacity="0.55"/><polyline points="172.0,388 188.0,380 204.0,384 222.0,368" fill="none" stroke="#8d877d" stroke-width="2.5"/>
+<rect x="294.0" y="254" width="152" height="170" rx="8" fill="url(#cardHi)" stroke="#c9a45c" stroke-width="2"/>
+<text x="370.0" y="284" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" letter-spacing="5" fill="#c9a45c">TER</text>
+<text x="370.0" y="342" text-anchor="middle" font-family="Georgia,serif" font-size="58" fill="#e2c27f">17</text>
+<g transform="rotate(-35 370.0 386)"><rect x="348.0" y="370" width="44" height="18" rx="4" fill="#c9a45c"/><rect x="367.0" y="388" width="6" height="30" fill="#c9a45c"/></g><rect x="344.0" y="408" width="40" height="6" rx="2" fill="#c9a45c" fill-opacity="0.6"/>
+<rect x="464.0" y="254" width="152" height="170" rx="8" fill="url(#card)" stroke="#30343b" stroke-width="1"/>
+<text x="540.0" y="284" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" letter-spacing="5" fill="#a9a39a">QUA</text>
+<text x="540.0" y="342" text-anchor="middle" font-family="Georgia,serif" font-size="58" fill="#e6dccb">18</text>
+<rect x="520.0" y="362" width="40" height="50" rx="3" fill="none" stroke="#8d877d" stroke-width="2.5"/><line x1="528.0" y1="372" x2="552.0" y2="372" stroke="#8d877d" stroke-width="2"/><line x1="528.0" y1="381" x2="552.0" y2="381" stroke="#8d877d" stroke-width="2"/><line x1="528.0" y1="390" x2="552.0" y2="390" stroke="#8d877d" stroke-width="2"/><line x1="528.0" y1="399" x2="552.0" y2="399" stroke="#8d877d" stroke-width="2"/><line x1="528.0" y1="408" x2="544.0" y2="408" stroke="#8d877d" stroke-width="2"/>
+<rect x="634.0" y="254" width="152" height="170" rx="8" fill="url(#card)" stroke="#30343b" stroke-width="1"/>
+<text x="710.0" y="284" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" letter-spacing="5" fill="#a9a39a">QUI</text>
+<text x="710.0" y="342" text-anchor="middle" font-family="Georgia,serif" font-size="58" fill="#e6dccb">19</text>
+<ellipse cx="710.0" cy="402" rx="22" ry="7" fill="#1a1c20" stroke="#8d877d" stroke-width="2"/><ellipse cx="710.0" cy="393" rx="22" ry="7" fill="#1a1c20" stroke="#8d877d" stroke-width="2"/><ellipse cx="710.0" cy="384" rx="22" ry="7" fill="#1a1c20" stroke="#8d877d" stroke-width="2"/><ellipse cx="710.0" cy="375" rx="22" ry="7" fill="#1a1c20" stroke="#8d877d" stroke-width="2"/>
+<rect x="804.0" y="254" width="152" height="170" rx="8" fill="url(#card)" stroke="#30343b" stroke-width="1"/>
+<rect x="804.0" y="254" width="152" height="170" rx="8" fill="url(#hatch)" fill-opacity="0.6"/>
+<text x="880.0" y="284" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" letter-spacing="5" fill="#6b6760">SEX</text>
+<text x="880.0" y="342" text-anchor="middle" font-family="Georgia,serif" font-size="58" fill="#5c5852">20</text>
+<polygon points="880.0,368.0 884.7,379.5 897.1,380.4 887.6,388.5 890.6,400.6 880.0,394.0 869.4,400.6 872.4,388.5 862.9,380.4 875.3,379.5" fill="none" stroke="#5c5852" stroke-width="2"/>
+<ellipse cx="370.0" cy="324" rx="54" ry="33" fill="none" stroke="#c9a45c" stroke-width="2.5" stroke-opacity="0.85" transform="rotate(-6 370.0 324)"/>
+<rect width="1080" height="1350" fill="url(#fade)"/>
+<rect width="1080" height="1350" fill="url(#vign)"/>
+</svg>
