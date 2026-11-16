@@ -1,0 +1,5 @@
+{"kicker":"Atividade · Prévia do PIB","date":"16.11.2026","tag":"Urgente",
+"headline_html":"Prévia do PIB recua <em>0,9%</em> no 3º trimestre.",
+"sub":"IBC-Br cai 0,2% em setembro, queda um pouco menor que a esperada pelo mercado.",
+"cells":[{"label":"IBC-Br setembro","value":"−0,2%","arrow":"↓","note":"sobre agosto, com ajuste sazonal"},{"label":"3º trimestre","value":"−0,9%","arrow":"↓","note":"ante o 2º trimestre"},{"label":"Agropecuária","value":"+1,2%","arrow":"↑","note":"em setembro; indústria e serviços caem"},{"label":"Selic","value":"13,75%","note":"próximo Copom em 8 e 9/12"}],
+"source":"Banco Central, Reuters"}
