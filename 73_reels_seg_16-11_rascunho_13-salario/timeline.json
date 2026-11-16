@@ -1,0 +1,109 @@
+{
+ "cenas": [
+  {
+   "id": "pote",
+   "ini": 0.0,
+   "fim": 45.291
+  },
+  {
+   "id": "cta",
+   "ini": 45.291,
+   "fim": 51.572
+  }
+ ],
+ "legendas": [
+  {
+   "cena": "pote",
+   "ini": 0.45,
+   "fim": 3.482,
+   "texto": "Essa moeda é 1% do 13º deste ano."
+  },
+  {
+   "cena": "pote",
+   "ini": 3.642,
+   "fim": 8.073,
+   "texto": "Junta 100 delas e você tem R$ 399 bilhões."
+  },
+  {
+   "cena": "pote",
+   "ini": 8.233,
+   "fim": 12.101,
+   "texto": "Pra quase 100 milhões de pessoas. Quase 3% do PIB."
+  },
+  {
+   "cena": "pote",
+   "ini": 12.261,
+   "fim": 14.541,
+   "texto": "Agora presta atenção em quem recebe."
+  },
+  {
+   "cena": "pote",
+   "ini": 14.701,
+   "fim": 20.647,
+   "texto": "Essas douradas vão pra quem tem emprego formal, no setor privado e no público. 72 de cada 100."
+  },
+  {
+   "cena": "pote",
+   "ini": 20.807,
+   "fim": 24.607,
+   "texto": "As prateadas vão pra aposentados e pensionistas. 28."
+  },
+  {
+   "cena": "pote",
+   "ini": 24.767,
+   "fim": 28.103,
+   "texto": "Agora olha onde elas caem. Quase metade fica no Sudeste."
+  },
+  {
+   "cena": "pote",
+   "ini": 28.263,
+   "fim": 31.701,
+   "texto": "E essas verdinhas aqui são do Sul: 16 moedas e meia."
+  },
+  {
+   "cena": "pote",
+   "ini": 31.861,
+   "fim": 39.071,
+   "texto": "Ou seja: se você tem empresa, parte dessas douradas sai do seu caixa, em duas datas: 30 de novembro e 20 de dezembro."
+  },
+  {
+   "cena": "pote",
+   "ini": 39.231,
+   "fim": 45.116,
+   "texto": "Pra quem já tem patrimônio, a pergunta não é se essa conta chega. É se o caixa já sabia que ela vinha."
+  },
+  {
+   "cena": "cta",
+   "ini": 45.466,
+   "fim": 48.972,
+   "texto": "Agora me conta: este ano, você recebe ou paga 13º?"
+  }
+ ],
+ "cues": {
+  "um": 1.07,
+  "cem": 3.882,
+  "total": 4.742,
+  "gente": 8.233,
+  "pib": 9.613,
+  "atencao": 12.261,
+  "douradas": 14.701,
+  "privado": 16.681,
+  "c72": 18.201,
+  "prateadas": 20.807,
+  "c28": 23.862,
+  "mapa": 24.767,
+  "sudeste": 26.327,
+  "sul": 28.263,
+  "c16": 29.603,
+  "ouseja": 31.861,
+  "saem": 33.801,
+  "datas": 35.361,
+  "d30": 36.181,
+  "d20": 37.981,
+  "patrimonio": 39.231,
+  "sabia": 43.191,
+  "cta": 45.466,
+  "qual": 46.286
+ },
+ "duracao": 51.572
+}

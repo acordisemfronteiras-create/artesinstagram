@@ -1,0 +1,216 @@
+{
+ "titulo": "Se o 13º do Brasil fosse 100 moedas: para onde vai cada uma?",
+ "kicker": "O 13º em 100 moedas",
+ "formato": "metafora-unica",
+ "conceito": "Um pote de vidro se enche com 100 moedas, camada por camada: cada camada é quem recebe o 13º; no fim, as douradas saem do pote em duas levas, nas duas datas de pagamento.",
+ "tecnica_biblioteca": "White Russian recipe animation (recipiente que se enche em camadas rotuladas)",
+ "voz": {
+  "motor": "kokoro",
+  "nome": "pm_alex",
+  "velocidade": 1.06
+ },
+ "fontes": [
+  "DIEESE, nota à imprensa sobre o 13º salário de 2026 (13/11/2026), publicada pelo Corecon-PR: https://www.coreconpr.gov.br/wp-content/uploads/2026/11/salario.pdf",
+  "Agência Brasil / Radioagência Nacional (14/11/2026): https://agenciabrasil.ebc.com.br/radioagencia-nacional/economia/audio/2026-11/dieese-13o-pode-injetar-quase-r400-bilhoes-na-economia-brasileira",
+  "Business Moment, 13º deve somar R$ 399,1 bilhões em 2026 (prazos citando o Ministério do Trabalho): https://businessmoment.com.br/decimo-terceiro-salario-2026-dieese-399-bilhoes/",
+  "Lei 4.749/1965 (1ª parcela até 30/11, 2ª até 20/12): https://www.planalto.gov.br/ccivil_03/leis/l4749.htm"
+ ],
+ "cenas": [
+  {
+   "id": "pote",
+   "falas": [
+    {
+     "fala": "Essa moeda {um} é um por cento do décimo terceiro deste ano.",
+     "legenda": "Essa moeda é 1% do 13º deste ano."
+    },
+    {
+     "fala": "Junta {cem} cem delas e você tem {total} trezentos e noventa e nove bilhões de reais.",
+     "legenda": "Junta 100 delas e você tem R$ 399 bilhões."
+    },
+    {
+     "fala": "{gente} Pra quase cem milhões de pessoas. {pib} Quase três por cento do pê-i-bê.",
+     "legenda": "Pra quase 100 milhões de pessoas. Quase 3% do PIB."
+    },
+    {
+     "fala": "{atencao} Agora presta atenção em quem recebe.",
+     "legenda": "Agora presta atenção em quem recebe."
+    },
+    {
+     "fala": "{douradas} Essas douradas vão pra quem tem emprego formal, {privado} no setor privado e no público. {c72} Setenta e duas de cada cem.",
+     "legenda": "Essas douradas vão pra quem tem emprego formal, no setor privado e no público. 72 de cada 100."
+    },
+    {
+     "fala": "{prateadas} As prateadas vão pra aposentados e pensionistas. {c28} Vinte e oito.",
+     "legenda": "As prateadas vão pra aposentados e pensionistas. 28."
+    },
+    {
+     "fala": "{mapa} Agora olha onde elas caem. {sudeste} Quase metade fica no Sudeste.",
+     "legenda": "Agora olha onde elas caem. Quase metade fica no Sudeste."
+    },
+    {
+     "fala": "{sul} E essas verdinhas aqui são do Sul: {c16} dezesseis moedas e meia.",
+     "legenda": "E essas verdinhas aqui são do Sul: 16 moedas e meia."
+    },
+    {
+     "fala": "{ouseja} Ou seja: se você tem empresa, {saem} parte dessas douradas sai do seu caixa, {datas} em duas datas: {d30} trinta de novembro {d20} e vinte de dezembro.",
+     "legenda": "Ou seja: se você tem empresa, parte dessas douradas sai do seu caixa, em duas datas: 30 de novembro e 20 de dezembro."
+    },
+    {
+     "fala": "{patrimonio} Pra quem já tem patrimônio, a pergunta não é se essa conta chega. {sabia} É se o caixa já sabia que ela vinha.",
+     "legenda": "Pra quem já tem patrimônio, a pergunta não é se essa conta chega. É se o caixa já sabia que ela vinha."
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "falas": [
+    {
+     "fala": "{cta} Agora me conta: {qual} este ano, você recebe ou paga décimo terceiro?",
+     "legenda": "Agora me conta: este ano, você recebe ou paga 13º?"
+    }
+   ]
+  }
+ ],
+ "sfx": [
+  {
+   "em": "@um",
+   "tipo": "riser",
+   "ganho": 0.8
+  },
+  {
+   "em": "@um",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@cem-0.1",
+   "tipo": "whoosh",
+   "ganho": 1.2
+  },
+  {
+   "em": "@cem+0.1",
+   "tipo": "contagem",
+   "ganho": 0.9
+  },
+  {
+   "em": "@total",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@gente",
+   "tipo": "pop"
+  },
+  {
+   "em": "@pib",
+   "tipo": "pop"
+  },
+  {
+   "em": "@atencao",
+   "tipo": "bip"
+  },
+  {
+   "em": "@douradas",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@douradas+0.1",
+   "tipo": "varredura",
+   "ganho": 0.8
+  },
+  {
+   "em": "@c72",
+   "tipo": "pop"
+  },
+  {
+   "em": "@prateadas",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@prateadas+0.1",
+   "tipo": "varredura",
+   "ganho": 0.6
+  },
+  {
+   "em": "@c28",
+   "tipo": "pop"
+  },
+  {
+   "em": "@mapa",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@sudeste+0.1",
+   "tipo": "varredura",
+   "ganho": 0.6
+  },
+  {
+   "em": "@sul",
+   "tipo": "whoosh",
+   "ganho": 1.1
+  },
+  {
+   "em": "@c16",
+   "tipo": "impacto",
+   "ganho": 0.8
+  },
+  {
+   "em": "@ouseja",
+   "tipo": "whoosh",
+   "ganho": 1.2
+  },
+  {
+   "em": "@d30",
+   "tipo": "whoosh",
+   "ganho": 0.9
+  },
+  {
+   "em": "@d30+0.1",
+   "tipo": "contagem",
+   "ganho": 0.7
+  },
+  {
+   "em": "@d20",
+   "tipo": "whoosh",
+   "ganho": 0.9
+  },
+  {
+   "em": "@d20+0.1",
+   "tipo": "contagem",
+   "ganho": 0.7
+  },
+  {
+   "em": "@patrimonio",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@patrimonio+2.7",
+   "tipo": "tique"
+  },
+  {
+   "em": "@sabia",
+   "tipo": "riser",
+   "ganho": 0.5
+  },
+  {
+   "em": "@sabia+0.2",
+   "tipo": "brilho",
+   "ganho": 0.8
+  },
+  {
+   "em": "@cta",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@qual",
+   "tipo": "pop"
+  },
+  {
+   "em": "@qual+1.6",
+   "tipo": "pop"
+  },
+  {
+   "em": "@qual+2.2",
+   "tipo": "brilho",
+   "ganho": 0.7
+  }
+ ]
+}

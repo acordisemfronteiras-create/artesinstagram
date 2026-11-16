@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../_kit_reels/base.css">
+<script src="../_kit_reels/base.js"></script>
+<style>
+/* Formato A (metáfora única) com a técnica "recipiente em camadas" da biblioteca de motion:
+   um pote de vidro se enche com 100 moedas; cada camada é quem recebe o 13º. */
+#cap p{font-size:42px;line-height:1.24}
+#cap{top:1345px}
+#luz{position:absolute;left:0;right:0;top:520px;height:900px;background:radial-gradient(ellipse 560px 460px at 50% 50%,rgba(201,164,92,.13),transparent 70%)}
+#persp{position:absolute;inset:0;perspective:1800px;perspective-origin:50% 50%}
+#world{position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:0 0;will-change:transform}
+#veu-topo{position:absolute;left:0;right:0;top:0;height:640px;background:linear-gradient(180deg,rgba(11,11,10,.97) 0,rgba(11,11,10,.92) 520px,rgba(11,11,10,0) 640px)}
+#veu-base{position:absolute;left:0;right:0;top:1300px;bottom:0;background:linear-gradient(180deg,rgba(10,10,10,0) 0,rgba(10,10,10,.94) 70px,#0a0a0a 160px)}
+.coin{position:absolute;width:58px;height:58px;border-radius:50%;will-change:transform,opacity}
+.coin::after{content:"";position:absolute;inset:7px;border-radius:50%;border:2px solid rgba(255,255,255,.28);box-shadow:inset 0 -3px 6px rgba(0,0,0,.18)}
+.hud{position:absolute;left:60px;right:60px;top:285px;text-align:center}
+.tagc{font-size:27px;letter-spacing:.34em;text-transform:uppercase;color:#cfc6b6;font-weight:600}
+.tagc i{display:inline-block;width:22px;height:22px;border-radius:50%;margin-right:16px;vertical-align:-2px}
+.num{font-family:"Fraunces",serif;font-weight:500;font-size:168px;line-height:1.02;letter-spacing:-.02em;color:#f6eedf}
+.num.m{font-size:124px;line-height:1.1}
+.sub{font-size:34px;color:#cfc6b6;margin-top:6px;line-height:1.3}
+.say{font-family:"Fraunces",serif;font-weight:500;font-size:104px;line-height:1.05;color:#f6eedf;margin-top:34px}
+.say.s{font-size:66px;line-height:1.12;margin-top:20px}
+.pre{font-size:30px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-top:10px}
+.risca{position:relative;display:inline-block}
+.risca b{position:absolute;left:-2%;right:-2%;top:54%;height:8px;background:#d98a6c;border-radius:5px;transform-origin:0 50%}
+.camada{position:absolute;left:912px;width:150px}
+.camada .br{position:absolute;left:0;top:0;bottom:0;width:16px;border:3px solid;border-left:none;border-radius:0 10px 10px 0}
+.camada .n{position:absolute;left:30px;top:50%;transform:translateY(-50%);font-family:"Fraunces",serif;font-size:58px;line-height:1}
+.camada .n small{display:block;font-family:"Inter",sans-serif;font-size:19px;letter-spacing:.2em;text-transform:uppercase;color:#a9a39a;margin-top:6px}
+.data{position:absolute;top:452px;width:250px;text-align:center}
+.data .chip{font-size:40px;padding:12px 30px}
+.leg{position:absolute;top:640px;width:300px;text-align:center}
+.leg i{display:block;width:150px;height:150px;border-radius:50%;margin:0 auto 24px}
+.leg .n{font-family:"Fraunces",serif;font-size:48px;color:#f6eedf}
+.leg .d{font-size:25px;color:#a9a39a;margin-top:6px;line-height:1.25}
+</style></head>
+<body><div id="stage">
+
+<div class="scene" id="pote">
+  <div id="luz"></div>
+  <div id="persp"><div id="world">
+    <svg width="1080" height="1920" style="position:absolute;left:0;top:0;overflow:visible">
+      <defs>
+        <linearGradient id="vidro" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".07"/><stop offset=".18" stop-color="#fff" stop-opacity=".02"/><stop offset=".85" stop-color="#fff" stop-opacity=".015"/><stop offset="1" stop-color="#fff" stop-opacity=".06"/></linearGradient>
+      </defs>
+      <g data-in="fade" data-at="@cem-0.2" data-dur=".8">
+        <rect x="186" y="602" width="708" height="714" rx="58" fill="url(#vidro)" stroke="rgba(246,238,223,.30)" stroke-width="4"/>
+        <rect x="166" y="584" width="748" height="26" rx="13" fill="rgba(246,238,223,.13)" stroke="rgba(246,238,223,.22)" stroke-width="2"/>
+        <rect x="214" y="650" width="14" height="560" rx="7" fill="rgba(255,255,255,.07)"/>
+      </g>
+      <!-- marca do nível: "o caixa já sabia" -->
+      <line id="marca" x1="200" y1="815" x2="880" y2="815" stroke="#e6c88a" stroke-width="4" stroke-dasharray="18 14" data-in="fade" data-at="@sabia+0.2" data-dur=".6"/>
+    </svg>
+    <div id="coins"></div>
+    <div class="camada" style="top:815px;height:475px" data-in="fade" data-at="@c72-0.1" data-dur=".4" data-out="@mapa-0.1"><div class="br" style="border-color:#e2c07c"></div><div class="n gold">72<small>formal</small></div></div>
+    <div class="camada" style="top:630px;height:182px" data-in="fade" data-at="@c28-0.1" data-dur=".4" data-out="@mapa-0.1"><div class="br" style="border-color:#b6bcc6"></div><div class="n" style="color:#d3d7de">28<small>aposent.</small></div></div>
+  </div></div>
+  <div id="veu-topo"></div><div id="veu-base"></div>
+
+  <div class="hud" data-in="fade" data-at="0.1" data-dur=".4" data-out="@um-0.25"><div class="pre" style="margin-top:110px">Essa moeda</div></div>
+  <div class="hud" data-in="pop" data-at="@um-0.05" data-dur=".35" data-out="@cem-0.3">
+    <div class="pre">é</div>
+    <div class="num">1%</div>
+    <div class="sub">do 13º deste ano</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@cem" data-dur=".3" data-out="@total-0.25">
+    <div class="num" data-count="100" data-from="1" data-at="@cem+0.05" data-dur="0.8">100</div>
+    <div class="sub">moedas</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@total" data-dur=".35" data-out="@gente-0.3">
+    <div class="num m" data-count="399" data-from="0" data-pre="R$ " data-suf=" bi" data-at="@total" data-dur="1.3">R$ 399 bi</div>
+    <div class="sub">o 13º salário de 2026</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@gente" data-dur=".35" data-out="@pib-0.25">
+    <div class="num m" data-count="99.7" data-from="0" data-dec="1" data-suf=" mi" data-at="@gente" data-dur="1.1">99,7 mi</div>
+    <div class="sub">de pessoas recebem</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@pib" data-dur=".35" data-out="@atencao-0.3">
+    <div class="num m">2,9%</div>
+    <div class="sub">do PIB do país</div>
+  </div>
+  <div class="hud" data-in="pop" data-at="@atencao" data-dur=".4" data-out="@douradas-0.3"><div class="pre" style="margin-top:40px">agora</div><div class="say" style="margin-top:6px">presta <span class="gold">atenção.</span></div></div>
+
+  <div class="hud" data-in="fade-up" data-at="@douradas" data-dur=".35" data-out="@prateadas-0.3">
+    <div class="tagc"><i style="background:#e2c07c"></i>Douradas</div>
+    <div class="num" data-count="72" data-from="0" data-at="@douradas+0.15" data-dur="1.5">72</div>
+    <div class="sub">emprego formal, privado e público</div>
+    <div class="sub gold" style="font-weight:600" data-in="pop" data-at="@c72" data-dur=".4">72 de cada 100 moedas</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@prateadas" data-dur=".35" data-out="@mapa-0.3">
+    <div class="tagc"><i style="background:#b6bcc6"></i>Prateadas</div>
+    <div class="num" data-count="28" data-from="0" data-at="@prateadas+0.15" data-dur="1.0">28</div>
+    <div class="sub">aposentados e pensionistas</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@mapa" data-dur=".35" data-out="@sudeste-0.3"><div class="pre" style="margin-top:40px">agora</div><div class="say s" style="margin-top:12px">onde elas <span class="gold">caem?</span></div></div>
+  <div class="hud" data-in="fade-up" data-at="@sudeste" data-dur=".35" data-out="@sul-0.3">
+    <div class="tagc"><i style="background:#f0e8da"></i>Sudeste</div>
+    <div class="num" data-count="47.8" data-from="0" data-dec="1" data-suf="%" data-at="@sudeste+0.1" data-dur="1.2">47,8%</div>
+    <div class="sub">quase metade do total</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@sul" data-dur=".35" data-out="@ouseja-0.3">
+    <div class="tagc"><i style="background:#3fd9a0"></i>Sul</div>
+    <div class="num" data-in="pop" data-at="@c16-0.05" data-dur=".45">16,5</div>
+    <div class="sub" data-in="fade" data-at="@c16+0.1" data-dur=".4">moedas de cada 100</div>
+  </div>
+
+  <div class="hud" data-in="fade-up" data-at="@ouseja" data-dur=".4" data-out="@saem-0.25"><div class="pre" style="margin-top:30px">ou seja</div><div class="say s" style="margin-top:12px">se você tem<br><span class="gold">empresa</span>,</div></div>
+  <div class="hud" data-in="fade-up" data-at="@saem" data-dur=".35" data-out="@datas-0.25"><div class="say s" style="margin-top:30px">parte das douradas<br>sai do <span class="gold">seu caixa</span></div></div>
+  <div class="hud" data-in="fade" data-at="@datas" data-dur=".3" data-out="@patrimonio-0.3"><div class="pre" style="margin-top:20px">em duas datas</div></div>
+  <div class="data" style="left:255px" data-in="pop" data-at="@d30-0.05" data-dur=".4" data-out="@patrimonio-0.3"><span class="chip">30/11</span></div>
+  <div class="data" style="left:575px" data-in="pop" data-at="@d20-0.05" data-dur=".4" data-out="@patrimonio-0.3"><span class="chip">20/12</span></div>
+
+  <div class="hud" data-in="fade-up" data-at="@patrimonio" data-dur=".4" data-out="@sabia-0.25">
+    <div class="pre">pra quem já tem patrimônio</div>
+    <div class="say s" style="margin-top:22px">a pergunta não é se<br><span class="risca">a conta chega<b data-in="grow-x" data-at="@patrimonio+2.7" data-dur=".45"></b></span></div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@sabia" data-dur=".35">
+    <div class="pre" style="margin-top:10px">é se</div>
+    <div class="say s" style="margin-top:12px">o <span class="gold">caixa já sabia</span><br>que ela vinha.</div>
+  </div>
+</div>
+
+<div class="scene" id="cta">
+  <div class="hud">
+    <div class="pre" data-in="fade-up" data-at="@cta" data-dur=".35">Agora me conta</div>
+    <div class="say s" data-in="pop" data-at="@qual-0.1" data-dur=".45">este ano, você<br><span class="gold">recebe</span> ou <span class="gold">paga</span> 13º?</div>
+  </div>
+  <div class="leg" style="left:150px" data-in="pop" data-at="@cta+0.3" data-dur=".4"><i style="background:radial-gradient(circle at 35% 30%,#f8e7bf,#e2c07c 55%,#9c7a3c);box-shadow:0 0 40px rgba(226,192,124,.5)"></i><div class="n">Recebo</div><div class="d">a moeda chega</div></div>
+  <div class="leg" style="left:630px" data-in="pop" data-at="@cta+0.6" data-dur=".4"><i style="background:radial-gradient(circle at 35% 30%,#3a3833,#26241f 60%,#141310);border:3px dashed #c9a45c"></i><div class="n">Pago</div><div class="d">a moeda sai</div></div>
+  <div class="abs" style="left:0;right:0;top:985px;text-align:center" data-in="pop" data-at="@qual+1.6" data-dur=".45"><span class="chip" style="font-size:36px;padding:16px 38px">Comenta ↓</span></div>
+  <div class="abs" style="left:80px;right:80px;top:1100px;text-align:center" data-in="fade-up" data-at="@qual+2.0" data-dur=".5">
+    <div class="serif" style="font-size:50px">Tiago Acordi <span class="gold" style="font-size:36px;margin-left:14px">@tiagoassessorxp</span></div>
+    <div class="tagp" style="font-size:19px;margin-top:10px">Assessor Alta Renda da XP Investimentos</div>
+    <div class="mute" style="font-size:21px;line-height:1.45;margin-top:18px">Conteúdo informativo. Não é recomendação de investimento.<br>Fonte: DIEESE, estimativa do 13º salário de 2026 (nov/2026). Prazos: Lei 4.749/1965.</div>
+  </div>
+</div>
+
+</div>
+<script>
+(function () {
+  const P = 66, X0 = 210, YB = 1290, HERO = 44;
+  const NEUTRO = [222, 210, 186], OURO = [226, 192, 124], PRATA = [182, 188, 198], DIM = [62, 59, 54], CLARO = [244, 236, 222], VERDE = [63, 217, 160], BRANCO = [255, 255, 255];
+  const box = document.getElementById('coins'), world = document.getElementById('world');
+  const C = n => cue(n);
+  const lin = (t, t0, d) => Math.max(0, Math.min(1, (t - t0) / d));
+  const mix = (a, b, k) => a.map((v, i) => v + (b[i] - v) * k);
+  const outc = k => 1 - Math.pow(1 - Math.max(0, Math.min(1, k)), 3);
+  const slot = j => { const r = Math.floor(j / 10), c = j % 10; return [X0 + c * P + P / 2, YB - r * P - P / 2]; };
+  const coins = [];
+  for (let i = 0; i < 100; i++) {
+    const el = document.createElement('div'); el.className = 'coin'; box.appendChild(el);
+    const r = Math.floor(i / 10), c = i % 10;
+    const g = i < 72 ? 'ouro' : 'prata';
+    // regiões por colunas (mesma base: o montante total): Sudeste = 48 moedas à esquerda; Sul = 16,5 à direita
+    const sud = c <= 3 || (c === 4 && r <= 7);
+    const sul = c === 9 || (c === 8 && r <= 5);
+    const meia = c === 8 && r === 6;
+    // saída nas duas datas: a camada de cima das douradas sai em 30/11, a de baixo em 20/12
+    const leva = g !== 'ouro' ? 0 : i >= 36 ? 1 : 2;
+    const ordemLeva = leva === 1 ? (71 - i) / 36 : leva === 2 ? (35 - i) / 36 : 0;
+    coins.push({ el, i, r, c, g, sud, sul, meia, leva, ordemLeva, j: (r * 7 + c * 3) % 10 });
+  }
+  const sulOrd = coins.filter(q => q.sul || q.meia).sort((a, b) => b.c - a.c || a.r - b.r);
+  sulOrd.forEach((q, k) => q.ks = k / sulOrd.length);
+  const sudOrd = coins.filter(q => q.sud);
+  sudOrd.forEach((q, k) => q.kd = k / sudOrd.length);
+
+  // câmera: [instante, duração, foco x, foco y, zoom, inclinação]
+  const [hx, hy] = slot(HERO);
+  const cam = [
+    [0, 0.01, hx, hy, 3.0, 0],
+    [C('cem') - 0.1, 1.7, 540, 960, 1.0, 7],
+    [C('atencao') - 0.1, 1.2, 540, 950, 1.04, 4],
+    [C('douradas') - 0.1, 1.4, 540, 930, 1.06, 9],
+    [C('prateadas') - 0.1, 1.3, 540, 780, 1.22, 6],
+    [C('mapa') - 0.1, 1.3, 540, 960, 1.0, 3],
+    [C('sudeste') - 0.1, 1.3, 430, 965, 1.08, 6],
+    [C('sul') - 0.1, 1.4, 790, 960, 1.22, 8],
+    [C('ouseja') - 0.15, 1.4, 540, 960, 1.0, 0],
+    [C('patrimonio') - 0.1, 1.6, 540, 960, 1.04, 4],
+    [C('sabia') - 0.1, 1.4, 540, 965, 1.0, 1],
+  ];
+  function pose(t) {
+    let i = 0; while (i + 1 < cam.length && t >= cam[i + 1][0]) i++;
+    if (i === 0) return cam[0].slice(2);
+    const a = cam[i - 1].slice(2), b = cam[i].slice(2), k = ease((t - cam[i][0]) / cam[i][1]);
+    return a.map((v, j) => v + (b[j] - v) * k);
+  }
+  const T30 = [380, 482], T20 = [700, 482];
+
+  window.onSeek = function (t) {
+    const [fx, fy, s, rx] = pose(t);
+    const calmo = lin(t, C('ouseja') - 0.15, 1.2) * (1 - lin(t, C('patrimonio'), 1));   // sem deriva quando as moedas voam para as datas
+    const drift = 1 - calmo;
+    world.style.transform = `translate(540px,960px) rotateX(${rx + 0.8 * Math.sin(t * 0.37) * drift}deg) rotateZ(${0.6 * Math.sin(t * 0.5) * drift}deg) scale(${s * (1 + 0.01 * Math.sin(t * 0.6) * drift)}) translate(${-fx}px,${-fy}px)`;
+    for (const q of coins) {
+      let [x, y] = slot(q.i);
+      let op = 1, sc = 1;
+      // entrada: cai de cima, de baixo para cima (a moeda-herói já está no lugar)
+      if (q.i !== HERO) {
+        const t0 = C('cem') + 0.05 + q.i * 0.011 + q.j * 0.012, k = lin(t, t0, 0.55);
+        y = y - (1 - outc(k)) * 900; op = Math.min(1, k * 3); x += (1 - outc(k)) * (q.c - 4.5) * 6;
+        const assenta = k >= 1 ? 0 : Math.sin(Math.min(1, k) * Math.PI) * 0;
+        y += assenta;
+      } else {
+        sc = 1 + 0.04 * Math.sin(t * 5) * (1 - lin(t, C('cem'), 0.5));
+      }
+      // cor
+      let col = q.i === HERO ? mix(BRANCO, NEUTRO, lin(t, C('cem'), 0.6)) : NEUTRO;
+      const kg = q.g === 'ouro' ? lin(t, C('douradas') + 0.1 + (q.i / 72) * 1.3, 0.3) : lin(t, C('prateadas') + 0.1 + ((q.i - 72) / 28) * 0.7, 0.3);
+      const grupo = q.g === 'ouro' ? OURO : PRATA;
+      col = mix(col, grupo, kg);
+      const kdim = lin(t, C('mapa') + 0.15 + (q.c / 10) * 0.5, 0.35);
+      col = mix(col, DIM, kdim);
+      let col2 = null;
+      if (q.sud) col = mix(col, CLARO, lin(t, C('sudeste') + 0.1 + q.kd * 0.9, 0.25) * (1 - lin(t, C('sul') - 0.1, 0.5)));
+      if (q.sul) col = mix(col, VERDE, lin(t, C('sul') + 0.15 + q.ks * 1.1, 0.25));
+      if (q.meia) col2 = mix(col, VERDE, lin(t, C('sul') + 0.15 + q.ks * 1.1, 0.25));
+      const kv = lin(t, C('ouseja') + 0.05 + (q.i / 100) * 0.6, 0.35);
+      col = mix(col, grupo, kv); if (col2) col2 = mix(col2, grupo, kv);
+      // foco: depois do "ou seja", as prateadas ficam ao fundo enquanto as douradas saem
+      if (q.g === 'prata') op *= 1 - 0.55 * lin(t, C('saem') - 0.2, 0.4) * (1 - lin(t, C('d20') + 1.0, 0.5));
+      // saída nas duas datas
+      if (q.leva) {
+        const t0 = C(q.leva === 1 ? 'd30' : 'd20') - 0.05 + q.ordemLeva * 0.9, k = lin(t, t0, 0.62);
+        if (k > 0) {
+          const [tx, ty] = q.leva === 1 ? T30 : T20, e = ease(k);
+          const arco = Math.sin(Math.PI * e) * (q.leva === 1 ? -90 : 90);
+          x = x + (tx - x) * e + arco; y = y + (ty - y) * e;
+          sc *= 1 - 0.55 * e; op *= 1 - lin(k, 0.7, 0.3);
+        }
+      }
+      // as prateadas descem para o fundo do pote depois que as douradas saem
+      if (q.g === 'prata') {
+        const [, yb] = slot(q.i - 72), k = lin(t, C('d20') + 1.15 + (q.i - 72) * 0.012, 0.5);
+        y = y + (yb - y) * outc(k);
+      }
+      const brilho = q.sul ? lin(t, C('sul') + 0.15 + q.ks * 1.1, 0.25) * (1 - kv) : 0;
+      const c2 = mix(col, BRANCO, 0.38);
+      q.el.style.left = (x - 29) + 'px'; q.el.style.top = (y - 29) + 'px';
+      q.el.style.opacity = op;
+      q.el.style.transform = `scale(${sc})`;
+      const rgb = a => `rgb(${a.map(Math.round)})`;
+      q.el.style.background = col2
+        ? `linear-gradient(90deg, ${rgb(col)} 50%, ${rgb(col2)} 50%)`
+        : `radial-gradient(circle at 35% 30%, ${rgb(c2)}, ${rgb(col)} 58%, ${rgb(mix(col, [0, 0, 0], 0.35))})`;
+      const heroGlow = q.i === HERO ? 0.8 * (1 - lin(t, C('cem'), 0.6)) : 0;
+      const g = Math.max(heroGlow, brilho * 0.8, kdim < 0.5 && kg > 0.5 && t < C('mapa') + 0.4 ? 0.22 : 0);
+      q.el.style.boxShadow = g > 0.02 ? `0 0 ${Math.round(16 + 34 * g)}px rgba(${(q.sul ? VERDE : q.i === HERO ? OURO : col).map(Math.round)},${g.toFixed(2)})` : 'none';
+    }
+  };
+})();
+</script>
+</body></html>
