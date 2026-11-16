@@ -21,5 +21,5 @@ Registro em ordem de data. Cada linha: o que ele pediu ou comentou, e a regra qu
 ## Em aberto (aguardando retorno dele)
 
 - ~~Estrear o formato C~~: estreou em 13/11/2026 (fechamento da semana em 4 números) e foi aprovado.
-- Estrear uma técnica da biblioteca de motion (`_skill_motion_biblioteca/`) no próximo Reels e perguntar ao Tiago se o acabamento melhorou.
+- Técnica da biblioteca de motion estreou em 16/11/2026 ("recipiente em camadas", no Reels do 13º em 100 moedas): aguardando o Tiago dizer se o acabamento melhorou.
 - Ler as skills externas pendentes (cinetic, html-demo, product-film, generative-film-skill) quando o acesso ao GitHub for autorizado.

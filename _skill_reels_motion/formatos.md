@@ -8,6 +8,7 @@ Cada formato é uma estrutura de roteiro + um jeito de animar. Escolha pelo tipo
 - **Estrutura:** você dentro do desenho → a escala (1 → o todo) → "presta atenção" → grupos do maior para o menor, cada um com cor, número e uma linha → virada ("ou seja, se você...") → gancho de patrimônio → pergunta por comentário → cartão final.
 - **Visual:** um mundo só (grade de unidades), câmera contínua (afasta, inclina, mergulha), número grande no alto, legenda embaixo.
 - **Exemplo:** `62_reels_qui_12-11_rascunho_quadradinhos-investidor` · **Referência:** `referencias/01_quadradinhos-ia.md`
+- **Variação com pote:** `73_reels_seg_16-11_rascunho_13-salario` (100 moedas enchem um pote de vidro em camadas; depois as moedas saem do pote nas datas de pagamento).
 - **Variações da unidade:** quadradinhos (pessoas), moedas (cada R$ 1 de cada R$ 100), sacas (produção), hectares, dias do ano, cédulas.
 - **Cuidados:** os grupos precisam somar o todo e não se sobrepor (ou a sobreposição precisa ser dita, como "2 dos dourados"). Se a fonte dá percentuais de bases diferentes, não misture na mesma grade.
 
