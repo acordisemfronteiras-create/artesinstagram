@@ -1,0 +1,30 @@
+{
+ "kicker": "Juros nos EUA · Ata do Fed",
+ "date": "18.11.2026",
+ "headline_html": "Fed admite alta <em>acima de 0,25 p.p.</em> em dezembro.",
+ "sub": "Dois dirigentes admitem passo maior se a inflação piorar.",
+ "cells": [
+  {
+   "label": "Juros nos EUA",
+   "value": "3,75%–4%",
+   "note": "faixa mantida em outubro"
+  },
+  {
+   "label": "Placar de outubro",
+   "value": "10 a 2",
+   "note": "dois votos por alta de 0,25 p.p."
+  },
+  {
+   "label": "Dólar hoje",
+   "value": "R$ 5,86",
+   "arrow": "↑",
+   "note": "maior desde abril de 2025"
+  },
+  {
+   "label": "Próxima reunião",
+   "value": "8 e 9.12",
+   "note": "mesmos dias do Copom"
+  }
+ ],
+ "source": "Fed, Exame, Agência Brasil"
+}
