@@ -1,0 +1,220 @@
+{
+ "titulo": "Seu título público caiu sem você vender nada? Entenda a marcação a mercado",
+ "kicker": "Entenda em 1 minuto",
+ "formato": "personas",
+ "conceito": "Uma gangorra: de um lado o juro, do outro o preço do título; quando um sobe, o outro desce, e no vencimento a gangorra para no valor combinado.",
+ "voz": {
+  "motor": "kokoro",
+  "nome": "pm_alex",
+  "velocidade": 1.06
+ },
+ "fontes": [
+  "Seu Dinheiro (26/10/2026): prefixados fecharam a sexta (23/10) abaixo de 13% e passaram de 15% na abertura de 26/10; IPCA+ de mais longo prazo caiu 23,62% no dia; prejuízo só se realiza na venda antes do vencimento e quem carrega recebe a rentabilidade contratada: https://www.seudinheiro.com/2026/renda-fixa/o-tesouro-ipca-8-esta-de-volta-tesouro-direto-abre-com-retornos-bem-mais-altos-e-tombo-nos-titulos-publicos-julw/",
+  "InvestNews (26/10/2026): Tesouro Nacional fecha a negociação de prefixados e IPCA+ 'devido à alta volatilidade nas taxas de juros'; queda só vira prejuízo para quem vende antes do vencimento: https://investnews.com.br/investimentos/tesouro-direto-reeleicao-de-lula/",
+  "Gazeta do Povo (26/10/2026): Tesouro trava a venda de títulos públicos após disparada dos juros; quem leva até o vencimento mantém o retorno contratado: https://www.gazetadopovo.com.br/economia/tesouro-nacional-trava-venda-de-titulos-publicos-apos-disparada-dos-juros/",
+  "Investidor10 (26/10/2026): suspensão por volta do meio-dia, retomada às 15h38 e nova suspensão às 16h25; prefixados entre 15,26% e 15,50%; título de inflação de prazo mais longo com queda de cerca de 37% no pregão: https://investidor10.com.br/noticias/tesouro-direto-marca-prejuizo-de-ate-37-em-pico-das-taxas-pos-eleicoes-2026-123523/",
+  "brapi/Money Times (07/11/2026): prefixados acima de 15% contra menos de 13% antes; título de inflação de prazo mais longo caiu mais de 20% na marcação a mercado: https://brapi.dev/news/di-jan-31-salta-a-14-46-e-b3-amplia-limites-apos-d7922e25"
+ ],
+ "cenas": [
+  {
+   "id": "gancho",
+   "falas": [
+    {
+     "fala": "{dia} Vinte e seis de outubro. {suspensa} A venda de títulos públicos chegou a ser suspensa.",
+     "legenda": "26 de outubro. A venda de títulos públicos chegou a ser suspensa."
+    },
+    {
+     "fala": "{sexta} Na sexta, os prefixados pagavam menos de treze por cento. {quinze} Na segunda, passaram de quinze.",
+     "legenda": "Na sexta, os prefixados pagavam menos de 13%. Na segunda, passaram de 15%."
+    },
+    {
+     "fala": "{extrato} E quem tinha esses títulos viu o saldo encolher {semvender} sem vender nada. {porque} Por quê?",
+     "legenda": "E quem tinha esses títulos viu o saldo encolher sem vender nada. Por quê?"
+    }
+   ]
+  },
+  {
+   "id": "titulo",
+   "falas": [
+    {
+     "fala": "{voce} Pensa assim: você comprou um título que paga {treze} treze por cento ao ano.",
+     "legenda": "Pensa assim: você comprou um título que paga 13% ao ano."
+    },
+    {
+     "fala": "{novo} No dia seguinte, os títulos novos {paga15} passam a pagar quinze.",
+     "legenda": "No dia seguinte, os títulos novos passam a pagar 15%."
+    }
+   ]
+  },
+  {
+   "id": "comprador",
+   "falas": [
+    {
+     "fala": "{comprador} Quem paga o mesmo preço pelo seu, de treze, {lado} com quinze ali do lado? {ninguem} Ninguém.",
+     "legenda": "Quem paga o mesmo preço pelo seu, de 13%, com 15% ali do lado? Ninguém."
+    },
+    {
+     "fala": "{desconto} Pra vender, só com desconto. {nome} O nome disso: marcação a mercado.",
+     "legenda": "Pra vender, só com desconto. O nome disso: marcação a mercado."
+    }
+   ]
+  },
+  {
+   "id": "gangorra",
+   "falas": [
+    {
+     "fala": "{gangorra} É uma gangorra: {sobe} o juro sobe, {desce} o preço desce. {volta} Se o juro cai, o preço sobe.",
+     "legenda": "É uma gangorra: o juro sobe, o preço desce. Se o juro cai, o preço sobe."
+    },
+    {
+     "fala": "{longo} Quanto mais longo, mais forte o tombo. {vinte} Os de inflação mais longos chegaram a cair mais de vinte por cento num dia.",
+     "legenda": "Quanto mais longo, mais forte o tombo. Os de inflação mais longos chegaram a cair mais de 20% num dia."
+    }
+   ]
+  },
+  {
+   "id": "vencimento",
+   "falas": [
+    {
+     "fala": "{atencao} Presta atenção: {real} essa perda só vira real pra quem vende antes do vencimento.",
+     "legenda": "Presta atenção: essa perda só vira real pra quem vende antes do vencimento."
+    },
+    {
+     "fala": "{fim} Quem leva até o fim recebe a taxa contratada na compra.",
+     "legenda": "Quem leva até o fim recebe a taxa contratada na compra."
+    }
+   ]
+  },
+  {
+   "id": "patrimonio",
+   "falas": [
+    {
+     "fala": "{patrimonio} Pra quem tem patrimônio, a pergunta não é se caiu. {prazo} É se o prazo combina com {quando} quando você vai precisar do dinheiro.",
+     "legenda": "Pra quem tem patrimônio, a pergunta não é se caiu. É se o prazo combina com quando você vai precisar do dinheiro."
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "falas": [
+    {
+     "fala": "{cta} E você: {viu} já viu o seu extrato balançar assim? Comenta sim ou não.",
+     "legenda": "E você: já viu o seu extrato balançar assim? Comenta sim ou não."
+    }
+   ]
+  }
+ ],
+ "sfx": [
+  {
+   "em": "@dia-0.05",
+   "tipo": "riser",
+   "ganho": 0.6
+  },
+  {
+   "em": "@suspensa",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@sexta",
+   "tipo": "pop"
+  },
+  {
+   "em": "@quinze-0.9",
+   "tipo": "riser",
+   "ganho": 0.6
+  },
+  {
+   "em": "@quinze",
+   "tipo": "impacto",
+   "ganho": 0.9
+  },
+  {
+   "em": "@extrato",
+   "tipo": "contagem",
+   "ganho": 0.7
+  },
+  {
+   "em": "@porque",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@voce",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@treze",
+   "tipo": "pop"
+  },
+  {
+   "em": "@paga15",
+   "tipo": "brilho",
+   "ganho": 0.8
+  },
+  {
+   "em": "@comprador",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@ninguem",
+   "tipo": "tique"
+  },
+  {
+   "em": "@desconto",
+   "tipo": "pop"
+  },
+  {
+   "em": "@nome",
+   "tipo": "impacto",
+   "ganho": 0.8
+  },
+  {
+   "em": "@gangorra",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@sobe",
+   "tipo": "tique"
+  },
+  {
+   "em": "@volta",
+   "tipo": "whoosh",
+   "ganho": 0.7
+  },
+  {
+   "em": "@vinte-0.9",
+   "tipo": "riser",
+   "ganho": 0.6
+  },
+  {
+   "em": "@vinte",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@atencao",
+   "tipo": "bip"
+  },
+  {
+   "em": "@fim",
+   "tipo": "brilho"
+  },
+  {
+   "em": "@patrimonio",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@quando",
+   "tipo": "pop"
+  },
+  {
+   "em": "@cta",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@viu+1.2",
+   "tipo": "pop"
+  }
+ ],
+ "ritmo": {
+  "final": 2.3
+ }
+}

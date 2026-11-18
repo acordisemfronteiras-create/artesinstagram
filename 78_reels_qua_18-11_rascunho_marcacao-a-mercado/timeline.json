@@ -1,0 +1,152 @@
+{
+ "cenas": [
+  {
+   "id": "gancho",
+   "ini": 0.0,
+   "fim": 14.777
+  },
+  {
+   "id": "titulo",
+   "ini": 14.777,
+   "fim": 22.278
+  },
+  {
+   "id": "comprador",
+   "ini": 22.278,
+   "fim": 30.203
+  },
+  {
+   "id": "gangorra",
+   "ini": 30.203,
+   "fim": 41.065
+  },
+  {
+   "id": "vencimento",
+   "ini": 41.065,
+   "fim": 49.358
+  },
+  {
+   "id": "patrimonio",
+   "ini": 49.358,
+   "fim": 55.981
+  },
+  {
+   "id": "cta",
+   "ini": 55.981,
+   "fim": 61.754
+  }
+ ],
+ "legendas": [
+  {
+   "cena": "gancho",
+   "ini": 0.45,
+   "fim": 4.884,
+   "texto": "26 de outubro. A venda de títulos públicos chegou a ser suspensa."
+  },
+  {
+   "cena": "gancho",
+   "ini": 5.044,
+   "fim": 10.334,
+   "texto": "Na sexta, os prefixados pagavam menos de 13%. Na segunda, passaram de 15%."
+  },
+  {
+   "cena": "gancho",
+   "ini": 10.494,
+   "fim": 14.602,
+   "texto": "E quem tinha esses títulos viu o saldo encolher sem vender nada. Por quê?"
+  },
+  {
+   "cena": "titulo",
+   "ini": 14.952,
+   "fim": 18.669,
+   "texto": "Pensa assim: você comprou um título que paga 13% ao ano."
+  },
+  {
+   "cena": "titulo",
+   "ini": 18.829,
+   "fim": 22.103,
+   "texto": "No dia seguinte, os títulos novos passam a pagar 15%."
+  },
+  {
+   "cena": "comprador",
+   "ini": 22.453,
+   "fim": 26.343,
+   "texto": "Quem paga o mesmo preço pelo seu, de 13%, com 15% ali do lado? Ninguém."
+  },
+  {
+   "cena": "comprador",
+   "ini": 26.503,
+   "fim": 30.028,
+   "texto": "Pra vender, só com desconto. O nome disso: marcação a mercado."
+  },
+  {
+   "cena": "gangorra",
+   "ini": 30.378,
+   "fim": 34.328,
+   "texto": "É uma gangorra: o juro sobe, o preço desce. Se o juro cai, o preço sobe."
+  },
+  {
+   "cena": "gangorra",
+   "ini": 34.488,
+   "fim": 40.89,
+   "texto": "Quanto mais longo, mais forte o tombo. Os de inflação mais longos chegaram a cair mais de 20% num dia."
+  },
+  {
+   "cena": "vencimento",
+   "ini": 41.24,
+   "fim": 45.723,
+   "texto": "Presta atenção: essa perda só vira real pra quem vende antes do vencimento."
+  },
+  {
+   "cena": "vencimento",
+   "ini": 45.883,
+   "fim": 49.183,
+   "texto": "Quem leva até o fim recebe a taxa contratada na compra."
+  },
+  {
+   "cena": "patrimonio",
+   "ini": 49.533,
+   "fim": 55.806,
+   "texto": "Pra quem tem patrimônio, a pergunta não é se caiu. É se o prazo combina com quando você vai precisar do dinheiro."
+  },
+  {
+   "cena": "cta",
+   "ini": 56.156,
+   "fim": 59.454,
+   "texto": "E você: já viu o seu extrato balançar assim? Comenta sim ou não."
+  }
+ ],
+ "cues": {
+  "dia": 0.45,
+  "suspensa": 2.49,
+  "sexta": 5.044,
+  "quinze": 8.624,
+  "extrato": 10.494,
+  "semvender": 12.814,
+  "porque": 14.034,
+  "voce": 14.952,
+  "treze": 16.852,
+  "novo": 18.829,
+  "paga15": 20.809,
+  "comprador": 22.453,
+  "lado": 24.713,
+  "ninguem": 25.953,
+  "desconto": 26.503,
+  "nome": 28.123,
+  "gangorra": 30.378,
+  "sobe": 31.118,
+  "desce": 31.718,
+  "volta": 32.678,
+  "longo": 34.488,
+  "vinte": 36.108,
+  "atencao": 41.24,
+  "real": 42.4,
+  "fim": 45.883,
+  "patrimonio": 49.533,
+  "prazo": 52.633,
+  "quando": 53.953,
+  "cta": 56.156,
+  "viu": 56.476
+ },
+ "duracao": 61.754
+}
