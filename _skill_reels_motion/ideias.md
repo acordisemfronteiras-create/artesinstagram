@@ -18,7 +18,7 @@ Pautas que cabem na estratégia do Tiago (alta renda, empreendedores, produtores
 ## Formato B (explicação com personas)
 
 - [x] Por que o dólar dispara quando o fiscal preocupa — 12/11/2026
-- [ ] O que é marcação a mercado (por que o título "cai" quando o juro sobe)
+- [x] O que é marcação a mercado (por que o título "cai" quando o juro sobe) — 18/11/2026
 - [ ] Como a Selic chega ao custeio da safra (crédito rural livre x controlado)
 - [ ] O que é curva de juros, e o que ela diz sobre o que o mercado espera
 - [ ] Holding familiar: o que é, o que resolve e o que não resolve (sem recomendar)
