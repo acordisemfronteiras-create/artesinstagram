@@ -1,0 +1,139 @@
+{
+ "cenas": [
+  {
+   "id": "gancho",
+   "ini": 0.0,
+   "fim": 13.143
+  },
+  {
+   "id": "ipo",
+   "ini": 13.143,
+   "fim": 19.5
+  },
+  {
+   "id": "regua",
+   "ini": 19.5,
+   "fim": 37.534
+  },
+  {
+   "id": "empresa",
+   "ini": 37.534,
+   "fim": 46.52
+  },
+  {
+   "id": "trava",
+   "ini": 46.52,
+   "fim": 52.726
+  },
+  {
+   "id": "patrimonio",
+   "ini": 52.726,
+   "fim": 58.433
+  },
+  {
+   "id": "cta",
+   "ini": 58.433,
+   "fim": 64.257
+  }
+ ],
+ "legendas": [
+  {
+   "cena": "gancho",
+   "ini": 0.45,
+   "fim": 6.487,
+   "texto": "Quinta-feira, 19 de novembro. A Anthropic estreou na Nasdaq, na maior abertura de capital da história."
+  },
+  {
+   "cena": "gancho",
+   "ini": 6.647,
+   "fim": 12.968,
+   "texto": "US$ 81,3 bilhões captados. A SpaceX, em junho, tinha feito 75."
+  },
+  {
+   "cena": "ipo",
+   "ini": 13.318,
+   "fim": 19.325,
+   "texto": "Mas o que é IPO? É o dia em que a empresa abre a porta e vende uma fatia ao público, pela primeira vez."
+  },
+  {
+   "cena": "regua",
+   "ini": 19.675,
+   "fim": 24.246,
+   "texto": "Antes, o banco combina uma faixa: de US$ 70 a US$ 78 a ação."
+  },
+  {
+   "cena": "regua",
+   "ini": 24.406,
+   "fim": 28.345,
+   "texto": "Veio tanta procura que o preço fechou em US$ 83, acima da faixa."
+  },
+  {
+   "cena": "regua",
+   "ini": 28.505,
+   "fim": 31.004,
+   "texto": "Valor da empresa: cerca de US$ 1,5 trilhão."
+  },
+  {
+   "cena": "regua",
+   "ini": 31.164,
+   "fim": 37.359,
+   "texto": "Na estreia, o primeiro negócio saiu a US$ 111,50. Preço da oferta e preço de mercado não são o mesmo."
+  },
+  {
+   "cena": "empresa",
+   "ini": 37.709,
+   "fim": 41.709,
+   "texto": "Receita em nove meses: US$ 33 bilhões. Um ano antes, 2,5."
+  },
+  {
+   "cena": "empresa",
+   "ini": 41.869,
+   "fim": 46.345,
+   "texto": "Mas o resultado operacional contábil ainda é negativo: US$ 1,3 bilhão."
+  },
+  {
+   "cena": "trava",
+   "ini": 46.695,
+   "fim": 52.551,
+   "texto": "E tem uma trava: boa parte das ações de quem já era dono fica presa por até 180 dias."
+  },
+  {
+   "cena": "patrimonio",
+   "ini": 52.901,
+   "fim": 58.258,
+   "texto": "Pra quem tem empresa: capital aberto tem preço todo dia. Fechado, só quando alguém compra."
+  },
+  {
+   "cena": "cta",
+   "ini": 58.608,
+   "fim": 61.957,
+   "texto": "E você, abriria o capital da sua empresa? Comenta sim ou não."
+  }
+ ],
+ "cues": {
+  "dia": 0.45,
+  "estreia": 2.79,
+  "valor": 6.647,
+  "spacex": 9.927,
+  "ipo": 13.318,
+  "porta": 15.678,
+  "faixa": 19.675,
+  "procura": 24.406,
+  "oitenta": 25.766,
+  "acima": 27.126,
+  "valuation": 28.505,
+  "abriu": 31.164,
+  "diferente": 34.964,
+  "receita": 37.709,
+  "antes": 40.429,
+  "prejuizo": 41.869,
+  "trava": 46.695,
+  "dias": 47.495,
+  "patrimonio": 52.901,
+  "diario": 54.201,
+  "fechada": 56.541,
+  "cta": 58.608,
+  "viu": 59.048
+ },
+ "duracao": 64.257
+}
