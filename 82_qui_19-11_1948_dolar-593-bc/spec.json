@@ -1,0 +1,14 @@
+{
+ "kicker": "Câmbio · Banco Central",
+ "date": "19.11.2026",
+ "tag": "Urgente",
+ "headline_html": "Dólar fecha a <em>R$ 5,93</em> mesmo com venda de US$ 1 bi do BC.",
+ "sub": "Sexta alta seguida, no maior nível desde abril de 2025, com o ajuste fiscal a caminho da Câmara.",
+ "cells": [
+  {"label": "Dólar comercial", "value": "R$ 5,93", "arrow": "↑", "note": "6ª alta seguida no fechamento"},
+  {"label": "Alta na semana", "value": "+4,9%", "note": "semana encurtada pelo feriado"},
+  {"label": "Leilão do BC", "value": "US$ 1 bi", "note": "venda à vista das reservas"},
+  {"label": "Ibovespa", "value": "166,4 mil", "arrow": "↓", "note": "−0,7% no dia"}
+ ],
+ "source": "BC, Times Brasil/CNBC, BPMoney"
+}
