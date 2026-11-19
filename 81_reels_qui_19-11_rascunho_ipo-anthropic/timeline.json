@@ -33,7 +33,7 @@
   {
    "id": "cta",
    "ini": 58.433,
-   "fim": 64.257
+   "fim": 64.251
   }
  ],
  "legendas": [
@@ -106,8 +106,8 @@
   {
    "cena": "cta",
    "ini": 58.608,
-   "fim": 61.957,
-   "texto": "E você, abriria o capital da sua empresa? Comenta sim ou não."
+   "fim": 61.951,
+   "texto": "E você, investiria na oferta da Anthropic? Comenta sim ou não."
   }
  ],
  "cues": {
@@ -133,7 +133,7 @@
   "diario": 54.201,
   "fechada": 56.541,
   "cta": 58.608,
-  "viu": 59.048
+  "viu": 58.928
  },
- "duracao": 64.257
+ "duracao": 64.251
 }
