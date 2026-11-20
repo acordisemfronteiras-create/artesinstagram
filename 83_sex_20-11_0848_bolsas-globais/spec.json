@@ -1,0 +1,14 @@
+{
+ "kicker": "Bolsas globais · Ásia e EUA",
+ "date": "20.11.2026",
+ "tag": "Urgente",
+ "headline_html": "Tóquio e Seul caem <em>mais de 5%</em>.",
+ "sub": "Onda de venda de ações ligadas à IA após a sexta queda seguida do S&P 500. Sem pregão na B3 hoje.",
+ "cells": [
+  {"label": "Nikkei · Tóquio", "value": "−5,1%", "arrow": "↓", "note": "fechamento desta sexta"},
+  {"label": "Kospi · Seul", "value": "−5,2%", "arrow": "↓", "note": "fechamento desta sexta"},
+  {"label": "S&P 500", "value": "−2,0%", "arrow": "↓", "note": "6ª queda seguida, na quinta"},
+  {"label": "Nasdaq", "value": "−2,3%", "arrow": "↓", "note": "fechamento de quinta"}
+ ],
+ "source": "AP, EFE, Euronews, Gazeta Brasil"
+}
