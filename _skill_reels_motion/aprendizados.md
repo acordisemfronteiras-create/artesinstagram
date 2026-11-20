@@ -22,4 +22,5 @@ Registro em ordem de data. Cada linha: o que ele pediu ou comentou, e a regra qu
 
 - ~~Estrear o formato C~~: estreou em 13/11/2026 (fechamento da semana em 4 números) e foi aprovado.
 - Técnica da biblioteca de motion estreou em 16/11/2026 ("recipiente em camadas", no Reels do 13º em 100 moedas): aguardando o Tiago dizer se o acabamento melhorou.
+- Alinhador de deixas (20/11/2026): o whisper escreve números com algarismos e as deixas depois de um número saíam até 1 s adiantadas; o `voz.py --alinhar` agora converte os algarismos por extenso (num2words). Conferir os quadros de número continua valendo.
 - Ler as skills externas pendentes (cinetic, html-demo, product-film, generative-film-skill) quando o acesso ao GitHub for autorizado.
