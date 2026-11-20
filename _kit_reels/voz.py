@@ -100,6 +100,24 @@ def separar_deixas(fala):
     return limpo, [(n, c / total) for n, c in deixas]
 
 
+def por_extenso(palavra):
+    """O whisper escreve números com algarismos ("358", "2025", "6,5"); a fala do roteiro tem os números por
+    extenso. Sem converter, a contagem de letras fica curta e as deixas depois de um número saem adiantadas."""
+    if not re.search(r"\d", palavra):
+        return palavra
+    try:
+        from num2words import num2words
+    except ImportError:
+        return palavra
+    def troca(m):
+        s = m.group(0).replace(".", "").replace(",", ".")
+        try:
+            return " " + num2words(float(s) if "." in s else int(s), lang="pt_BR") + " "
+        except Exception:
+            return m.group(0)
+    return re.sub(r"\d[\d.,]*\d|\d", troca, palavra)
+
+
 def alinhador():
     try:
         from faster_whisper import WhisperModel
@@ -114,7 +132,7 @@ def alinhador():
         ws = [w for s in segs for w in s.words]
         if not ws:
             return None
-        letras = np.cumsum([0] + [len(re.sub(r"\W", "", w.word)) for w in ws])
+        letras = np.cumsum([0] + [len(re.sub(r"\W", "", por_extenso(w.word))) for w in ws])
         alvo = frac * letras[-1]
         i = int(np.argmin(np.abs(letras[:-1] - alvo)))   # palavra cujo início está mais perto da fração
         return float(ws[i].start)

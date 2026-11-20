@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../_kit_reels/base.css">
+<script src="../_kit_reels/base.js"></script>
+<style>
+/* Formato A, variação "cofre": a porta de um cofre gira e abre; dentro, 100 moedas = as reservas do Brasil */
+#cap p{font-size:42px;line-height:1.24}
+#cap{top:1345px}
+#luz{position:absolute;left:0;right:0;top:420px;height:1000px;background:radial-gradient(ellipse 640px 500px at 50% 50%,rgba(201,164,92,.15),transparent 70%)}
+#persp{position:absolute;inset:0;perspective:1600px;perspective-origin:50% 48%}
+#world{position:absolute;left:540px;top:930px;width:0;height:0;transform-origin:0 0;transform-style:preserve-3d;will-change:transform}
+#veu-topo{position:absolute;left:0;right:0;top:0;height:720px;background:linear-gradient(180deg,rgba(11,11,10,.97) 0,rgba(11,11,10,.93) 560px,rgba(11,11,10,0) 720px)}
+#veu-base{position:absolute;left:0;right:0;top:1200px;bottom:0;background:linear-gradient(180deg,rgba(10,10,10,0) 0,rgba(10,10,10,.94) 130px,#0a0a0a 220px)}
+.coin{position:absolute;width:76px;height:76px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-family:"Fraunces",serif;font-weight:600;font-size:34px;color:rgba(20,18,14,.0)}
+.coin b{position:absolute;inset:7px;border-radius:inherit;border:2px solid rgba(255,255,255,.28)}
+.coin span{position:relative;letter-spacing:-.02em}
+#piso{position:absolute;left:-60px;top:-60px;width:1020px;height:1020px;border-radius:60px;background:radial-gradient(circle at 50% 45%,#1d1b16,#100f0c 75%);border:2px solid #2e2a22}
+#porta{position:absolute;left:10px;top:10px;width:880px;height:880px;transform-origin:0 50%;transform-style:preserve-3d}
+#porta .disco{position:absolute;inset:0;border-radius:50%;
+  background:radial-gradient(circle at 42% 38%,#3a362d 0,#24221c 45%,#16140f 80%);
+  box-shadow:inset 0 0 0 16px #2f2b22,inset 0 0 0 20px #8c7442,inset 0 0 60px rgba(0,0,0,.8),0 30px 80px rgba(0,0,0,.6)}
+#porta .anel{position:absolute;left:150px;top:150px;width:580px;height:580px;border-radius:50%;border:3px solid rgba(201,164,92,.45);box-shadow:inset 0 0 40px rgba(0,0,0,.6)}
+#porta .pino{position:absolute;width:34px;height:34px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e9d6a6,#8c7442 70%)}
+#volante{position:absolute;left:290px;top:290px;width:300px;height:300px}
+#volante i{position:absolute;left:138px;top:-10px;width:24px;height:320px;border-radius:12px;background:linear-gradient(90deg,#8c7442,#e6c88a,#8c7442)}
+#volante u{position:absolute;left:95px;top:95px;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f3e2b6,#a5864b 70%);box-shadow:0 0 30px rgba(201,164,92,.5)}
+#porta .dobra{position:absolute;left:-26px;width:46px;height:120px;border-radius:10px;background:linear-gradient(90deg,#5b4c2e,#a5864b,#5b4c2e)}
+.hud{position:absolute;left:60px;right:60px;top:285px;text-align:center}
+.tagc{font-size:27px;letter-spacing:.34em;text-transform:uppercase;color:#cfc6b6;font-weight:600}
+.tagc i{display:inline-block;width:20px;height:20px;border-radius:50%;margin-right:16px;vertical-align:-1px}
+.num{font-family:"Fraunces",serif;font-weight:500;font-size:176px;line-height:1.02;letter-spacing:-.02em;color:#f6eedf}
+.num.m{font-size:128px;line-height:1.1}
+.sub{font-size:33px;color:#cfc6b6;margin-top:6px;line-height:1.3}
+.say{font-family:"Fraunces",serif;font-weight:500;font-size:104px;line-height:1.05;color:#f6eedf;margin-top:34px}
+.say.s{font-size:68px;line-height:1.12;margin-top:20px}
+.pre{font-size:30px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-top:10px}
+.lista{display:grid;grid-template-columns:1fr auto;gap:12px 28px;width:640px;margin:26px auto 0;text-align:left;font-size:34px;color:#e9e1d2}
+.lista span:nth-child(even){font-family:"Fraunces",serif;color:#f6eedf;text-align:right}
+.lista em{font-style:normal;color:#a9a39a;font-size:27px}
+.fila{position:absolute;left:0;right:0;top:640px;display:flex;justify-content:center;gap:34px}
+.fila div{width:118px;height:118px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:"Fraunces",serif;font-weight:600;font-size:52px;color:rgba(18,16,12,.85)}
+</style></head>
+<body><div id="stage">
+
+<div class="scene" id="cofre">
+  <div id="luz"></div>
+  <div id="persp"><div id="world">
+    <div id="piso"></div>
+    <div id="moedas"></div>
+    <div id="porta"><div class="disco"></div><div class="anel"></div><div id="volante"><i></i><i style="transform:rotate(60deg)"></i><i style="transform:rotate(120deg)"></i><u></u></div>
+      <div class="dobra" style="top:200px"></div><div class="dobra" style="top:560px"></div></div>
+  </div></div>
+  <div id="veu-topo"></div><div id="veu-base"></div>
+
+  <div class="hud" data-in="fade-up" data-at="@bc" data-dur=".35" data-out="@reservas-0.3">
+    <div class="pre">quinta-feira, 19/11</div>
+    <div class="num m" data-in="pop" data-at="@bilhao-0.05" data-dur=".45">US$ 1 bi</div>
+    <div class="sub" data-in="fade" data-at="@bilhao+0.4" data-dur=".4">vendidos pelo Banco Central</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@reservas" data-dur=".4" data-out="@um-0.3">
+    <div class="say s" style="margin-top:30px">as reservas<br><span class="gold">internacionais</span></div>
+    <div class="sub" style="margin-top:22px" data-in="fade-up" data-at="@colchao" data-dur=".4">o colchão do país em moeda forte</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@um" data-dur=".35" data-out="@cem-0.3">
+    <div class="pre">cada moeda</div>
+    <div class="num" data-in="pop" data-at="@um+0.9" data-dur=".4">1%</div>
+    <div class="sub">das reservas</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@cem" data-dur=".3" data-out="@total-0.22">
+    <div class="num" data-count="100" data-from="1" data-at="@cem+0.02" data-dur="0.7">100</div>
+    <div class="sub">moedas</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@total" data-dur=".35" data-out="@atencao-0.3">
+    <div class="pre">o cofre inteiro</div>
+    <div class="num m" data-count="358" data-from="100" data-pre="US$ " data-suf=" bi" data-at="@total" data-dur="1.3">US$ 358 bi</div>
+    <div class="sub" data-in="fade" data-at="@fim" data-dur=".4">em 31/12/2025</div>
+  </div>
+  <div class="hud" data-in="pop" data-at="@atencao" data-dur=".4" data-out="@nem-0.12"><div class="say" style="margin-top:70px">presta <span class="gold">atenção.</span></div></div>
+  <div class="hud" data-in="fade-up" data-at="@nem" data-dur=".35" data-out="@verdes-0.3"><div class="say s" style="margin-top:60px">nem tudo aqui<br>é <span class="gold">dólar.</span></div></div>
+
+  <div class="hud" data-in="fade-up" data-at="@verdes" data-dur=".35" data-out="@douradas-0.3">
+    <div class="tagc"><i style="background:#3fb98a"></i>Dólar</div>
+    <div class="num" data-count="72" data-from="0" data-suf="%" data-at="@verdes+0.2" data-dur="1.1">72%</div>
+    <div class="sub">72 de cada 100 moedas</div>
+    <div style="margin-top:18px" data-in="pop" data-at="@antes" data-dur=".4"><span class="chip">em 2024: 78,45%</span></div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@douradas" data-dur=".35" data-out="@azuis-0.3">
+    <div class="tagc"><i style="background:#e6c88a;border-radius:4px"></i>Ouro</div>
+    <div class="num" data-in="pop" data-at="@c7-0.05" data-dur=".45">7,2%</div>
+    <div class="sub" data-in="fade-up" data-at="@segundo" data-dur=".4">o 2º maior pedaço do cofre</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@azuis" data-dur=".35" data-out="@vermelhas-0.3">
+    <div class="tagc"><i style="background:#4f8df0"></i>Euro</div>
+    <div class="num" data-in="pop" data-at="@c66-0.05" data-dur=".45">6,6%</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@vermelhas" data-dur=".35" data-out="@cinzas-0.3">
+    <div class="tagc"><i style="background:#e0574f"></i>Renminbi · China</div>
+    <div class="num" data-in="pop" data-at="@c6-0.05" data-dur=".45">5,9%</div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@cinzas" data-dur=".35" data-out="@ouseja-0.3">
+    <div class="tagc"><i style="background:#9a9cab"></i>As outras</div>
+    <div class="lista">
+      <span data-in="left" data-at="@cinzas+1.0" data-dur=".35">Libra</span><span data-in="fade" data-at="@cinzas+1.0" data-dur=".35">2,8%</span>
+      <span data-in="left" data-at="@cinzas+1.7" data-dur=".35">Iene</span><span data-in="fade" data-at="@cinzas+1.7" data-dur=".35">2,2%</span>
+      <span data-in="left" data-at="@dolares" data-dur=".35">Dólar canadense</span><span data-in="fade" data-at="@dolares" data-dur=".35">1,7%</span>
+      <span data-in="left" data-at="@dolares+0.8" data-dur=".35">Dólar australiano</span><span data-in="fade" data-at="@dolares+0.8" data-dur=".35">1,3%</span>
+      <span data-in="left" data-at="@won+0.4" data-dur=".35">Won <em>Coreia do Sul</em></span><span data-in="fade" data-at="@won+0.4" data-dur=".35">0,2%</span>
+    </div>
+  </div>
+
+  <div class="hud" data-in="fade-up" data-at="@ouseja" data-dur=".4" data-out="@patrimonio-0.3">
+    <div class="pre">ou seja</div>
+    <div class="say s" style="margin-top:14px">o cofre do país tem</div>
+    <div class="num m" data-in="pop" data-at="@oito-0.05" data-dur=".4">8 moedas</div>
+    <div class="say s" style="margin-top:0" data-in="pop" data-at="@eouro" data-dur=".4">e <span class="gold">ouro.</span></div>
+  </div>
+  <div class="hud" data-in="fade-up" data-at="@patrimonio" data-dur=".4" data-out="@quanto-0.25"><div class="say s" style="margin-top:50px">Pra quem tem <span class="gold">patrimônio</span>,<br>a pergunta é a mesma.</div></div>
+  <div class="hud" data-in="fade-up" data-at="@quanto" data-dur=".35">
+    <div class="say s" style="margin-top:40px">quanto está em <span class="gold">real</span>,</div>
+    <div class="say s" data-in="fade-up" data-at="@naoesta" data-dur=".4">e quanto <span class="gold">não está</span>?</div>
+  </div>
+</div>
+
+<div class="scene" id="cta">
+  <div class="hud">
+    <div class="pre" data-in="fade-up" data-at="@cta" data-dur=".35">Agora me conta</div>
+    <div class="say s" style="font-size:62px" data-in="pop" data-at="@qual-0.1" data-dur=".45">De cada R$ 100 do seu<br>patrimônio, quantos estão<br>em <span class="gold">outra moeda</span>?</div>
+  </div>
+  <div class="fila" style="top:690px">
+    <div data-in="pop" data-at="@cta+0.2" data-dur=".4" style="background:linear-gradient(160deg,#8fe3c2,#3fb98a)">$</div>
+    <div data-in="pop" data-at="@cta+0.4" data-dur=".4" style="border-radius:22px;height:82px;margin-top:18px;font-size:40px;background:linear-gradient(160deg,#f6e3b4,#c9a45c)">Au</div>
+    <div data-in="pop" data-at="@cta+0.6" data-dur=".4" style="background:linear-gradient(160deg,#9cc0ff,#4f8df0)">€</div>
+    <div data-in="pop" data-at="@cta+0.8" data-dur=".4" style="background:linear-gradient(160deg,#f3a29c,#e0574f)">元</div>
+    <div data-in="pop" data-at="@cta+1.0" data-dur=".4" style="background:linear-gradient(160deg,#d4d5de,#9a9cab)">£</div>
+  </div>
+  <div class="abs" style="left:0;right:0;top:880px;text-align:center" data-in="pop" data-at="@qual+2.3" data-dur=".45"><span class="chip" style="font-size:36px;padding:16px 38px">Comenta o número ↓</span></div>
+  <div class="abs" style="left:70px;right:70px;top:1000px;text-align:center" data-in="fade-up" data-at="@qual+2.8" data-dur=".5">
+    <div class="serif" style="font-size:50px">Tiago Acordi <span class="gold" style="font-size:36px;margin-left:14px">@tiagoassessorxp</span></div>
+    <div class="tagp" style="font-size:19px;margin-top:10px">Assessor Alta Renda da XP Investimentos</div>
+    <div class="mute" style="font-size:20px;line-height:1.45;margin-top:18px">Conteúdo informativo. Não é recomendação de investimento.<br>Fonte: Banco Central, Relatório de Gestão das Reservas Internacionais (mar/2026),<br>posição em 31/12/2025 (composição da carteira gerenciada internamente).<br>Venda de US$ 1 bi em 19/11/2026: Banco Central.</div>
+  </div>
+</div>
+
+</div>
+<script>
+(function () {
+  const N = 10, P = 90, S = 76, UM = { r: 4, c: 4 };
+  const CREME = [214, 204, 186], BRANCO = [255, 255, 255];
+  const COR = { dolar: [63, 185, 138], ouro: [226, 192, 124], euro: [79, 141, 240], yuan: [224, 87, 79], outras: [154, 156, 171] };
+  const GRUPOS = [['dolar', 72], ['ouro', 7], ['euro', 7], ['yuan', 6], ['outras', 8]];
+  const OUTRAS = ['£', '£', '£', '¥', '¥', 'C$', 'C$', 'A$'];
+  const SIMB = { dolar: '$', ouro: 'Au', euro: '€', yuan: '元' };
+  const C = n => cue(n);
+  const CUE = { dolar: 'verdes', ouro: 'douradas', euro: 'azuis', yuan: 'vermelhas', outras: 'cinzas' };
+  const box = document.getElementById('moedas');
+  const cells = [];
+  for (let r = 0; r < N; r++) for (let c = 0; c < N; c++) {
+    const el = document.createElement('div'); el.className = 'coin';
+    el.style.left = (c * P + (P - S) / 2) + 'px'; el.style.top = (r * P + (P - S) / 2) + 'px';
+    el.innerHTML = '<b></b><span></span>';
+    box.appendChild(el);
+    cells.push({ el, sp: el.querySelector('span'), r, c, d: Math.hypot(9 - c, 9 - r) + c * 1e-3 + r * 1e-4, dv: Math.hypot(c - UM.c, r - UM.r) });
+  }
+  // do mais longe ao mais perto do canto inferior direito: dólar, ouro, euro, renminbi, outras
+  const ord = [...cells].sort((a, b) => b.d - a.d);
+  let i0 = 0;
+  for (const [g, n] of GRUPOS) {
+    ord.slice(i0, i0 + n).forEach((q, j) => { q.g = g; q.k = j / n; q.rank = i0 + j; q.sp.textContent = g === 'outras' ? OUTRAS[j] : SIMB[g]; if (q.sp.textContent.length > 1) q.el.style.fontSize = g === 'ouro' ? '30px' : '26px'; });
+    i0 += n;
+  }
+  const centro = g => { const qs = cells.filter(q => q.g === g); return [qs.reduce((s, q) => s + q.c, 0) / qs.length * P + P / 2, qs.reduce((s, q) => s + q.r, 0) / qs.length * P + P / 2]; };
+  const um = cells.find(q => q.r === UM.r && q.c === UM.c);
+  const maxdv = Math.max(...cells.map(q => q.dv));
+  const mix = (a, b, k) => a.map((v, i) => v + (b[i] - v) * k);
+  const lin = (t, t0, d) => Math.max(0, Math.min(1, (t - t0) / d));
+
+  // câmera: [instante, duração, foco x, foco y, zoom, inclinação, giro]
+  const ux = UM.c * P + P / 2, uy = UM.r * P + P / 2;
+  const [ox, oy] = centro('ouro'), [ex, ey] = centro('euro'), [yx, yy] = centro('yuan'), [rx_, ry_] = centro('outras');
+  const cam = [
+    [0, 0.01, 450, 450, 0.74, 4, 0],
+    [C('bc'), 3.6, 450, 450, 0.8, 10, -3],
+    [C('reservas') - 0.1, 1.8, 450, 450, 0.8, 36, -8],
+    [C('um') - 0.1, 1.4, ux, uy, 2.9, 22, -4],
+    [C('cem') - 0.15, 1.6, 450, 450, 0.8, 42, -10],
+    [C('total') + 0.4, 1.6, 450, 450, 0.84, 36, -3],
+    [C('atencao') - 0.1, 1.2, 450, 450, 0.88, 30, 2],
+    [C('verdes') - 0.15, 1.5, 380, 400, 0.98, 44, -13],
+    [C('douradas') - 0.15, 1.4, ox, oy, 1.7, 40, -6],
+    [C('azuis') - 0.15, 1.2, ex, ey, 2.0, 38, 8],
+    [C('vermelhas') - 0.15, 1.2, yx, yy, 2.35, 36, -6],
+    [C('cinzas') - 0.15, 1.3, rx_ - 10, ry_ - 60, 2.3, 32, 6],
+    [C('ouseja') - 0.15, 1.7, 450, 450, 0.8, 40, -6],
+    [C('patrimonio') - 0.1, 1.6, 480, 440, 0.92, 34, 6],
+    [C('quanto') - 0.1, 1.6, 450, 450, 0.9, 28, -2],
+  ];
+  function pose(t) {
+    let i = 0; while (i + 1 < cam.length && t >= cam[i + 1][0]) i++;
+    if (i === 0) return cam[0].slice(2);
+    const a = cam[i - 1].slice(2), b = cam[i].slice(2), k = ease((t - cam[i][0]) / cam[i][1]);
+    return a.map((v, j) => v + (b[j] - v) * k);
+  }
+  const focos = [
+    [C('douradas'), C('azuis'), ['ouro']], [C('azuis'), C('vermelhas'), ['euro']],
+    [C('vermelhas'), C('cinzas'), ['yuan']], [C('cinzas'), C('ouseja'), ['outras']],
+    [C('quanto'), 1e9, ['ouro', 'euro', 'yuan', 'outras']],
+  ];
+  const alvo = (q, t) => { const f = focos.find(f => t >= f[0] && t < f[1]); return !f ? [1, 0] : f[2].includes(q.g) ? [1, 1] : [0.28, 0]; };
+
+  const porta = document.getElementById('porta'), volante = document.getElementById('volante'), world = document.getElementById('world');
+  // pinos ao redor da porta
+  for (let j = 0; j < 16; j++) {
+    const a = j / 16 * 2 * Math.PI, p = document.createElement('div'); p.className = 'pino';
+    p.style.left = (440 + 392 * Math.cos(a) - 17) + 'px'; p.style.top = (440 + 392 * Math.sin(a) - 17) + 'px';
+    porta.appendChild(p);
+  }
+  window.onSeek = function (t) {
+    const [fx, fy, s, rx, rz] = pose(t);
+    const dz = 1 + 0.012 * Math.sin(t * 0.6);
+    world.style.transform = `rotateX(${rx + Math.sin(t * 0.37)}deg) rotateZ(${rz + 1.5 * Math.sin(t * 0.5)}deg) scale(${s * dz}) translate(${-fx}px,${-fy}px)`;
+    // porta: o volante gira na palavra "cofre", a porta abre em "reservas"
+    const gira = ease(lin(t, C('cofre') - 0.1, 1.3));
+    volante.style.transform = `rotate(${gira * 300}deg)`;
+    const abre = ease(lin(t, C('reservas') - 0.15, 1.5));
+    porta.style.transform = `translateZ(40px) rotateY(${-105 * abre}deg)`;
+    porta.style.opacity = 1 - lin(t, C('reservas') + 0.8, 0.7);
+    for (const q of cells) {
+      const ka = ease(lin(t, C('reservas') + 0.2 + (q.dv / maxdv) * 1.2, 0.45));
+      const g = lin(t, C(CUE[q.g]) + 0.2 + q.k * 0.9, 0.35);   // cor e símbolo do grupo
+      let col = mix(CREME, COR[q.g], g);
+      const destaque = q === um ? lin(t, C('um'), 0.4) * (1 - lin(t, C('cem'), 0.6)) : 0;
+      col = mix(col, [246, 226, 170], destaque);
+      let op = 0, fo = 0; for (let j = 0; j < 5; j++) { const a = alvo(q, t - j * 0.1); op += a[0] / 5; fo += a[1] / 5; }
+      const pulso = 1 + fo * 0.05 * Math.sin(2 * Math.PI * (t * 1.1 - q.rank * 0.07));
+      const barra = q.g === 'ouro' ? g : 0;   // o ouro vira barrinha
+      q.el.style.borderRadius = barra > 0 ? `${50 - 32 * barra}% / ${50 - 26 * barra}%` : '50%';
+      q.el.style.height = (S - 26 * barra) + 'px';
+      q.el.style.marginTop = (13 * barra) + 'px';
+      q.el.style.opacity = ka * op;
+      q.el.style.transform = `scale(${(0.3 + 0.7 * ka) * pulso * (1 + 0.12 * destaque)})`;
+      const c2 = mix(col, BRANCO, 0.38);
+      q.el.style.background = `linear-gradient(160deg, rgb(${c2.map(Math.round)}), rgb(${col.map(Math.round)}))`;
+      q.el.style.color = `rgba(18,16,12,${(0.8 * g).toFixed(2)})`;
+      const luz = 0.25 + 0.45 * fo + 0.7 * destaque;
+      q.el.style.boxShadow = `0 0 ${Math.round(16 + 34 * luz)}px rgba(${col.map(Math.round)},${Math.min(.9, luz).toFixed(2)})`;
+    }
+  };
+})();
+</script>
+</body></html>

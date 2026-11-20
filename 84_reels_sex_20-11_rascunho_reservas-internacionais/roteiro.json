@@ -1,0 +1,219 @@
+{
+ "titulo": "Se as reservas do Brasil fossem 100 moedas: em que moeda está cada uma?",
+ "kicker": "O cofre do país em 100 moedas",
+ "formato": "metafora-unica",
+ "conceito": "Uma porta de cofre gira e se abre; dentro, 100 moedas são as reservas internacionais do Brasil. A câmera desce do maior grupo (dólar) ao menor (as outras moedas), cada uma com o símbolo da sua moeda; o ouro aparece em barrinhas.",
+ "tecnica_biblioteca": "Revelação por porta/abertura + grade de unidades com câmera contínua (formato A)",
+ "voz": {
+  "motor": "kokoro",
+  "nome": "pm_alex",
+  "velocidade": 1.06
+ },
+ "fontes": [
+  "Banco Central do Brasil, Relatório de Gestão das Reservas Internacionais, vol. 18, mar/2026 (posição em 31/12/2025: estoque US$ 358,23 bi no conceito caixa; composição por moeda da carteira gerenciada internamente: dólar 72,00%, ouro 7,19%, euro 6,60%, renminbi 5,94%, libra 2,80%, iene 2,24%, dólar canadense 1,73%, dólar australiano 1,27%, won 0,23%): https://www.bcb.gov.br/content/publicacoes/relgestaoreservas/GESTAORESERVAS202603-relatorio_anual_reservas_internacionais_2026.pdf",
+  "InfoMoney / Estadão Conteúdo (31/03/2026), dólar 72% em 2025 e 78,45% em 2024; ouro 7,19%, euro 6,60%, renminbi 5,94%: https://www.infomoney.com.br/mercados/bc-reduz-peso-do-dolar-nas-reservas-e-reforca-ouro-e-moedas-asiaticas/",
+  "Times Brasil / CNBC (31/03/2026), mesmos números: https://timesbrasil.com.br/brasil/economia-brasileira/banco-central-dolar-americano-ainda-e-principal-ativo-das-reservas-internacionais-do-brasil/",
+  "Venda de US$ 1 bi à vista pelo BC em 19/11/2026 e dólar a R$ 5,93 (verificado no post 82 de 19/11): https://istoe.com.br/dolar-hoje-19-novembro-2026-alta-593-banco-central"
+ ],
+ "cenas": [
+  {
+   "id": "cofre",
+   "falas": [
+    {
+     "fala": "{bc} Na quinta, o Banco Central tirou {bilhao} um bilhão de dólares {cofre} desse cofre aqui.",
+     "legenda": "Na quinta, o Banco Central tirou US$ 1 bilhão desse cofre aqui."
+    },
+    {
+     "fala": "{reservas} São as reservas internacionais. {colchao} O colchão do país em moeda forte.",
+     "legenda": "São as reservas internacionais. O colchão do país em moeda forte."
+    },
+    {
+     "fala": "{um} Cada moeda dessas é um por cento do cofre. {cem} Cem moedas: {total} trezentos e cinquenta e oito bilhões de dólares, {fim} no fim de dois mil e vinte e cinco.",
+     "legenda": "Cada moeda dessas é 1% do cofre. 100 moedas: US$ 358 bilhões, no fim de 2025."
+    },
+    {
+     "fala": "{atencao} Agora presta atenção: {nem} nem tudo aqui é dólar.",
+     "legenda": "Agora presta atenção: nem tudo aqui é dólar."
+    },
+    {
+     "fala": "{verdes} As verdes são dólar. {c72} Setenta e duas de cada cem. {antes} Em dois mil e vinte e quatro, eram setenta e oito.",
+     "legenda": "As verdes são dólar. 72 de cada 100. Em 2024, eram 78."
+    },
+    {
+     "fala": "{douradas} Essas douradas nem são moeda: {ouro} são ouro. {c7} Sete. {segundo} O segundo maior pedaço do cofre.",
+     "legenda": "Essas douradas nem são moeda: são ouro. 7. O segundo maior pedaço do cofre."
+    },
+    {
+     "fala": "{azuis} As azuis são o euro, {c66} quase sete. {vermelhas} E essas vermelhinhas aqui são a moeda chinesa: {c6} quase seis.",
+     "legenda": "As azuis são o euro, quase 7. E essas vermelhinhas aqui são a moeda chinesa: quase 6."
+    },
+    {
+     "fala": "{cinzas} O resto se divide entre libra, iene, {dolares} dólar canadense, australiano {won} e até a moeda da Coreia do Sul.",
+     "legenda": "O resto se divide entre libra, iene, dólar canadense, australiano e até a moeda da Coreia do Sul."
+    },
+    {
+     "fala": "{ouseja} Ou seja: o cofre do país {oito} tem oito moedas {eouro} e ouro.",
+     "legenda": "Ou seja: o cofre do país tem 8 moedas e ouro."
+    },
+    {
+     "fala": "{patrimonio} Pra quem já tem patrimônio, a pergunta é a mesma do cofre: {quanto} quanto do seu está em real, {naoesta} e quanto não está.",
+     "legenda": "Pra quem já tem patrimônio, a pergunta é a mesma do cofre: quanto do seu está em real, e quanto não está."
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "falas": [
+    {
+     "fala": "{cta} Agora me conta: {qual} de cada cem reais do seu patrimônio, quantos estão em outra moeda?",
+     "legenda": "Agora me conta: de cada 100 reais do seu patrimônio, quantos estão em outra moeda?"
+    }
+   ]
+  }
+ ],
+ "sfx": [
+  {
+   "em": "@bc",
+   "tipo": "riser",
+   "ganho": 0.7
+  },
+  {
+   "em": "@bilhao",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@cofre",
+   "tipo": "tique"
+  },
+  {
+   "em": "@reservas-0.1",
+   "tipo": "whoosh",
+   "ganho": 1.2
+  },
+  {
+   "em": "@colchao",
+   "tipo": "pop"
+  },
+  {
+   "em": "@um",
+   "tipo": "pop"
+  },
+  {
+   "em": "@cem-0.1",
+   "tipo": "whoosh",
+   "ganho": 1.1
+  },
+  {
+   "em": "@cem+0.1",
+   "tipo": "contagem",
+   "ganho": 0.9
+  },
+  {
+   "em": "@total",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@atencao",
+   "tipo": "bip"
+  },
+  {
+   "em": "@verdes",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@verdes+0.1",
+   "tipo": "varredura",
+   "ganho": 0.8
+  },
+  {
+   "em": "@c72",
+   "tipo": "pop"
+  },
+  {
+   "em": "@antes",
+   "tipo": "tique"
+  },
+  {
+   "em": "@douradas",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@ouro",
+   "tipo": "brilho",
+   "ganho": 0.7
+  },
+  {
+   "em": "@c7",
+   "tipo": "impacto",
+   "ganho": 0.8
+  },
+  {
+   "em": "@azuis",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@c66",
+   "tipo": "pop"
+  },
+  {
+   "em": "@vermelhas",
+   "tipo": "whoosh",
+   "ganho": 1.1
+  },
+  {
+   "em": "@c6",
+   "tipo": "pop"
+  },
+  {
+   "em": "@cinzas",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@cinzas+0.2",
+   "tipo": "varredura",
+   "ganho": 0.5
+  },
+  {
+   "em": "@ouseja",
+   "tipo": "whoosh",
+   "ganho": 1.2
+  },
+  {
+   "em": "@oito",
+   "tipo": "contagem",
+   "ganho": 0.7
+  },
+  {
+   "em": "@eouro",
+   "tipo": "impacto",
+   "ganho": 0.8
+  },
+  {
+   "em": "@patrimonio",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@quanto",
+   "tipo": "riser",
+   "ganho": 0.5
+  },
+  {
+   "em": "@naoesta",
+   "tipo": "brilho",
+   "ganho": 0.7
+  },
+  {
+   "em": "@cta",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@qual",
+   "tipo": "pop"
+  },
+  {
+   "em": "@qual+2.4",
+   "tipo": "brilho",
+   "ganho": 0.7
+  }
+ ]
+}

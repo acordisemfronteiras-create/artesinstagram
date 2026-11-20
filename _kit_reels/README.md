@@ -26,7 +26,7 @@ descreve só o motor.
   `{"em": "@deixa-0.1", "tipo": "whoosh", "ganho": 1.0}`. Ajuste de volumes em `"mix": {"voz", "trilha", "sfx"}`.
 - `render.py PASTA --quadros t1,t2` (conferência) · `render.py PASTA` (vídeo, em 2 partes paralelas, ~3 min por
   minuto de vídeo) · `render.py PASTA --so-audio` (refaz só o som).
-- Dependências: `pip install piper-tts kokoro-onnx soundfile faster-whisper playwright numpy pillow --break-system-packages`.
+- Dependências: `pip install piper-tts kokoro-onnx soundfile faster-whisper playwright numpy pillow num2words --break-system-packages` (num2words: o `--alinhar` converte os números que o whisper escreve em algarismos, para as deixas depois de um número não saírem adiantadas).
 - Exemplos: `62_reels_...quadradinhos-investidor` (formato A, metáfora única) e `61_reels_...dolar-fiscal` (formato B,
   personas; feito com a versão anterior do motor).
 

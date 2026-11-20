@@ -1,0 +1,118 @@
+{
+ "cenas": [
+  {
+   "id": "cofre",
+   "ini": 0.0,
+   "fim": 49.257
+  },
+  {
+   "id": "cta",
+   "ini": 49.257,
+   "fim": 56.652
+  }
+ ],
+ "legendas": [
+  {
+   "cena": "cofre",
+   "ini": 0.45,
+   "fim": 4.198,
+   "texto": "Na quinta, o Banco Central tirou US$ 1 bilhão desse cofre aqui."
+  },
+  {
+   "cena": "cofre",
+   "ini": 4.358,
+   "fim": 8.172,
+   "texto": "São as reservas internacionais. O colchão do país em moeda forte."
+  },
+  {
+   "cena": "cofre",
+   "ini": 8.332,
+   "fim": 16.205,
+   "texto": "Cada moeda dessas é 1% do cofre. 100 moedas: US$ 358 bilhões, no fim de 2025."
+  },
+  {
+   "cena": "cofre",
+   "ini": 16.365,
+   "fim": 18.929,
+   "texto": "Agora presta atenção: nem tudo aqui é dólar."
+  },
+  {
+   "cena": "cofre",
+   "ini": 19.089,
+   "fim": 24.735,
+   "texto": "As verdes são dólar. 72 de cada 100. Em 2024, eram 78."
+  },
+  {
+   "cena": "cofre",
+   "ini": 24.895,
+   "fim": 29.32,
+   "texto": "Essas douradas nem são moeda: são ouro. 7. O segundo maior pedaço do cofre."
+  },
+  {
+   "cena": "cofre",
+   "ini": 29.48,
+   "fim": 34.633,
+   "texto": "As azuis são o euro, quase 7. E essas vermelhinhas aqui são a moeda chinesa: quase 6."
+  },
+  {
+   "cena": "cofre",
+   "ini": 34.793,
+   "fim": 40.349,
+   "texto": "O resto se divide entre libra, iene, dólar canadense, australiano e até a moeda da Coreia do Sul."
+  },
+  {
+   "cena": "cofre",
+   "ini": 40.509,
+   "fim": 43.315,
+   "texto": "Ou seja: o cofre do país tem 8 moedas e ouro."
+  },
+  {
+   "cena": "cofre",
+   "ini": 43.475,
+   "fim": 49.082,
+   "texto": "Pra quem já tem patrimônio, a pergunta é a mesma do cofre: quanto do seu está em real, e quanto não está."
+  },
+  {
+   "cena": "cta",
+   "ini": 49.432,
+   "fim": 54.052,
+   "texto": "Agora me conta: de cada 100 reais do seu patrimônio, quantos estão em outra moeda?"
+  }
+ ],
+ "cues": {
+  "bc": 0.45,
+  "bilhao": 2.27,
+  "cofre": 3.15,
+  "reservas": 4.358,
+  "colchao": 6.278,
+  "um": 8.332,
+  "cem": 10.86,
+  "total": 11.912,
+  "fim": 14.552,
+  "atencao": 16.365,
+  "nem": 17.8,
+  "verdes": 19.089,
+  "c72": 20.369,
+  "antes": 22.129,
+  "douradas": 24.895,
+  "ouro": 26.415,
+  "c7": 27.115,
+  "segundo": 27.655,
+  "azuis": 29.48,
+  "c66": 30.58,
+  "vermelhas": 31.56,
+  "c6": 33.9,
+  "cinzas": 34.793,
+  "dolares": 37.073,
+  "won": 38.853,
+  "ouseja": 40.509,
+  "oito": 42.08,
+  "eouro": 42.869,
+  "patrimonio": 43.475,
+  "quanto": 46.795,
+  "naoesta": 48.035,
+  "cta": 49.432,
+  "qual": 50.232
+ },
+ "duracao": 56.652
+}
