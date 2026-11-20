@@ -5,13 +5,15 @@ Uso:
 
 1. Edita: tira o silêncio do começo, corta os trechos de --cortar (segundos do arquivo original, para tirar
    regravações e tropeços) e encurta as pausas longas para --pausa-max (as curtas ficam como estão).
-2. Limpa: passa-alta, redução de ruído leve, de-esser, equalização de presença, compressão e volume padrão.
+2. Limpa: tira o ruído de fundo com DeepFilterNet (se `bash _kit_reels/instalar.sh --ia` rodou; senão, o afftdn do
+   ffmpeg), depois passa-alta, de-esser, equalização de presença, compressão e volume padrão. --sem-ia força o ffmpeg.
 3. Alinha: transcreve com faster-whisper (tempo por palavra), casa as palavras com as legendas do roteiro.json
    e grava PASTA/narracao.wav + PASTA/timeline.json no mesmo formato do voz.py. Assim a página e os efeitos
    (que usam L1, L2... e @deixas) acompanham a fala dele sem mexer em nada.
 Confira a lista de deixas que o script imprime: deixa fora do lugar aparece como animação adiantada ou atrasada.
 --so-alinhar pula a edição e a limpeza (usa PASTA/narracao.wav como está).
 """
+import os
 import difflib, json, re, subprocess, sys, unicodedata
 from pathlib import Path
 import numpy as np
@@ -22,6 +24,24 @@ FINAL = 2.8   # segundos de silêncio no fim (cartão final)
 LIMPEZA = ("highpass=f=75,lowpass=f=14000,afftdn=nr=10:nf=-45,deesser=i=0.4,"
            "equalizer=f=200:t=q:w=1:g=-1.5,equalizer=f=3500:t=q:w=1.2:g=2,"
            "acompressor=threshold=-20dB:ratio=2.5:attack=8:release=150:makeup=2,loudnorm=I=-16:TP=-1.5:LRA=7")
+DF_BIN = Path.home() / "ia/bin/deepFilter"
+DF_MODELO = Path.home() / ".cache/DeepFilterNet/DeepFilterNet3"
+
+
+def tirar_ruido(wav48):
+    """DeepFilterNet (Rikorose/DeepFilterNet): remove ruído de fundo da voz, roda em ~3% do tempo real na CPU.
+    Devolve o caminho do arquivo limpo, ou None se a ferramenta não estiver instalada."""
+    if not (DF_BIN.exists() and DF_MODELO.exists()):
+        return None
+    saida = wav48.parent / "_df"
+    r = subprocess.run([str(DF_BIN), "-m", str(DF_MODELO), str(wav48), "-o", str(saida)], capture_output=True, text=True)
+    limpos = sorted(saida.glob("*.wav")) if saida.exists() else []
+    if r.returncode != 0 or not limpos:
+        print("aviso: DeepFilterNet falhou; usando o afftdn do ffmpeg")
+        return None
+    os.replace(limpos[0], wav48); saida.rmdir()
+    print("ruído removido com DeepFilterNet")
+    return wav48
 
 
 def norm(w):
@@ -123,9 +143,11 @@ def main():
     if "--so-alinhar" not in sys.argv:
         tmp = pasta / "_orig.wav"
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", arq, "-ac", "1", "-ar", "48000", str(tmp)], check=True)
+        com_ia = "--sem-ia" not in sys.argv and tirar_ruido(tmp) is not None
         orig, sr = sf.read(tmp)
         sf.write(pasta / "_editado.wav", editar(orig, cortes, float(arg("--pausa-max", 0.42)), sr), sr)
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(pasta / "_editado.wav"), "-af", LIMPEZA,
+        filtro = LIMPEZA.replace("afftdn=nr=10:nf=-45,", "") if com_ia else LIMPEZA
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(pasta / "_editado.wav"), "-af", filtro,
                         "-ar", str(SR), "-ac", "1", str(pasta / "narracao.wav")], check=True)
         tmp.unlink(); (pasta / "_editado.wav").unlink()
     a, sr = sf.read(pasta / "narracao.wav")

@@ -11,7 +11,8 @@ Esta skill mora no repositório `acordisemfronteiras-create/artesinstagram`:
 
 - `_skill_reels_motion/` — esta pasta: o que aprendemos. Leia `formatos.md` para escolher a estrutura, `referencias/` para ver os vídeos que o Tiago gostou e por quê, `ideias.md` para pautas, `aprendizados.md` para o que ele já pediu.
 - `_skill_motion_biblioteca/` — técnicas de motion das 240 entradas do prompt-motion.com, destiladas para nós: catálogo, regras de acabamento, lista do que evitar e checagem. Use no passo de animar e no de conferir.
-- `_kit_reels/` — o motor: `voz.py` (narração e linha do tempo), `base.css` / `base.js` / `personas.js` (animação), `som.py` (trilha e efeitos), `render.py` (vídeo), `historico.md`.
+- `_kit_reels/` — o motor: `voz.py` (narração e linha do tempo), `base.css` / `base.js` / `personas.js` (animação), `som.py` (trilha e efeitos), `render.py` (vídeo), `historico.md`. Ferramentas extras (instalação, conferência com a HyperFrames, limpeza de voz, voz Chatterbox, recorte e ampliação de imagem): `ferramentas.md`.
+- `_skill_reels_motion/edicao_profissional.md` — regras de acabamento tiradas da HyperFrames e da Remotion (tempo de leitura, easing por papel, transições com causa, som). Use no passo 6 e no 7.
 - Pastas `NN_reels_...` — cada Reels, com `roteiro.json`, `pagina.html`, `timeline.json`, `legenda.txt` e `reels.mp4`. Os dois primeiros são os melhores exemplos de cada formato; abra o do formato escolhido antes de escrever.
 
 ## A regra que não dobra: aprovação
@@ -20,14 +21,14 @@ Reels só vai ao ar com o OK do Tiago, por escrito, na mesma conversa. Ele pediu
 
 ## Fluxo
 
-1. **Sincronize e leia.** `git fetch origin main && git reset --hard origin/main`. Leia esta pasta, `_kit_reels/historico.md` e o fim de `_kit_noticias/historico.md` para não repetir assunto dos últimos 10 dias.
+1. **Sincronize, instale e leia.** `git fetch origin main && git reset --hard origin/main`, depois `bash _kit_reels/instalar.sh --hf` (acrescente `--ia` se for usar voz gravada, Chatterbox, recorte ou ampliação). Leia esta pasta, `_kit_reels/historico.md` e o fim de `_kit_noticias/historico.md` para não repetir assunto dos últimos 10 dias.
 2. **Escolha a pauta.** O que está em alta no mercado agora e interessa a quem tem patrimônio: um conceito por trás da notícia da semana, um dado que surpreende, uma regra que mudou. Pesquise em fontes de qualidade (BC, IBGE, Tesouro, CVM, B3, ANBIMA, Fed, Agência Brasil, InfoMoney, Valor, Estadão, Folha, Reuters, Bloomberg Línea, Exame, Canal Rural).
 3. **Valide os números.** Cada número na tela ou na fala precisa de fonte primária oficial ou de duas fontes independentes que batem. Se divergirem, fique com a primária ou tire o dado. Guarde os links em `"fontes"` no `roteiro.json`. Conta derivada (ex.: 36 − 19 = 17) só quando a própria fonte confirma o resultado.
 4. **Escolha o formato** em `formatos.md` pelo tipo de assunto: proporção ou distribuição pede o formato A (metáfora única); causa e efeito pede o B (personas); processo em etapas ou lista pede o C (texto cinético). Alterne quando der, e veja em `aprendizados.md` se há formato esperando estreia.
 5. **Escreva o roteiro** (seção abaixo) e rode `python3 _kit_reels/voz.py PASTA --alinhar`. Mire em 50 a 62 s. Se passar, corte frases, não acelere a voz.
 6. **Anime** em `PASTA/pagina.html`, com desenho novo para o tema. Escolha uma técnica do `_skill_motion_biblioteca/catalogo.md` (tabela "Técnica por tipo de assunto" no `SKILL.md` de lá), escreva o conceito em uma linha e siga o "Acabamento" de lá.
-7. **Confira antes de filmar** (e rode a "Checagem antes de filmar" da biblioteca de motion): `python3 _kit_reels/render.py PASTA --quadros t1,t2,...` em 8 a 14 instantes, incluindo os de troca de texto. Abra as imagens. Procure texto sobre texto, texto sobre desenho, corte nas bordas, número diferente do verificado. Corrija e repita. Filmar custa minutos; um quadro custa segundos.
-8. **Filme:** `python3 _kit_reels/render.py PASTA` → `reels.mp4`. Confira duração, volume e um quadro do meio. Para mexer só no som: `--so-audio`.
+7. **Confira antes de filmar** (e rode a "Checagem antes de filmar" da biblioteca de motion): `python3 _kit_reels/render.py PASTA --quadros t1,t2,...` em 8 a 14 instantes, incluindo os de troca de texto. Abra as imagens. Procure texto sobre texto, texto sobre desenho, corte nas bordas, número diferente do verificado. Corrija e repita. Filmar custa minutos; um quadro custa segundos. Depois rode `bash _kit_reels/conferir_hf.sh PASTA`: ele aponta texto que sai antes de dar tempo de ler (0,5 s + 0,3 s por palavra), letra abaixo de 28 px e contraste.
+8. **Filme:** `python3 _kit_reels/render.py PASTA` → `reels.mp4`. Confira duração, um quadro do meio e `bash _kit_reels/conferir_hf.sh PASTA video` (alvo −16 a −14 LUFS, pico ≤ −1 dBTP, nenhum trecho parado acima de ~3 s sem motivo). Para mexer só no som: `--so-audio`.
 9. **Legenda** em `PASTA/legenda.txt`, commit e push, rascunho no HubPost, pedido de aprovação (seção final).
 
 ## Roteiro: o que faz a pessoa assistir até o fim
@@ -61,7 +62,7 @@ Descreva o que aconteceu e o efeito; não diga o que fazer. Fica de fora: sugeri
 
 ## Som
 
-- **Voz:** uma só por estilo, sempre a mesma. Estilo atual: Kokoro `pm_alex`, velocidade 1,06 (`"voz"` no roteiro). O Tiago aprovou a demo com essa voz em 12/11/2026; o piloto do mesmo dia usou Piper `faber`. Trocar de voz é decisão dele.
+- **Voz:** uma só por estilo, sempre a mesma. Estilo atual: Kokoro `pm_alex`, velocidade 1,06 (`"voz"` no roteiro). O motor também tem a Chatterbox (`"motor": "chatterbox"`, mais natural, clona timbre; ver `_kit_reels/ferramentas.md`), que só entra se o Tiago escolher. Voz gravada pelo Tiago passa pelo DeepFilterNet no `voz_gravada.py`. O Tiago aprovou a demo com essa voz em 12/11/2026; o piloto do mesmo dia usou Piper `faber`. Trocar de voz é decisão dele.
 - **Efeitos** no campo `"sfx"`, presos às deixas: `whoosh` em movimento de câmera, `impacto` em número forte, `riser` antes dele, `pop` quando algo aparece, `varredura` e `contagem` em ondas e contadores, `brilho` em conclusão, `bip` em "presta atenção". Um efeito por batida basta; som demais cansa e briga com a voz.
 - Trilha e efeitos são sintetizados em `som.py`. Não baixe música nem efeito de terceiros.
 - Você não ouve o resultado. Confira o que dá: transcreva a narração de volta para checar se as palavras saíram certas (números e siglas são onde a voz erra), e meça o volume. Diga isso ao Tiago quando o som for novidade.

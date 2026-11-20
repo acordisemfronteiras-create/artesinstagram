@@ -70,6 +70,31 @@ class Piper:
         return reamostrar(a, sr)
 
 
+class Chatterbox:
+    """Voz Chatterbox (opcional, ambiente ~/ia). Ver _kit_reels/chatterbox_worker.py. Trocar a voz é decisão do Tiago."""
+    def __init__(self, cfg):
+        py = Path.home() / "ia/bin/python"
+        if not py.exists():
+            raise SystemExit("Chatterbox não instalado: rode `bash _kit_reels/instalar.sh --ia`")
+        worker = Path(__file__).resolve().parent / "chatterbox_worker.py"
+        self.p = subprocess.Popen([str(py), str(worker), json.dumps(cfg)], stdin=subprocess.PIPE,
+                                  stdout=subprocess.PIPE, text=True)
+        while (l := self.p.stdout.readline()) and l.strip() != "pronto":
+            if not l:
+                raise SystemExit("Chatterbox não iniciou")
+
+    def falar(self, texto):
+        tmp = VOICES / "_cb.wav"; VOICES.mkdir(parents=True, exist_ok=True)
+        self.p.stdin.write(json.dumps({"texto": texto, "saida": str(tmp)}) + "\n"); self.p.stdin.flush()
+        r = self.p.stdout.readline().strip()
+        if r != "ok":
+            raise SystemExit(f"Chatterbox: {r}")
+        import soundfile as sf
+        a, sr = sf.read(tmp, dtype="float32")
+        tmp.unlink()
+        return reamostrar(a if a.ndim == 1 else a.mean(1), sr)
+
+
 def reamostrar(a, sr):
     if sr == SR:
         return a
@@ -145,6 +170,8 @@ def main(pasta, alinhar=False):
     cfg = rot.get("voz", {"motor": "piper"})
     if cfg.get("motor", "kokoro") == "kokoro":
         voz = Kokoro(cfg.get("nome", "pm_alex"), cfg.get("velocidade", 1.1)); ritmo = dict(RITMO)
+    elif cfg["motor"] == "chatterbox":
+        voz = Chatterbox(cfg); ritmo = dict(RITMO)
     else:
         voz = Piper(); ritmo = dict(RITMO_PIPER)
     ritmo.update(rot.get("ritmo", {}))

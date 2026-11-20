@@ -12,6 +12,9 @@ No pedido de aprovação, mandar sempre a **legenda completa, exatamente como va
 descreve só o motor.
 
 ## O motor
+- `instalar.sh [--ia] [--hf] [--ref]`: prepara a máquina em cada rodada (a nuvem é apagada). Ferramentas extras e quando usar: `ferramentas.md`.
+- `conferir_hf.sh PASTA [snapshot|video]`: confere a página e o vídeo com a CLI da HyperFrames (tempo de leitura, tamanho de letra, contraste, volume, trechos parados).
+- `ampliar.py` (Real-ESRGAN) e `chatterbox_worker.py` (voz Chatterbox) rodam no ambiente separado `~/ia`.
 - `voz.py PASTA [--alinhar]`: narração + `timeline.json` (cenas, legendas e **deixas**). Em `fala`, `{nome}` marca uma
   deixa no início da palavra seguinte; a página e o som usam `@nome` para sincronizar com ela. Vozes: Kokoro `pm_alex`
   (estilo atual; `"voz": {"motor": "kokoro", "nome": "pm_alex", "velocidade": 1.06}`) ou Piper `faber` (piloto de
