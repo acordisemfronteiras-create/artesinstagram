@@ -1,0 +1,14 @@
+{
+ "kicker": "Wall Street · Bolsas dos EUA",
+ "date": "20.11.2026",
+ "tag": "Urgente",
+ "headline_html": "S&amp;P 500 e Dow Jones entram em <em>correção</em>.",
+ "sub": "Nasdaq cai mais de 5% e zera o ganho de 2026 com a venda de ações ligadas à IA.",
+ "cells": [
+  {"label": "S&P 500", "value": "−3,70%", "arrow": "↓", "note": "6.910 pontos"},
+  {"label": "Nasdaq", "value": "−5,28%", "arrow": "↓", "note": "negativo no ano"},
+  {"label": "Dow Jones", "value": "−1,93%", "arrow": "↓", "note": "48.147 pontos"},
+  {"label": "S&P 500", "value": "7 quedas", "note": "seguidas, maior série desde 2020"}
+ ],
+ "source": "Reuters, Yahoo Finance, Fortune"
+}
