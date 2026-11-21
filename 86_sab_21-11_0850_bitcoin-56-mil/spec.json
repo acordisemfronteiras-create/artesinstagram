@@ -1,0 +1,29 @@
+{
+ "kicker": "Criptoativos · Mercado global",
+ "date": "21.11.2026",
+ "headline_html": "Bitcoin cai abaixo de <em>US$ 56 mil</em>.",
+ "sub": "Menor nível desde setembro de 2024, na esteira da correção em Wall Street e da aposta em juros mais altos nos EUA.",
+ "cells": [
+  {
+   "label": "Mínima da madrugada",
+   "value": "US$ 55 mil",
+   "note": "faixa da mínima, menor desde set/2024"
+  },
+  {
+   "label": "Sexta-feira",
+   "value": "< US$ 60 mil",
+   "note": "1ª vez desde julho"
+  },
+  {
+   "label": "Medo e ganância",
+   "value": "12 de 100",
+   "note": "faixa de medo extremo"
+  },
+  {
+   "label": "Ether",
+   "value": "< US$ 1.600",
+   "note": "segue o movimento"
+  }
+ ],
+ "source": "Reuters, CoinGecko, BitNotícias"
+}
