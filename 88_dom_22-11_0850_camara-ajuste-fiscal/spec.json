@@ -1,0 +1,13 @@
+{
+ "kicker": "Contas públicas · Câmara",
+ "date": "22.11.2026",
+ "headline_html": "Ajuste fiscal vai ao plenário da Câmara e precisa de <em>257&nbsp;votos</em>.",
+ "sub": "Relator manteve o texto do Senado; se aprovado sem mudanças, o projeto segue para sanção.",
+ "cells": [
+  {"label": "Sessão", "value": "Segunda, 18h", "note": "23/11; votação pode ir à terça"},
+  {"label": "Quórum", "value": "257 de 513", "note": "maioria absoluta, lei complementar"},
+  {"label": "Teto da despesa", "value": "2,5% → 2%", "note": "crescimento real, em anos com bloqueio"},
+  {"label": "Benefícios fiscais", "value": "Corte de 20%", "note": "redução total prevista no texto"}
+ ],
+ "source": "CNN Brasil, Congresso em Foco"
+}
