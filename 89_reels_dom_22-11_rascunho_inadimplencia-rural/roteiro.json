@@ -1,0 +1,219 @@
+{
+ "titulo": "Por que a inadimplência do crédito rural bateu recorde",
+ "kicker": "Entenda em 1 minuto",
+ "formato": "personas",
+ "conceito": "Uma tesoura: a linha do juro sobe e a do preço do grão desce; no meio, a parcela do produtor fica apertada. O que pesa é o custo da dívida, não só o tamanho.",
+ "voz": {
+  "motor": "kokoro",
+  "nome": "pm_alex",
+  "velocidade": 1.06
+ },
+ "fontes": [
+  "Cepea/Esalq-USP, Texto Ocasional para Discussão (Alves e Barros), divulgado em 19/10/2026, via Canal Rural (20/10/2026): inadimplência PF 0,8% (dez/2022) para 9,7% (ago/2026), maior patamar da série do BC; taxa média PF 6,3% (2021) para 12,2% a.a. (2025); juros R$ 34 bi para R$ 99 bi, 3,9% para 11,4% da renda do agro; linhas livres 17,6% x controladas 3,8%, 77% do saldo em atraso; grãos -28% reais: https://canalrural.com.br/economia/juros-do-credito-rural-quase-dobram-em-4-anos-e-impulsionam-inadimplencia-aponta-cepea",
+  "Itatiaia (20/10/2026), mesmo estudo: 0,8% para 9,7%, topo histórico da série do BC; 6,3% para 12,2%; R$ 34 bi para R$ 99 bi (3,9% para 11,4% da renda); 17,6% x 3,8%, 77% do saldo em atraso; preço real dos grãos -28% ante 2021: https://www.itatiaia.com.br/agro/inadimplencia-recorde-no-agro-vem-do-custo-e-nao-do-tamanho-da-divida-aponta-cepea/",
+  "CNN Brasil via NovaCana (03/11/2026): 9,7% em ago/2026, maior nível da série do BC iniciada em 2011; custo anual dos juros +191% (R$ 34 bi para R$ 99 bi, corrigidos pela inflação); 17,6% x 3,8%; grãos -28% reais 2021-2025: https://www.novacana.com/noticias/custo-dos-juros-da-divida-rural-sobe-191-em-quatro-anos-mostra-cepea",
+  "Globo Rural via MundoCoop (20/10/2026): 0,8% para recorde de 9,7%; 6,3% para 12,2%; R$ 34 bi para R$ 99 bi; 77% do saldo em atraso nas linhas livres, 17,6% x 3,8%: https://mundocoop.com.br/agronegocio/credito-mais-caro-ajuda-a-explicar-recorde-de-inadimplencia-no-campo/",
+  "Capital Aberto (04/11/2026): recorde de 9,69% em ago/2026 (BC): https://capitalaberto.com.br/economia-e-financas/2026/11/credito-privado-assume-espaco-deixado-pelos-bancos-no-agro",
+  "Selic 2% no início de 2021 (BC; DW/O Povo, 18/11/2026) e 13,75% hoje (Copom; _kit_noticias/historico.md): https://www.opovo.com.br/noticias/mundo/2026/11/18/o-que-explica-a-explosao-da-inadimplencia-no-agronegocio.html"
+ ],
+ "cenas": [
+  {
+   "id": "gancho",
+   "falas": [
+    {
+     "fala": "{zero} Zero vírgula oito por cento. {era} Era a inadimplência do crédito rural no fim de dois mil e vinte e dois.",
+     "legenda": "0,8%. Era a inadimplência do crédito rural no fim de 2022."
+    },
+    {
+     "fala": "{agosto} Em agosto deste ano: {nove} nove vírgula sete. {recorde} Recorde da série do Banco Central.",
+     "legenda": "Em agosto deste ano: 9,7%. Recorde da série do Banco Central."
+    },
+    {
+     "fala": "{porque} Dívida demais? {cepea} Um estudo do Cepea aponta outro culpado: {custo} o custo.",
+     "legenda": "Dívida demais? Um estudo do Cepea aponta outro culpado: o custo."
+    }
+   ]
+  },
+  {
+   "id": "juro",
+   "falas": [
+    {
+     "fala": "{selic} A Selic foi de dois para {hoje} treze e setenta e cinco por cento.",
+     "legenda": "A Selic foi de 2% para 13,75%."
+    },
+    {
+     "fala": "{taxa} E a taxa média do crédito rural {dobrou} quase dobrou: de seis vírgula três para doze vírgula dois ao ano.",
+     "legenda": "E a taxa média do crédito rural quase dobrou: de 6,3% para 12,2% ao ano."
+    }
+   ]
+  },
+  {
+   "id": "conta",
+   "falas": [
+    {
+     "fala": "{conta} A conta anual de juros do agro {bi99} quase triplicou: noventa e nove bilhões de reais.",
+     "legenda": "A conta anual de juros do agro quase triplicou: R$ 99 bilhões."
+    },
+    {
+     "fala": "{renda} {onze} Onze vírgula quatro por cento da renda do setor.",
+     "legenda": "11,4% da renda do setor."
+    }
+   ]
+  },
+  {
+   "id": "preco",
+   "falas": [
+    {
+     "fala": "{preco} E o preço real dos grãos {caiu} caiu vinte e oito por cento.",
+     "legenda": "E o preço real dos grãos caiu 28%."
+    },
+    {
+     "fala": "{tesoura} Dívida feita com grão caro e juro baixo, {chegou} paga com grão barato e juro alto.",
+     "legenda": "Dívida feita com grão caro e juro baixo, paga com grão barato e juro alto."
+    }
+   ]
+  },
+  {
+   "id": "livre",
+   "falas": [
+    {
+     "fala": "{livre} Nas linhas a juro livre, {dezessete} a inadimplência é de dezessete vírgula seis por cento. {controlado} No juro controlado, três vírgula oito.",
+     "legenda": "Nas linhas a juro livre, a inadimplência é de 17,6%. No juro controlado, 3,8%."
+    }
+   ]
+  },
+  {
+   "id": "patrimonio",
+   "falas": [
+    {
+     "fala": "{patrimonio} Pra quem tem patrimônio no campo, a pergunta não é só {quanto} quanto se deve. {qual} É a que juro, e de que tipo.",
+     "legenda": "Pra quem tem patrimônio no campo, a pergunta não é só quanto se deve. É a que juro, e de que tipo."
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "falas": [
+    {
+     "fala": "{cta} E na sua região, o que pesou mais: {juro} o juro ou o preço? Comenta.",
+     "legenda": "E na sua região, o que pesou mais: o juro ou o preço? Comenta."
+    }
+   ]
+  }
+ ],
+ "sfx": [
+  {
+   "em": "@zero-0.05",
+   "tipo": "riser",
+   "ganho": 0.5
+  },
+  {
+   "em": "@zero",
+   "tipo": "impacto",
+   "ganho": 0.7
+  },
+  {
+   "em": "@agosto",
+   "tipo": "contagem",
+   "ganho": 0.7
+  },
+  {
+   "em": "@nove",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@recorde",
+   "tipo": "pop"
+  },
+  {
+   "em": "@porque",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@custo",
+   "tipo": "impacto",
+   "ganho": 0.8
+  },
+  {
+   "em": "@selic",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@hoje",
+   "tipo": "pop"
+  },
+  {
+   "em": "@dobrou",
+   "tipo": "contagem",
+   "ganho": 0.7
+  },
+  {
+   "em": "@conta",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@bi99-0.9",
+   "tipo": "riser",
+   "ganho": 0.6
+  },
+  {
+   "em": "@onze",
+   "tipo": "pop"
+  },
+  {
+   "em": "@preco",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@caiu",
+   "tipo": "varredura",
+   "ganho": 0.7
+  },
+  {
+   "em": "@tesoura",
+   "tipo": "whoosh",
+   "ganho": 0.8
+  },
+  {
+   "em": "@chegou",
+   "tipo": "impacto",
+   "ganho": 0.8
+  },
+  {
+   "em": "@livre",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@dezessete",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@controlado",
+   "tipo": "pop"
+  },
+  {
+   "em": "@patrimonio",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@qual",
+   "tipo": "brilho"
+  },
+  {
+   "em": "@cta",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@juro+1.4",
+   "tipo": "pop"
+  },
+  {
+   "em": "@bi99+0.9",
+   "tipo": "impacto",
+   "ganho": 0.9
+  }
+ ],
+ "ritmo": {
+  "final": 2.3
+ }
+}

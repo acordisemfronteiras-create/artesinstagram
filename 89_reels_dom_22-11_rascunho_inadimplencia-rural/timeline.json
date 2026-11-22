@@ -1,0 +1,144 @@
+{
+ "cenas": [
+  {
+   "id": "gancho",
+   "ini": 0.0,
+   "fim": 14.949
+  },
+  {
+   "id": "juro",
+   "ini": 14.949,
+   "fim": 24.273
+  },
+  {
+   "id": "conta",
+   "ini": 24.273,
+   "fim": 32.363
+  },
+  {
+   "id": "preco",
+   "ini": 32.363,
+   "fim": 40.206
+  },
+  {
+   "id": "livre",
+   "ini": 40.206,
+   "fim": 47.598
+  },
+  {
+   "id": "patrimonio",
+   "ini": 47.598,
+   "fim": 53.373
+  },
+  {
+   "id": "cta",
+   "ini": 53.373,
+   "fim": 59.297
+  }
+ ],
+ "legendas": [
+  {
+   "cena": "gancho",
+   "ini": 0.45,
+   "fim": 6.381,
+   "texto": "0,8%. Era a inadimplência do crédito rural no fim de 2022."
+  },
+  {
+   "cena": "gancho",
+   "ini": 6.541,
+   "fim": 10.915,
+   "texto": "Em agosto deste ano: 9,7%. Recorde da série do Banco Central."
+  },
+  {
+   "cena": "gancho",
+   "ini": 11.075,
+   "fim": 14.774,
+   "texto": "Dívida demais? Um estudo do Cepea aponta outro culpado: o custo."
+  },
+  {
+   "cena": "juro",
+   "ini": 15.124,
+   "fim": 18.356,
+   "texto": "A Selic foi de 2% para 13,75%."
+  },
+  {
+   "cena": "juro",
+   "ini": 18.516,
+   "fim": 24.098,
+   "texto": "E a taxa média do crédito rural quase dobrou: de 6,3% para 12,2% ao ano."
+  },
+  {
+   "cena": "conta",
+   "ini": 24.448,
+   "fim": 29.132,
+   "texto": "A conta anual de juros do agro quase triplicou: R$ 99 bilhões."
+  },
+  {
+   "cena": "conta",
+   "ini": 29.292,
+   "fim": 32.188,
+   "texto": "11,4% da renda do setor."
+  },
+  {
+   "cena": "preco",
+   "ini": 32.538,
+   "fim": 35.515,
+   "texto": "E o preço real dos grãos caiu 28%."
+  },
+  {
+   "cena": "preco",
+   "ini": 35.675,
+   "fim": 40.031,
+   "texto": "Dívida feita com grão caro e juro baixo, paga com grão barato e juro alto."
+  },
+  {
+   "cena": "livre",
+   "ini": 40.381,
+   "fim": 47.423,
+   "texto": "Nas linhas a juro livre, a inadimplência é de 17,6%. No juro controlado, 3,8%."
+  },
+  {
+   "cena": "patrimonio",
+   "ini": 47.773,
+   "fim": 53.198,
+   "texto": "Pra quem tem patrimônio no campo, a pergunta não é só quanto se deve. É a que juro, e de que tipo."
+  },
+  {
+   "cena": "cta",
+   "ini": 53.548,
+   "fim": 56.997,
+   "texto": "E na sua região, o que pesou mais: o juro ou o preço? Comenta."
+  }
+ ],
+ "cues": {
+  "zero": 0.45,
+  "era": 2.177,
+  "agosto": 6.541,
+  "nove": 7.341,
+  "recorde": 8.721,
+  "porque": 11.075,
+  "cepea": 12.155,
+  "custo": 14.275,
+  "selic": 15.124,
+  "hoje": 16.124,
+  "taxa": 18.516,
+  "dobrou": 19.976,
+  "conta": 24.448,
+  "bi99": 26.048,
+  "renda": 29.292,
+  "onze": 29.292,
+  "preco": 32.538,
+  "caiu": 33.398,
+  "tesoura": 35.675,
+  "chegou": 38.115,
+  "livre": 40.381,
+  "dezessete": 41.221,
+  "controlado": 44.821,
+  "patrimonio": 47.773,
+  "quanto": 50.513,
+  "qual": 51.573,
+  "cta": 53.548,
+  "juro": 55.408
+ },
+ "duracao": 59.297
+}
