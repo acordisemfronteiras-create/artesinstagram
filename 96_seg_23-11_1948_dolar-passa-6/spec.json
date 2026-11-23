@@ -1,0 +1,14 @@
+{
+ "kicker": "Câmbio · Bolsa",
+ "date": "23.11.2026",
+ "tag": "",
+ "headline_html": "Dólar passa de <em>R$ 6</em> no dia e fecha a R$ 5,92.",
+ "sub": "Primeira vez acima de R$ 6 desde abril de 2025, com o ajuste fiscal em pauta na Câmara.",
+ "cells": [
+  {"label": "Dólar comercial", "value": "R$ 5,92", "note": "fechamento, em leve queda"},
+  {"label": "Máxima do dia", "value": "Acima de R$ 6", "arrow": "↑", "note": "1ª vez desde abril de 2025"},
+  {"label": "Ibovespa", "value": "164,8 mil", "arrow": "↓", "note": "−0,95% · 3ª queda seguida"},
+  {"label": "Nasdaq", "value": "+6,5%", "arrow": "↑", "note": "melhor dia desde abril de 2025"}
+ ],
+ "source": "InfoMoney, TradeMap, CNBC"
+}
