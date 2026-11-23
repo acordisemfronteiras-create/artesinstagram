@@ -1,0 +1,9 @@
+{"kicker": "Câmbio · Agora", "date": "23.11.2026", "tag": "Urgente",
+ "headline_html": "Dólar encosta em <em>R$ 6</em>.",
+ "sub": "Moeda sobe 0,86% e chega a R$ 5,986 na manhã desta segunda, com o ajuste fiscal em votação na Câmara.",
+ "cells": [
+  {"label": "Dólar às 9h08", "value": "R$ 5,986", "arrow": "↑", "note": "alta de 0,86%"},
+  {"label": "Fechamento de quinta", "value": "R$ 5,93", "note": "maior desde abril de 2025"},
+  {"label": "Câmara", "value": "18h", "note": "votação do ajuste fiscal"},
+  {"label": "Copom", "value": "8 e 9/12", "note": "Selic hoje em 13,75%"}],
+ "source": "IstoÉ Dinheiro, BPMoney"}
