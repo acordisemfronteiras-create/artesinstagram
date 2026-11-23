@@ -1,0 +1,33 @@
+{
+ "kicker": "Mercados · Agora",
+ "date": "23.11.2026",
+ "tag": "Urgente",
+ "headline_html": "Nasdaq sobe quase <em>7%</em>.",
+ "sub": "Ações de IA e chips puxam a virada em Nova York. Na B3, o fiscal pesa: Ibovespa cai e o dólar tocou R$ 6.",
+ "cells": [
+  {
+   "label": "Nasdaq às 13h31",
+   "value": "6,8%",
+   "arrow": "↑",
+   "note": "24.152 pontos"
+  },
+  {
+   "label": "S&P 500 às 13h31",
+   "value": "5,0%",
+   "arrow": "↑",
+   "note": "após 7 quedas seguidas"
+  },
+  {
+   "label": "Ibovespa às 10h10",
+   "value": "1,16%",
+   "arrow": "↓",
+   "note": "164.454 pontos"
+  },
+  {
+   "label": "Dólar na máxima",
+   "value": "R$ 6",
+   "note": "1ª vez desde abril de 2025"
+  }
+ ],
+ "source": "Reuters, Estadão, InfoMoney, Yahoo Finance"
+}
