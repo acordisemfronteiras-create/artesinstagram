@@ -1,0 +1,13 @@
+{
+ "kicker": "Mercados · Abertura",
+ "date": "23.11.2026",
+ "headline_html": "Futuros do S&amp;P 500 sobem <em>2,6%</em> após a correção.",
+ "sub": "B3 reabre depois do feriado, com o dólar a R$ 5,93 e o ajuste fiscal na Câmara às 18h.",
+ "cells": [
+  {"label": "S&P 500 futuro", "value": "+2,6%", "arrow": "↑", "note": "às 7h de Brasília"},
+  {"label": "Dow Jones futuro", "value": "+1,8%", "arrow": "↑", "note": "às 7h de Brasília"},
+  {"label": "S&P 500 na sexta", "value": "−3,70%", "arrow": "↓", "note": "6.910 pontos, em correção"},
+  {"label": "Dólar", "value": "R$ 5,93", "note": "fechamento de quinta (19)"}
+ ],
+ "source": "Reuters, AP, Money Times, Exame"
+}
