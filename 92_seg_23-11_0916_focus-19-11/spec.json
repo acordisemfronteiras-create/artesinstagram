@@ -1,0 +1,9 @@
+{"kicker": "Boletim Focus · Mercado", "date": "23.11.2026",
+ "headline_html": "Focus eleva IPCA de 2026 para <em>5,15%</em> e Selic de 2027 para 13%.",
+ "sub": "Mercado projeta mais inflação e dólar mais alto nos dois anos, segundo o boletim do Banco Central.",
+ "cells": [
+  {"label": "IPCA 2026 · 2027", "value": "5,15% · 5,12%", "note": "as duas projeções sobem"},
+  {"label": "PIB 2026 · 2027", "value": "1,70% · 1,00%", "note": "as duas projeções caem"},
+  {"label": "Câmbio 2026 · 2027", "value": "R$ 5,55 · 5,50", "note": "as duas projeções sobem"},
+  {"label": "Selic 2026 · 2027", "value": "13,75% · 13,00%", "note": "2026 estável; 2027 sobe"}],
+ "source": "Banco Central (Focus de 19/11)"}
