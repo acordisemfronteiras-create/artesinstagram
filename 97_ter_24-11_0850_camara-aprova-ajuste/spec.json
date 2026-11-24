@@ -1,0 +1,14 @@
+{
+ "kicker": "Fiscal · Congresso",
+ "date": "24.11.2026",
+ "tag": "Urgente",
+ "headline_html": "Câmara aprova o ajuste fiscal por <em>353 votos</em> a 128.",
+ "sub": "Destaques rejeitados na madrugada. Sem mudanças em relação ao Senado, o texto vai à sanção.",
+ "cells": [
+  {"label": "Placar", "value": "353 a 128", "note": "5 abstenções · mínimo de 257"},
+  {"label": "Limite de gasto", "value": "2,5% → 2%", "note": "alta real da despesa, em ano de bloqueio"},
+  {"label": "Destaques", "value": "Rejeitados", "arrow": "✕", "note": "texto igual ao do Senado"},
+  {"label": "Próximo passo", "value": "Sanção", "arrow": "→", "note": "prazo de 15 dias úteis"}
+ ],
+ "source": "Câmara, Agência Brasil, InfoMoney"
+}
