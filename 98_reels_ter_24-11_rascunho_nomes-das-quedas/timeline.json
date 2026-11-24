@@ -1,0 +1,217 @@
+{
+ "cenas": [
+  {
+   "id": "abre",
+   "ini": 0.0,
+   "fim": 12.675
+  },
+  {
+   "id": "d1",
+   "ini": 12.675,
+   "fim": 20.207
+  },
+  {
+   "id": "d2",
+   "ini": 20.207,
+   "fim": 29.638
+  },
+  {
+   "id": "d3",
+   "ini": 29.638,
+   "fim": 38.448
+  },
+  {
+   "id": "virada",
+   "ini": 38.448,
+   "fim": 53.144
+  },
+  {
+   "id": "cta",
+   "ini": 53.144,
+   "fim": 61.31
+  }
+ ],
+ "legendas": [
+  {
+   "cena": "abre",
+   "ini": 0.4,
+   "fim": 3.209,
+   "texto": "Na sexta, a bolsa americana entrou em correção."
+  },
+  {
+   "cena": "abre",
+   "ini": 3.329,
+   "fim": 6.135,
+   "texto": "Na segunda, subiu 4,7%."
+  },
+  {
+   "cena": "abre",
+   "ini": 6.255,
+   "fim": 8.237,
+   "texto": "Mas o que essa palavra quer dizer?"
+  },
+  {
+   "cena": "abre",
+   "ini": 8.357,
+   "fim": 10.367,
+   "texto": "Cada tamanho de queda tem um nome."
+  },
+  {
+   "cena": "abre",
+   "ini": 10.487,
+   "fim": 12.525,
+   "texto": "São 3 degraus. Presta atenção."
+  },
+  {
+   "cena": "d1",
+   "ini": 12.825,
+   "fim": 14.068,
+   "texto": "Degrau 1: o recuo."
+  },
+  {
+   "cena": "d1",
+   "ini": 14.188,
+   "fim": 16.78,
+   "texto": "Cair de 5% a 10% desde o topo."
+  },
+  {
+   "cena": "d1",
+   "ini": 16.9,
+   "fim": 20.057,
+   "texto": "É comum. Só este ano, a bolsa americana já teve 3."
+  },
+  {
+   "cena": "d2",
+   "ini": 20.357,
+   "fim": 21.898,
+   "texto": "Degrau 2: a correção."
+  },
+  {
+   "cena": "d2",
+   "ini": 22.018,
+   "fim": 24.514,
+   "texto": "10% ou mais abaixo do recorde."
+  },
+  {
+   "cena": "d2",
+   "ini": 24.634,
+   "fim": 26.853,
+   "texto": "Na sexta, o S&P 500 fechou"
+  },
+  {
+   "cena": "d2",
+   "ini": 26.973,
+   "fim": 29.488,
+   "texto": "11,6% abaixo do topo."
+  },
+  {
+   "cena": "d3",
+   "ini": 29.788,
+   "fim": 31.511,
+   "texto": "Degrau 3: o bear market."
+  },
+  {
+   "cena": "d3",
+   "ini": 31.631,
+   "fim": 34.362,
+   "texto": "O mercado do urso: 20% ou mais."
+  },
+  {
+   "cena": "d3",
+   "ini": 34.482,
+   "fim": 37.145,
+   "texto": "Na sexta, o Nasdaq 100 chegou a tocar essa linha"
+  },
+  {
+   "cena": "d3",
+   "ini": 37.265,
+   "fim": 38.298,
+   "texto": "durante o pregão."
+  },
+  {
+   "cena": "virada",
+   "ini": 38.598,
+   "fim": 40.233,
+   "texto": "Ou seja: em 2 pregões,"
+  },
+  {
+   "cena": "virada",
+   "ini": 40.353,
+   "fim": 42.298,
+   "texto": "a mesma bolsa foi ao degrau 2"
+  },
+  {
+   "cena": "virada",
+   "ini": 42.418,
+   "fim": 43.939,
+   "texto": "e voltou para o degrau 1."
+  },
+  {
+   "cena": "virada",
+   "ini": 44.059,
+   "fim": 46.93,
+   "texto": "E esses nomes nem são oficiais. São convenção."
+  },
+  {
+   "cena": "virada",
+   "ini": 47.05,
+   "fim": 48.607,
+   "texto": "Pra quem tem patrimônio,"
+  },
+  {
+   "cena": "virada",
+   "ini": 48.727,
+   "fim": 50.488,
+   "texto": "a pergunta não é o nome da queda."
+  },
+  {
+   "cena": "virada",
+   "ini": 50.608,
+   "fim": 52.994,
+   "texto": "É quanto da carteira sente cada degrau."
+  },
+  {
+   "cena": "cta",
+   "ini": 53.294,
+   "fim": 54.8,
+   "texto": "Me conta aqui embaixo:"
+  },
+  {
+   "cena": "cta",
+   "ini": 54.92,
+   "fim": 57.31,
+   "texto": "qual degrau você já sentiu na carteira?"
+  }
+ ],
+ "cues": {
+  "correcao": 2.66,
+  "subiu": 4.049,
+  "quer": 7.335,
+  "nome": 9.917,
+  "tres": 10.627,
+  "presta": 11.647,
+  "e1": 12.825,
+  "recuo": 13.425,
+  "cinco": 14.448,
+  "ano": 17.46,
+  "e2": 20.357,
+  "corr": 21.277,
+  "dez": 22.018,
+  "s116": 26.973,
+  "e3": 29.788,
+  "urso": 30.648,
+  "vinte": 32.311,
+  "tocou": 35.682,
+  "pregao": 37.265,
+  "ouseja": 38.598,
+  "deg2": 41.493,
+  "deg1": 43.158,
+  "oficial": 44.839,
+  "patrimonio": 47.79,
+  "nomeq": 49.707,
+  "quanto": 50.728,
+  "cta": 53.294,
+  "degrau": 55.04
+ },
+ "duracao": 61.31
+}

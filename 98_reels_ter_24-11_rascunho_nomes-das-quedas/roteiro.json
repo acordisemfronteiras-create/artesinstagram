@@ -1,0 +1,74 @@
+{
+ "titulo": "Recuo, correção, bear market: cada queda tem um nome",
+ "kicker": "Entenda em 1 minuto",
+ "formato": "texto-cinetico",
+ "legenda_na_tela": false,
+ "voz": {"motor": "kokoro", "nome": "pm_alex", "velocidade": 1.06},
+ "ritmo": {"pausa_fala": 0.12, "pausa_cena": 0.3, "intro": 0.4, "final": 4.0},
+ "fontes": [
+  "Definições (convenção de mercado, não designação oficial): correção = queda de 10% ou mais desde o recorde; bear market = 20% ou mais — Nacionale: https://www.nacionale.com/en/articles/is-stock-market-in-correction-dow-sp-500-nasdaq-how-far-from-record-november-19 · Atlasbig: https://www.atlasbig.com/finance/stock-market-corrections-history · Stablecoin Insider: https://stablecoininsider.org/why-is-the-stock-market-crashing/",
+  "S&P 500 recorde de fechamento 7.818,93 em 6/10/2026; 20/11 fechou a 6.910,39 (−3,7%), 11,6% abaixo do recorde — Stablecoin Insider: https://stablecoininsider.org/why-is-the-stock-market-crashing/ · Atlasbig (7.819, −11,6%): https://www.atlasbig.com/finance/stock-market-corrections-history · CEO Economy (6.910,39, −3,7%, mais de 10% abaixo do recorde de 6/10): https://ceoeconomy.com/article/sp-500-correction-nasdaq-plunges-ai-chip-selloff-nov-20-2026",
+  "Nasdaq 100 chegou a ficar mais de 20% abaixo do recorde durante o pregão de 20/11 (mínima 24.910,48, −20,2%; fechou −19,8%) — Stablecoin Insider (acima) · The Boston Report: https://thebostonreport.com/2026/11/21/sp-500-correction-nasdaq-negative-2026-nvidia-november-20/ · CEO Economy (UPI) (acima)",
+  "23/11: S&P 500 +4,73% a 7.237,17, melhor dia desde abr/2025; 7,4% abaixo do recorde; Nasdaq +6,5% — BBN Times: https://www.bbntimes.com/global-economy/s-p-500-soars-4-73-to-7-237-17-in-best-day-since-april-2025-on-huang-s-nvidia-comeback · Atlasbig (7.237, +4,7%, −7,4%) (acima) · Yahoo Finance: https://sg.finance.yahoo.com/news/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-surge-after-nvidia-reinstates-jensen-huang-182039397.html",
+  "Terceira queda de mais de 5% do S&P 500 em 2026 (9,8% jan–mar; 5,0% jun; a atual desde 6/10) — Creative Planning (C. Bilello, 10/11/2026): https://creativeplanning.com/financial-insights/sp-500-corrections-since-2009-november-2026/ · Mitrade/BeInCrypto (18/11/2026): https://www.mitrade.com/insights/news/live-news/article-3-2262467-20261118"
+ ],
+ "cenas": [
+  {"id": "abre", "falas": [
+   {"fala": "Na sexta, a bolsa americana entrou em {correcao} correção.", "legenda": "Na sexta, a bolsa americana entrou em correção."},
+   {"fala": "Na segunda, {subiu} subiu quatro vírgula sete por cento.", "legenda": "Na segunda, subiu 4,7%."},
+   {"fala": "Mas o que essa palavra {quer} quer dizer?", "legenda": "Mas o que essa palavra quer dizer?"},
+   {"fala": "Cada tamanho de queda tem um {nome} nome.", "legenda": "Cada tamanho de queda tem um nome."},
+   {"fala": "São {tres} três degraus. {presta} Presta atenção.", "legenda": "São 3 degraus. Presta atenção."}
+  ]},
+  {"id": "d1", "falas": [
+   {"fala": "{e1} Degrau um: o {recuo} recuu.", "legenda": "Degrau 1: o recuo."},
+   {"fala": "Cair de {cinco} cinco a dez por cento desde o topo.", "legenda": "Cair de 5% a 10% desde o topo."},
+   {"fala": "É comum. {ano} Só este ano, a bolsa americana já teve três.", "legenda": "É comum. Só este ano, a bolsa americana já teve 3."}
+  ]},
+  {"id": "d2", "falas": [
+   {"fala": "{e2} Degrau dois: a {corr} correção.", "legenda": "Degrau 2: a correção."},
+   {"fala": "{dez} Dez por cento ou mais abaixo do recorde.", "legenda": "10% ou mais abaixo do recorde."},
+   {"fala": "Na sexta, o Ésse e Pê quinhentos fechou", "legenda": "Na sexta, o S&P 500 fechou"},
+   {"fala": "{s116} onze vírgula seis por cento abaixo do topo.", "legenda": "11,6% abaixo do topo."}
+  ]},
+  {"id": "d3", "falas": [
+   {"fala": "{e3} Degrau três: o {urso} bér márket.", "legenda": "Degrau 3: o bear market."},
+   {"fala": "O mercado do urso: {vinte} vinte por cento ou mais.", "legenda": "O mercado do urso: 20% ou mais."},
+   {"fala": "Na sexta, o Násdaq cem {tocou} chegou a tocar essa linha", "legenda": "Na sexta, o Nasdaq 100 chegou a tocar essa linha"},
+   {"fala": "{pregao} durante o pregão.", "legenda": "durante o pregão."}
+  ]},
+  {"id": "virada", "falas": [
+   {"fala": "{ouseja} Ou seja: em dois pregões,", "legenda": "Ou seja: em 2 pregões,"},
+   {"fala": "a mesma bolsa foi ao {deg2} degrau dois", "legenda": "a mesma bolsa foi ao degrau 2"},
+   {"fala": "e voltou para o {deg1} degrau um.", "legenda": "e voltou para o degrau 1."},
+   {"fala": "E esses nomes {oficial} nem são oficiais. São convenção.", "legenda": "E esses nomes nem são oficiais. São convenção."},
+   {"fala": "Pra quem tem {patrimonio} patrimônio,", "legenda": "Pra quem tem patrimônio,"},
+   {"fala": "a pergunta não é o {nomeq} nome da queda.", "legenda": "a pergunta não é o nome da queda."},
+   {"fala": "É {quanto} quanto da carteira sente cada degrau.", "legenda": "É quanto da carteira sente cada degrau."}
+  ]},
+  {"id": "cta", "falas": [
+   {"fala": "{cta} Me conta aqui embaixo:", "legenda": "Me conta aqui embaixo:"},
+   {"fala": "qual {degrau} degrau você já sentiu na carteira?", "legenda": "qual degrau você já sentiu na carteira?"}
+  ]}
+ ],
+ "sfx": [
+  {"em": "@correcao-0.9", "tipo": "riser", "ganho": 0.7},
+  {"em": "@correcao", "tipo": "impacto"},
+  {"em": "@subiu", "tipo": "varredura", "ganho": 0.7},
+  {"em": "@tres", "tipo": "impacto", "ganho": 0.8},
+  {"em": "@presta", "tipo": "bip"},
+  {"em": "@e1-0.15", "tipo": "whoosh"},
+  {"em": "@cinco", "tipo": "pop"},
+  {"em": "@ano", "tipo": "contagem", "ganho": 0.7},
+  {"em": "@e2-0.15", "tipo": "whoosh"},
+  {"em": "@dez", "tipo": "pop"},
+  {"em": "@s116", "tipo": "impacto", "ganho": 0.85},
+  {"em": "@e3-0.15", "tipo": "whoosh"},
+  {"em": "@vinte", "tipo": "impacto", "ganho": 0.8},
+  {"em": "@tocou", "tipo": "tique"},
+  {"em": "@ouseja-0.1", "tipo": "whoosh", "ganho": 0.7},
+  {"em": "@deg1", "tipo": "pop"},
+  {"em": "@quanto", "tipo": "brilho"},
+  {"em": "@cta", "tipo": "pop"}
+ ]
+}

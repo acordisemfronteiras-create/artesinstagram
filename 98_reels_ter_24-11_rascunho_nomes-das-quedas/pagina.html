@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../_kit_reels/base.css">
+<script src="../_kit_reels/base.js"></script>
+<style>
+/* Formato C (texto cinético + etapas + barra de status) — cada queda tem um nome: recuo, correção, bear market
+   Conceito: uma escada desenhada em escala (cada degrau = um limite de queda desde o recorde); um ponto (o índice) desce e sobe nela. */
+.claro-bg{position:absolute;inset:0;background:radial-gradient(ellipse 900px 800px at 50% 35%,#f6f1e6 0%,#ebe3d3 70%,#e2d8c5 100%)}
+.cin{top:880px;font-size:74px}
+.ctr{position:absolute;left:60px;right:60px;text-align:center}
+.num-etapa{position:absolute;left:0;right:0;top:250px;text-align:center;font-family:"Fraunces",serif;font-weight:500;font-size:560px;line-height:1;color:var(--gold);letter-spacing:-.04em}
+.claro .num-etapa{color:#a47c2f}
+.etq{position:absolute;left:80px;top:262px;display:flex;align-items:baseline;gap:22px}
+.etq b{font-family:"Fraunces",serif;font-weight:500;font-size:64px;color:var(--gold);line-height:1}
+.etq span{font-size:28px;letter-spacing:.3em;text-transform:uppercase;color:#8f8a82;font-weight:600}
+.claro .etq b{color:#a47c2f}.claro .etq span{color:#6d665b}
+.mega{font-family:"Fraunces",serif;font-weight:500;font-size:210px;line-height:1;letter-spacing:-.03em;color:#f6eedf}
+.pill{display:inline-block;border-radius:999px;padding:12px 30px;font-size:36px;font-weight:600}
+.pill.g{background:rgba(201,164,92,.16);color:#e6c88a;border:1.5px solid rgba(201,164,92,.6)}
+.pill.r{background:rgba(192,83,63,.16);color:#e59a86;border:1.5px solid rgba(192,83,63,.6)}
+.lbl{font-size:26px;letter-spacing:.3em;text-transform:uppercase;color:#8f8a82;font-weight:600}
+.claro .lbl{color:#6d665b}
+/* escada */
+.escada{position:absolute;left:60px;top:330px;width:960px;height:440px;overflow:visible}
+.escada .tread{stroke-width:8;stroke-linecap:round}
+.escada .riser{stroke-width:3;stroke-dasharray:6 10}
+.escada .pct{font-family:Fraunces,serif;font-size:46px}
+.escada .nm{font-family:Inter,sans-serif;font-size:26px;letter-spacing:.2em;font-weight:600;text-transform:uppercase}
+.chips3{position:absolute;left:70px;right:70px;top:770px;display:flex;justify-content:center;gap:22px}
+.chips3 div{border:1.5px solid #c9bfa9;border-radius:20px;padding:12px 24px;background:#f3ecdf;text-align:center}
+.chips3 b{font-family:"Fraunces",serif;font-size:40px;color:#8f6a1f;font-weight:500;line-height:1;display:block}
+.chips3 span{display:block;font-size:26px;color:#6d665b;margin-top:6px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.tags{position:absolute;left:0;right:0;top:330px;display:flex;flex-direction:column;align-items:center;gap:26px}
+.tags span{font-family:"Fraunces",serif;font-size:76px;color:#b3aa9b;line-height:1}
+.risk{position:absolute;height:10px;background:#d98a6c;border-radius:5px;transform-origin:0 50%}
+/* barra de status (fio do formato C) */
+#status{position:absolute;left:150px;right:150px;top:1215px;height:96px;border-radius:999px;background:rgba(16,15,13,.92);border:1.5px solid #3a3328;display:flex;align-items:center;padding:0 34px 0 18px;gap:24px;box-shadow:0 20px 60px rgba(0,0,0,.45);opacity:0}
+#glow{position:absolute;left:250px;right:250px;top:1170px;height:190px;border-radius:50%;filter:blur(60px);opacity:0}
+#status .ic{width:62px;height:62px;border-radius:50%;background:#1d1a14;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;flex:none}
+#status .ic svg{width:40px;height:40px}
+#status .tx{font-size:29px;color:#efe6d6;font-weight:500;flex:1}
+#status .tx i{font-style:normal;color:#8f8a82}
+#status .dots{display:flex;gap:10px}
+#status .dots s{width:14px;height:14px;border-radius:50%;background:#3a352c;display:block}
+#status .dots s.on{background:var(--gold)}
+.st{position:absolute;inset:0;display:flex;align-items:center;gap:24px;padding:0 34px 0 18px;opacity:0}
+/* fim */
+.fim{position:absolute;left:90px;right:90px;top:1000px;text-align:center}
+.fim .nm{font-family:"Fraunces",serif;font-size:66px;color:#f1e8d8}
+.fim .rl{font-size:24px;letter-spacing:.26em;color:#8f8a82;text-transform:uppercase;margin-top:10px}
+.fim .hd{font-family:"Fraunces",serif;font-size:46px;color:var(--gold);margin-top:22px}
+.fim .bio{font-size:30px;color:#cfc6b6;margin-top:16px}
+.fim .disc{font-size:26px;color:#8f8a82;margin-top:34px;line-height:1.45}
+.ponto-lbl{font-family:Inter,sans-serif;font-size:26px;font-weight:700;letter-spacing:.04em}
+</style></head>
+<body><div id="stage">
+
+<!-- ABERTURA -->
+<div class="scene" id="abre">
+  <div class="ctr" style="top:330px" data-in="fade-up" data-at="@correcao-0.1" data-dur=".35" data-out="@quer-0.3">
+    <div class="lbl">S&amp;P 500 · sexta, 20/11</div>
+    <div class="mega" style="margin-top:16px;color:#e59a86" data-count="11.6" data-from="0" data-dec="1" data-pre="−" data-suf="%" data-at="@correcao" data-dur="1.2">−11,6%</div>
+    <div class="lbl" style="margin-top:8px">abaixo do recorde de 6/10</div>
+  </div>
+  <div class="ctr" style="top:700px" data-in="pop" data-at="@subiu" data-dur=".4" data-out="@quer-0.3"><span class="pill g">segunda, 23/11: +4,7%</span></div>
+  <div class="ctr" style="top:300px" data-in="pop" data-at="@quer-0.1" data-dur=".4" data-out="@nome-0.3">
+    <div class="mega" style="font-size:150px;font-style:italic;font-weight:400;color:#e6c88a">“correção”</div>
+    <div class="mega" style="font-size:240px;color:#5f5a52;margin-top:10px">?</div>
+  </div>
+  <div class="tags" data-in="fade" data-at="@nome-0.3" data-dur=".2" data-out="@presta-0.3">
+    <span data-in="fade-up" data-at="@nome-0.3" data-dur=".35">1 · recuo</span>
+    <span data-in="fade-up" data-at="@nome-0.15" data-dur=".35">2 · correção</span>
+    <span data-in="fade-up" data-at="@nome+0.0" data-dur=".35">3 · bear market</span>
+  </div>
+  <div class="num-etapa" style="top:300px;font-size:480px" data-in="zoom" data-at="@presta-0.1" data-dur=".4">3</div>
+  <div class="ctr" style="top:790px" data-in="fade" data-at="@presta+0.2" data-dur=".3"><span class="lbl">degraus de queda</span></div>
+  <div class="cin" data-cin="L1" data-cin-hold="auto">Na sexta, a bolsa americana entrou em <em>correção.</em></div>
+  <div class="cin" data-cin="L2" data-cin-hold="auto">Na segunda, subiu <em>4,7%.</em></div>
+  <div class="cin" data-cin="L3" data-cin-hold="auto">Mas o que essa palavra <em>quer dizer?</em></div>
+  <div class="cin" data-cin="L4" data-cin-hold="auto">Cada tamanho de queda tem um <em>nome.</em></div>
+  <div class="cin" data-cin="L5" data-cin-hold="0.4">São <em>3 degraus.</em> Presta atenção.</div>
+</div>
+
+<!-- DEGRAU 1: RECUO (fundo claro) -->
+<div class="scene claro" id="d1">
+  <div class="claro-bg" data-in="fade" data-at="0" data-dur=".12"></div>
+  <div class="num-etapa" data-in="zoom" data-at="@e1-0.05" data-dur=".35" data-out="@cinco-0.3">1</div>
+  <div class="etq" data-in="left" data-at="@cinco-0.25" data-dur=".4"><b>1</b><span>Recuo</span></div>
+  <svg class="escada" viewBox="0 0 960 440" data-esc="1" data-tema="claro" data-in="fade" data-at="@cinco-0.2" data-dur=".35"></svg>
+  <div class="chips3">
+    <div data-in="pop" data-at="@ano+0.3" data-dur=".35"><b>−9,8%</b><span>jan–mar</span></div>
+    <div data-in="pop" data-at="@ano+0.6" data-dur=".35"><b>−5,0%</b><span>junho</span></div>
+    <div data-in="pop" data-at="@ano+0.9" data-dur=".35"><b>3ª</b><span>desde out.</span></div>
+  </div>
+  <div class="cin claro" data-cin="L1" data-cin-hold="auto">Degrau 1: o <em>recuo.</em></div>
+  <div class="cin claro" data-cin="L2" data-cin-hold="auto">Cair de <em>5% a 10%</em> desde o topo.</div>
+  <div class="cin claro" data-cin="L3" data-cin-hold="0.4">É comum. Só este ano, a bolsa americana já teve <em>3.</em></div>
+</div>
+
+<!-- DEGRAU 2: CORREÇÃO (escuro) -->
+<div class="scene" id="d2">
+  <div class="num-etapa" data-in="zoom" data-at="@e2-0.05" data-dur=".35" data-out="@dez-0.3">2</div>
+  <div class="etq" data-in="left" data-at="@dez-0.25" data-dur=".4"><b>2</b><span>Correção</span></div>
+  <svg class="escada" viewBox="0 0 960 440" data-esc="2" data-tema="escuro" data-in="fade" data-at="@dez-0.2" data-dur=".35"></svg>
+  <div class="cin" data-cin="L1" data-cin-hold="auto">Degrau 2: a <em>correção.</em></div>
+  <div class="cin" data-cin="L2" data-cin-hold="auto"><em>10% ou mais</em> abaixo do recorde.</div>
+  <div class="cin" data-cin="L3" data-cin-hold="auto">Na sexta, o <em>S&amp;P 500</em> fechou</div>
+  <div class="cin" data-cin="L4" data-cin-hold="0.4"><em>11,6%</em> abaixo do topo.</div>
+</div>
+
+<!-- DEGRAU 3: BEAR MARKET (fundo claro) -->
+<div class="scene claro" id="d3">
+  <div class="claro-bg" data-in="fade" data-at="0" data-dur=".12"></div>
+  <div class="num-etapa" data-in="zoom" data-at="@e3-0.05" data-dur=".35" data-out="@vinte-0.3">3</div>
+  <div class="etq" data-in="left" data-at="@vinte-0.25" data-dur=".4"><b>3</b><span>Bear market</span></div>
+  <svg class="escada" viewBox="0 0 960 440" data-esc="3" data-tema="claro" data-in="fade" data-at="@vinte-0.2" data-dur=".35"></svg>
+  <div class="cin claro" data-cin="L1" data-cin-hold="auto">Degrau 3: o <em>bear market.</em></div>
+  <div class="cin claro" data-cin="L2" data-cin-hold="auto">O mercado do urso: <em>20% ou mais.</em></div>
+  <div class="cin claro" data-cin="L3" data-cin-hold="auto">Na sexta, o <em>Nasdaq 100</em> chegou a tocar essa linha</div>
+  <div class="cin claro" data-cin="L4" data-cin-hold="0.4">durante o <em>pregão.</em></div>
+</div>
+
+<!-- barra de status: só durante os 3 degraus -->
+<div id="glow"></div>
+<div id="status">
+  <div class="st" data-n="1"><div class="ic"><svg viewBox="0 0 100 100"><path d="M12 30h26v20h24v20h26" fill="none" stroke="#c9a45c" stroke-width="7" stroke-linejoin="round"/></svg></div><div class="tx">Recuo <i>· degrau 1 de 3</i></div><div class="dots"><s class="on"></s><s></s><s></s></div></div>
+  <div class="st" data-n="2"><div class="ic"><svg viewBox="0 0 100 100"><path d="M12 30h26v20h24v20h26" fill="none" stroke="#d98a4c" stroke-width="7" stroke-linejoin="round"/></svg></div><div class="tx">Correção <i>· degrau 2 de 3</i></div><div class="dots"><s class="on"></s><s class="on"></s><s></s></div></div>
+  <div class="st" data-n="3"><div class="ic"><svg viewBox="0 0 100 100"><path d="M12 30h26v20h24v20h26" fill="none" stroke="#c0533f" stroke-width="7" stroke-linejoin="round"/></svg></div><div class="tx">Bear market <i>· degrau 3 de 3</i></div><div class="dots"><s class="on"></s><s class="on"></s><s class="on"></s></div></div>
+</div>
+
+<!-- VIRADA -->
+<div class="scene" id="virada">
+  <div class="claro-bg" id="vclaro" style="opacity:0"></div>
+  <svg class="escada" id="escV" viewBox="0 0 960 440" data-esc="0" data-tema="escuro" data-in="fade" data-at="@ouseja-0.1" data-dur=".35" data-out="@oficial-0.3"></svg>
+  <div class="abs" style="left:0;right:0;top:420px;display:flex;justify-content:center;gap:50px" data-in="fade" data-at="@oficial-0.1" data-dur=".3" data-out="@patrimonio-0.3">
+    <div style="position:relative"><span class="pill" style="background:#1d1a14;color:#8a8378;font-size:46px;padding:18px 44px;border:1.5px solid #3a3328">oficial</span><i class="risk" style="left:-10px;width:calc(100% + 20px);top:44px" data-in="grow-x" data-at="@oficial+0.5" data-dur=".3"></i></div>
+    <div><span class="pill g" style="font-size:46px;padding:18px 44px" data-in="pop" data-at="@oficial+1.0" data-dur=".4">convenção</span></div>
+  </div>
+  <div class="ctr" style="top:580px" data-in="fade" data-at="@oficial+0.6" data-dur=".3" data-out="@patrimonio-0.3"><span class="lbl">nenhuma bolsa ou regulador declara</span></div>
+  <svg class="abs" style="left:340px;top:300px;width:400px;height:400px" viewBox="0 0 400 400" data-in="pop" data-at="@quanto-0.1" data-dur=".45">
+    <circle cx="200" cy="200" r="150" fill="none" stroke="#d8ccb4" stroke-width="54"/>
+    <circle id="fatia" cx="200" cy="200" r="150" fill="none" stroke="#a47c2f" stroke-width="54" stroke-dasharray="0 943" transform="rotate(-90 200 200)"/>
+    <text x="200" y="192" text-anchor="middle" font-family="Fraunces,serif" font-size="44" fill="#17140f">sua</text>
+    <text x="200" y="240" text-anchor="middle" font-family="Fraunces,serif" font-style="italic" font-size="44" fill="#8f6a1f">carteira</text>
+  </svg>
+  <div class="ctr" style="top:730px" data-in="fade" data-at="@quanto+0.6" data-dur=".3"><span class="lbl" style="color:#6d665b">quanto está exposto a cada degrau?</span></div>
+  <div class="cin" data-cin="L1" data-cin-hold="auto">Ou seja: em <em>2 pregões,</em></div>
+  <div class="cin" data-cin="L2" data-cin-hold="auto">a mesma bolsa foi ao <em>degrau 2</em></div>
+  <div class="cin" data-cin="L3" data-cin-hold="auto">e voltou para o <em>degrau 1.</em></div>
+  <div class="cin" data-cin="L4" data-cin-hold="auto">E esses nomes nem são oficiais. São <em>convenção.</em></div>
+  <div class="cin claro" data-cin="L5" data-cin-hold="auto">Pra quem tem <em>patrimônio,</em></div>
+  <div class="cin claro" data-cin="L6" data-cin-hold="auto">a pergunta não é o <em>nome</em> da queda.</div>
+  <div class="cin claro" data-cin="L7" data-cin-hold="0.5">É <em>quanto da carteira</em> sente cada degrau.</div>
+</div>
+
+<!-- CTA + cartão final -->
+<div class="scene" id="cta">
+  <div class="cin" style="top:330px" data-cin="L1" data-cin-hold="0.1">Me conta aqui embaixo:</div>
+  <div class="cin" style="top:330px" data-cin="L2" data-cin-out="L2+60">qual <em>degrau</em> você já sentiu na carteira?</div>
+  <div class="abs" style="left:60px;right:60px;top:590px;display:flex;justify-content:center;gap:18px">
+    <span class="chip" data-in="pop" data-at="@degrau+0.4" data-dur=".35">1 · recuo</span>
+    <span class="chip" style="border-color:#d98a4c;color:#e8a274" data-in="pop" data-at="@degrau+0.6" data-dur=".35">2 · correção</span>
+    <span class="chip" style="border-color:#c0533f;color:#e59a86" data-in="pop" data-at="@degrau+0.8" data-dur=".35">3 · bear market</span>
+  </div>
+  <div class="fim" data-in="fade-up" data-at="@degrau+0.8" data-dur=".5">
+    <div class="nm">Tiago Acordi</div>
+    <div class="rl">Assessor Alta Renda da XP Investimentos</div>
+    <div class="hd">@tiagoassessorxp</div>
+    <div class="bio">Fale comigo pelo link da bio</div>
+    <div class="disc">Conteúdo informativo. Não é recomendação de investimento.<br>Fontes: fechamentos do S&amp;P 500 e do Nasdaq 100<br>(Yahoo Finance, Atlasbig, Creative Planning), 20 e 23/11/2026.</div>
+  </div>
+</div>
+
+</div>
+<script>
+// Escada em escala: y = 30 + queda% × 15,6. Degraus nos limites de 5%, 10% e 20% desde o recorde.
+const Y = p => 30 + p * 15.6;
+const COR = { escuro: ['#c9a45c', '#d98a4c', '#c0533f', '#5f5a52', '#efe6d6', '#8f8a82'],
+              claro:  ['#a47c2f', '#b8692e', '#a8402e', '#b5ab98', '#17140f', '#6d665b'] };
+const DEG = [ // [x0, x1, queda, nome]
+  [40, 230, 0, 'recorde'], [230, 450, 5, 'recuo'], [450, 670, 10, 'correção'], [670, 920, 20, 'bear market']];
+document.querySelectorAll('svg.escada').forEach(svg => {
+  const ativo = +svg.dataset.esc, c = COR[svg.dataset.tema];
+  let h = '';
+  DEG.forEach(([x0, x1, p, nm], i) => {
+    const on = ativo === 0 ? i > 0 : i === ativo;
+    const cor = i === 0 ? c[3] : (on ? c[i - 1] : c[3]);
+    if (on && i > 0) h += `<rect x="${x0}" y="${Y(p)}" width="${x1 - x0}" height="${Y(25) - Y(p)}" fill="${c[i - 1]}" opacity="${svg.dataset.tema === 'claro' ? .13 : .12}"/>`;
+    if (i > 0) h += `<line class="riser" x1="${x0}" y1="${Y(DEG[i - 1][2])}" x2="${x0}" y2="${Y(p)}" stroke="${c[3]}"/>`;
+    h += `<line class="tread" x1="${x0}" y1="${Y(p)}" x2="${x1}" y2="${Y(p)}" stroke="${cor}" ${on && i > 0 && ativo ? `data-in="grow-x" data-at="${'@' + ['', 'cinco', 'dez', 'vinte'][ativo]}" data-dur=".5"` : ''} style="transform-box:fill-box;transform-origin:0 50%"/>`;
+    const ty = 384, tc = i === 0 ? c[5] : (on ? c[i - 1] : c[3]);
+    if (i === 0) h += `<text class="nm" x="${x0}" y="${Y(p) + 42}" fill="${c[5]}">recorde</text>`;
+    else {
+      h += `<text class="pct" x="${x0 + 14}" y="${ty}" fill="${tc}">−${p}%</text>`;
+      h += `<text class="nm" x="${x0 + 16}" y="${ty + 32}" fill="${on ? c[4] : c[3]}">${nm}</text>`;
+    }
+  });
+  // pontos (índices) — posicionados em onSeek
+  if (ativo === 2 || ativo === 0) h += `<g class="pt" data-p="sp"><circle r="20" fill="${c[1]}" stroke="${c[4]}" stroke-width="4"/><text class="ponto-lbl" x="34" y="9" fill="${c[4]}"></text></g>`;
+  if (ativo === 3) h += `<g class="pt" data-p="nq"><circle class="ring" r="20" fill="none" stroke="${c[2]}" stroke-width="4"/><circle r="20" fill="${c[2]}" stroke="${c[4]}" stroke-width="4"/><text class="ponto-lbl" x="-34" y="-34" text-anchor="end" fill="${c[4]}"></text></g>`;
+  svg.innerHTML = h;
+});
+
+const ETAPAS = [['d1', '#c9a45c'], ['d2', '#d98a4c'], ['d3', '#c0533f']];
+const lerp = (a, b, k) => a + (b - a) * k;
+const fmtp = v => '−' + v.toFixed(1).replace('.', ',') + '%';
+window.onSeek = function (t) {
+  const cen = id => TL.cenas.find(c => c.id === id);
+  // barra de status
+  const ini = cen('d1').ini + 0.2, fim = cen('d3').fim - 0.1;
+  const vis = Math.max(0, Math.min(1, (t - ini) / 0.3, (fim - t) / 0.3));
+  const st = document.getElementById('status'), gl = document.getElementById('glow');
+  st.style.opacity = vis; gl.style.opacity = 0.55 * vis;
+  st.style.transform = `translateY(${(1 - ease(vis)) * 40}px)`;
+  let k = 0;
+  ETAPAS.forEach(([id], i) => { if (t >= cen(id).ini) k = i; });
+  document.querySelectorAll('#status .st').forEach((el, i) => {
+    const c = cen(ETAPAS[i][0]);
+    el.style.opacity = Math.max(0, Math.min(1, (t - c.ini) / 0.25, (c.fim + 0.1 - t) / 0.2));
+  });
+  gl.style.background = ETAPAS[k][1];
+
+  // S&P 500 no degrau 2: cai do recorde até −11,6% na deixa "11,6%"
+  const sp2 = document.querySelector('#d2 .pt');
+  if (sp2) {
+    const a = ease((t - cue('s116', -0.6)) / 1.1), p = 11.6 * a;
+    const x = lerp(135, 560, ease((t - cue('s116', -0.6)) / 0.7));
+    sp2.setAttribute('transform', `translate(${x},${Y(p)})`);
+    sp2.style.opacity = t >= cue('s116', -0.7) ? 1 : 0;
+    sp2.querySelector('text').textContent = 'S&P 500 ' + fmtp(p);
+  }
+  // Nasdaq 100 no degrau 3: desce até −20,2% (mínima do pregão) e fecha em −19,8%
+  const nq = document.querySelector('#d3 .pt');
+  if (nq) {
+    const a = ease((t - cue('tocou', -0.4)) / 1.2), b = ease((t - cue('pregao')) / 0.6);
+    const p = 20.2 * a - 0.4 * b;
+    nq.setAttribute('transform', `translate(870,${Y(p)})`);
+    nq.style.opacity = t >= cue('tocou', -0.5) ? 1 : 0;
+    nq.querySelector('text').textContent = 'Nasdaq 100 ' + fmtp(p) + (b > 0.5 ? ' no fechamento' : '');
+    const r = Math.max(0, Math.min(1, (t - cue('tocou', 0.8)) / 0.8));
+    const ring = nq.querySelector('.ring');
+    ring.setAttribute('r', 20 + 60 * r); ring.style.opacity = r > 0 && r < 1 ? 1 - r : 0;
+  }
+  // virada: 6/10 recorde → 20/11 −11,6% (degrau 2) → 23/11 −7,4% (degrau 1)
+  const sv = document.querySelector('#escV .pt');
+  if (sv) {
+    const a = ease((t - cue('deg2', -0.5)) / 1.0), b = ease((t - cue('deg1', -0.3)) / 0.9);
+    const p = 11.6 * a - 4.2 * b;
+    const x = lerp(lerp(135, 560, a), 340, b);
+    sv.setAttribute('transform', `translate(${x},${Y(p)})`);
+    sv.style.opacity = t >= cue('ouseja') ? 1 : 0;
+    sv.querySelector('text').textContent = b > 0.05 ? 'seg, 23/11 ' + fmtp(p) : (a > 0.05 ? 'sex, 20/11 ' + fmtp(p) : 'S&P 500');
+  }
+  // virada: fundo claro e fatia da carteira
+  document.getElementById('vclaro').style.opacity = t >= cue('patrimonio', -0.25) ? 1 : 0;
+  const f = ease((t - cue('quanto', 0.3)) / 0.9) * 300;
+  document.getElementById('fatia').setAttribute('stroke-dasharray', `${f} 943`);
+};
+</script>
+</body></html>
