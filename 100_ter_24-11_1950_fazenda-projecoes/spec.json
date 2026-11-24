@@ -1,0 +1,13 @@
+{
+ "kicker": "Economia · Projeções oficiais",
+ "date": "24.11.2026",
+ "headline_html": "Fazenda corta o PIB de 2027 para <em>1,8%</em> e vê inflação no teto.",
+ "sub": "Boletim Macrofiscal piora crescimento e inflação nos dois anos. Hoje, o ajuste fiscal foi sancionado sem vetos.",
+ "cells": [
+  {"label": "PIB 2026", "value": "1,9%", "arrow": "↓", "note": "antes 2%"},
+  {"label": "PIB 2027", "value": "1,8%", "arrow": "↓", "note": "antes 2,3%"},
+  {"label": "IPCA 2026", "value": "5,3%", "arrow": "↑", "note": "antes 4,9% · acima do teto"},
+  {"label": "IPCA 2027", "value": "4,5%", "arrow": "↑", "note": "antes 3,8% · no teto da meta"}
+ ],
+ "source": "SPE/Fazenda, Agência Brasil, Estadão"
+}
