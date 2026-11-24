@@ -3,7 +3,7 @@
 Padrão aprovado pelo Tiago em 23/11/2026 (referência: `referencia_dolar_23-11.jpg`, Stories "Dólar encosta em R$ 6").
 
 ## Ideia
-Um Stories por dia, em formato de notícia curta e informativa, sobre o fato mais atípico ou urgente do dia no mercado: um nível simbólico rompido (dólar, Ibovespa, juros), decisão ou comunicado inesperado (BC, Fed, governo, Congresso), intervenção no câmbio, recorde, choque de commodity que pega o agro, dado que surpreende o consenso. Sempre vai para aprovação do Tiago antes de postar.
+Um Stories por dia, em formato de notícia curta e informativa, sobre o fato mais atípico ou urgente do dia no mercado: um nível simbólico rompido (dólar, Ibovespa, juros), decisão ou comunicado inesperado (BC, Fed, governo, Congresso), intervenção no câmbio, recorde, choque de commodity que pega o agro, dado que surpreende o consenso. Publicado automaticamente desde 24/11/2026 (com aprovação só em caso de dúvida).
 
 ## Visual
 - 1080x1920. Mesma linguagem dos posts de notícia: paleta escura com dourado #c9a45c, Fraunces (títulos e números) + Inter (texto), dourado só no número-chave (`<em>`).
@@ -19,7 +19,13 @@ Um Stories por dia, em formato de notícia curta e informativa, sobre o fato mai
 ## Regras
 - Todo número com fonte primária oficial ou duas fontes independentes que batem. Se o fato não está confirmado (ex.: "passou de R$ 6"), use a formulação que está confirmada ("encosta em R$ 6") e explique ao Tiago.
 - Compliance de assessor: descrever, nunca recomendar; sem produto, emissor ou rentabilidade projetada; política só com fatos.
-- Publicação só depois do "aprovado" do Tiago, no HubPost, como STORY (sem legenda).
+- Publicação automática (decisão do Tiago em 24/11/2026: "pode postar automático, não precisa pedir mais aprovação"), no HubPost, como STORY (sem legenda), agora + 3 min. Depois de publicar, avisar o Tiago com a arte, os dados e as fontes.
+- Exceção: se a validação ou o compliance deixarem QUALQUER dúvida, não publicar. Deixar rascunho no HubPost e pedir o OK dele.
 
 ## Histórico
 Ver `historico.md`.
+
+## Aprendizados
+- 24/11/2026: Tiago aprovou o Stories "Dólar chega a cair 2%" (99) e liberou a publicação automática dos próximos.
+- Título de 2 linhas é mais seguro: com 3 linhas o título encostou na ilustração; ilustração até y≈860.
+- Para fato intradiário, prefira dados que não mudam mais (PTAX do BC, fechamento anterior, "chegou a cair X%") a uma cotação do momento com fonte única.
