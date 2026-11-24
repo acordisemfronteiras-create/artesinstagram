@@ -1,0 +1,31 @@
+{
+ "kicker": "Câmbio · Agora",
+ "date": "24.11.2026",
+ "tag": "Urgente",
+ "headline_html": "Dólar chega a cair <em>2%</em>.",
+ "sub": "Moeda vai perto de R$ 5,80 pela manhã, após relatos de que Lula deu aval a uma PEC para conter despesas obrigatórias.",
+ "cells": [
+  {
+   "label": "PTAX de hoje",
+   "value": "R$ 5,8573",
+   "arrow": "↓",
+   "note": "queda de 1,9% no dia"
+  },
+  {
+   "label": "Pior momento",
+   "value": "−2%",
+   "note": "pela manhã, perto de R$ 5,80"
+  },
+  {
+   "label": "Fechamento de ontem",
+   "value": "R$ 5,93",
+   "note": "depois de passar de R$ 6"
+  },
+  {
+   "label": "Ajuste fiscal",
+   "value": "353 votos",
+   "note": "aprovado na Câmara, vai à sanção"
+  }
+ ],
+ "source": "Banco Central, Reuters, CNN Brasil, BPMoney"
+}
