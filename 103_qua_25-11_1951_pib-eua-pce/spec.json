@@ -1,0 +1,13 @@
+{
+ "kicker": "Economia dos EUA · PIB e PCE",
+ "date": "25.11.2026",
+ "headline_html": "PIB dos EUA é revisado para <em>4,3%</em> no 3º trimestre.",
+ "sub": "E a inflação pelo PCE sobe a 3,8% em 12 meses, a duas semanas da decisão do Fed.",
+ "cells": [
+  {"label": "PIB 3º tri", "value": "4,3%", "arrow": "↑", "note": "anualizado; prévia era 3,4%"},
+  {"label": "PCE de outubro", "value": "3,8%", "note": "em 12 meses; +0,3% no mês"},
+  {"label": "Núcleo do PCE", "value": "3,3%", "note": "em 12 meses, acima do esperado"},
+  {"label": "Decisão do Fed", "value": "8 e 9.12", "note": "juros hoje em 3,75%–4%"}
+ ],
+ "source": "BEA, Exame, TradeMap"
+}
