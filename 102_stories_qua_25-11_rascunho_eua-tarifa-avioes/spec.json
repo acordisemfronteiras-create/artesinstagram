@@ -1,0 +1,30 @@
+{
+ "kicker": "Comércio · EUA",
+ "date": "25.11.2026",
+ "tag": "Urgente",
+ "headline_html": "EUA propõem <em>10%</em> sobre aviões.",
+ "sub": "Proposta do USTR acaba com a isenção das aeronaves brasileiras e muda a cobrança sobre o açúcar. Ainda não está em vigor.",
+ "cells": [
+  {
+   "label": "Aeronaves",
+   "value": "0% → 10%",
+   "note": "fim da isenção, se aprovada"
+  },
+  {
+   "label": "Peso nas vendas",
+   "value": "4º",
+   "note": "produto mais exportado aos EUA"
+  },
+  {
+   "label": "Tarifa em vigor",
+   "value": "25%",
+   "note": "sobre parte dos produtos, desde julho"
+  },
+  {
+   "label": "Audiência pública",
+   "value": "14.01.2027",
+   "note": "comentários até 30.12"
+  }
+ ],
+ "source": "USTR via Reuters, InvestNews, Times Brasil"
+}
