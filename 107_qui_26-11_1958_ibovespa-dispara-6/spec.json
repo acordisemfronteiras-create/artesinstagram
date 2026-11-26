@@ -1,0 +1,32 @@
+{
+ "kicker": "Bolsa · Fechamento",
+ "date": "26.11.2026",
+ "tag": "Urgente",
+ "headline_html": "Ibovespa dispara <em>6,07%</em> no dia.",
+ "sub": "Maior alta desde o 1º turno, com a inflação abaixo do esperado e a sucessão na Fazenda no radar.",
+ "cells": [
+  {
+   "label": "Ibovespa",
+   "value": "176.800",
+   "arrow": "↑",
+   "note": "alta de 6,07% no dia"
+  },
+  {
+   "label": "Dólar",
+   "value": "R$ 5,74",
+   "arrow": "↓",
+   "note": "4ª queda seguida"
+  },
+  {
+   "label": "IPCA-15 de novembro",
+   "value": "0,22%",
+   "note": "abaixo do esperado"
+  },
+  {
+   "label": "Próximo Copom",
+   "value": "8 e 9.12",
+   "note": "Selic hoje em 13,75%"
+  }
+ ],
+ "source": "B3, IBGE, SBT News"
+}
