@@ -1,0 +1,32 @@
+{
+ "kicker": "Bolsa · Agora",
+ "date": "26.11.2026",
+ "tag": "Urgente",
+ "headline_html": "Ibovespa chega a subir mais de <em>4%</em>.",
+ "sub": "Índice chegou aos 174 mil pontos com a prévia da inflação abaixo do esperado e a expectativa sobre o comando da Fazenda.",
+ "cells": [
+  {
+   "label": "Ibovespa às 11h41",
+   "value": "173.582",
+   "arrow": "↑",
+   "note": "alta de 4,14%"
+  },
+  {
+   "label": "Fechamento de ontem",
+   "value": "166.685",
+   "note": "alta de 1,58%"
+  },
+  {
+   "label": "IPCA-15 de novembro",
+   "value": "0,22%",
+   "note": "abaixo do piso das projeções"
+  },
+  {
+   "label": "Dólar às 9h19",
+   "value": "R$ 5,771",
+   "arrow": "↓",
+   "note": "queda de 0,79%"
+  }
+ ],
+ "source": "Estadão Conteúdo, InfoMoney, IstoÉ, IBGE"
+}
