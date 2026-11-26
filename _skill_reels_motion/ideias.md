@@ -10,6 +10,7 @@ Pautas que cabem na estratégia do Tiago (alta renda, empreendedores, produtores
 - [ ] De cada 100 sacas de soja do Brasil, quantas vão para a China (Secex / Conab)
 - [ ] De cada R$ 100 de herança em SC, quanto fica no ITCMD, por faixa (lei estadual vigente)
 - [ ] 100 empresas familiares: quantas chegam à 2ª e à 3ª geração (só com pesquisa de fonte sólida, ex.: IBGC, PwC)
+- [x] De cada R$ 100 do Orçamento federal, quantos já têm dono (Conof/Câmara, PLOA 2027) — 26/11/2026
 - [ ] Os 365 dias do ano em quadradinhos: em quantos o Ibovespa subiu, caiu, ficou parado (B3)
 
 - [ ] O IPCA como um copo que se enche: os pesos de cada grupo no índice (IBGE), camada por camada (técnica "recipiente em camadas" da biblioteca de motion)
