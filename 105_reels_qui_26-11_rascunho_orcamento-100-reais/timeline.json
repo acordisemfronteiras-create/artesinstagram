@@ -1,0 +1,121 @@
+{
+ "cenas": [
+  {
+   "id": "mundo",
+   "ini": 0.0,
+   "fim": 53.551
+  },
+  {
+   "id": "cta",
+   "ini": 53.551,
+   "fim": 59.933
+  }
+ ],
+ "legendas": [
+  {
+   "cena": "mundo",
+   "ini": 0.45,
+   "fim": 4.875,
+   "texto": "Esses 100 quadradinhos são o gasto do governo federal em 2027."
+  },
+  {
+   "cena": "mundo",
+   "ini": 5.035,
+   "fim": 11.09,
+   "texto": "Cada um é R$ 1 de cada R$ 100 do projeto de Orçamento, sem contar juros e repasses a estados e municípios."
+  },
+  {
+   "cena": "mundo",
+   "ini": 11.25,
+   "fim": 13.751,
+   "texto": "Agora presta atenção: quantos já têm dono?"
+  },
+  {
+   "cena": "mundo",
+   "ini": 13.911,
+   "fim": 17.917,
+   "texto": "Os azuis pagam aposentadorias e pensões do INSS. 43."
+  },
+  {
+   "cena": "mundo",
+   "ini": 18.077,
+   "fim": 21.259,
+   "texto": "Os roxos, a folha dos servidores federais. 17."
+  },
+  {
+   "cena": "mundo",
+   "ini": 21.419,
+   "fim": 26.801,
+   "texto": "Os cinzas: BPC, seguro-desemprego, abono, precatórios e outras obrigações. Mais 30."
+  },
+  {
+   "cena": "mundo",
+   "ini": 26.961,
+   "fim": 30.159,
+   "texto": "Somando, 90 de cada 100 já estão travados por lei."
+  },
+  {
+   "cena": "mundo",
+   "ini": 30.319,
+   "fim": 34.768,
+   "texto": "Sobram esses 10 dourados. É daqui que sai o custeio da máquina e o investimento."
+  },
+  {
+   "cena": "mundo",
+   "ini": 34.928,
+   "fim": 39.51,
+   "texto": "E, desses 10, quase R$ 45 bilhões já estão reservados para emendas."
+  },
+  {
+   "cena": "mundo",
+   "ini": 39.67,
+   "fim": 44.078,
+   "texto": "Ou seja: quando o governo precisa cortar, a tesoura só alcança os dourados."
+  },
+  {
+   "cena": "mundo",
+   "ini": 44.238,
+   "fim": 48.309,
+   "texto": "Para mexer nos outros 90, só mudando a lei. Às vezes, a Constituição."
+  },
+  {
+   "cena": "mundo",
+   "ini": 48.469,
+   "fim": 53.376,
+   "texto": "Pra quem tem patrimônio, a pergunta muda. Ele está organizado para quando a regra mudar?"
+  },
+  {
+   "cena": "cta",
+   "ini": 53.726,
+   "fim": 57.333,
+   "texto": "Me conta aí: quantos quadradinhos você achava que estavam livres?"
+  }
+ ],
+ "cues": {
+  "cem": 0.69,
+  "ano": 3.13,
+  "cada": 5.035,
+  "fora": 7.895,
+  "atencao": 11.25,
+  "azuis": 13.911,
+  "c43": 16.691,
+  "roxos": 18.077,
+  "c17": 20.357,
+  "cinzas": 21.419,
+  "c30": 26.079,
+  "tranca": 26.961,
+  "c90": 27.381,
+  "livres": 30.319,
+  "maquina": 31.939,
+  "emendas": 34.928,
+  "ouseja": 39.67,
+  "tesoura": 42.11,
+  "lei": 44.238,
+  "const": 46.798,
+  "patrimonio": 48.469,
+  "como": 51.209,
+  "cta": 53.726,
+  "quantos": 54.446
+ },
+ "duracao": 59.933
+}

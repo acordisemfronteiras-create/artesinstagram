@@ -1,0 +1,194 @@
+{
+ "titulo": "O Orçamento de 2027 em 100 quadradinhos: quantos já têm dono?",
+ "kicker": "Orçamento 2027 em 100",
+ "formato": "metafora-unica",
+ "voz": {
+  "motor": "kokoro",
+  "nome": "pm_alex",
+  "velocidade": 1.06
+ },
+ "fontes": [
+  "Câmara dos Deputados (Conof), Raio X do Orçamento, PLOA 2027 (set/2026): despesas primárias sem transferências R$ 2.826,0 bi; obrigatórias R$ 2.542,8 bi (90,0%), discricionárias R$ 283,2 bi (10,0%); RGPS R$ 1.218,7 bi (43,1%), pessoal R$ 475,2 bi (16,8%), demais obrigatórias R$ 848,9 bi (30,0%); reserva para emendas R$ 44,8 bi (15,8% das discricionárias): https://www2.camara.leg.br/orcamento-da-uniao/raio-x-do-orcamento/2027/RaioX_PLOA_2027.pdf",
+  "Agência Câmara (01/09/2026), Orçamento de 2027 é de R$ 7,4 trilhões; limite de gastos é de R$ 2,6 trilhões (92% obrigatórias sobre o limite; discricionárias do Executivo R$ 222,1 bi, comprimidas pelas obrigatórias): https://www.camara.leg.br/noticias/1301734-noticia",
+  "IFI/Senado, RAF nº 112 (mai/2026): RGPS foi 42,9% da despesa primária da União em 2025: https://www2.senado.leg.br/jspui/bitstream/id/865129/6/RAF112_MAI2026_Evolucao_despesa_RGPS.pdf"
+ ],
+ "cenas": [
+  {
+   "id": "mundo",
+   "falas": [
+    {
+     "fala": "Esses {cem} cem quadradinhos são o gasto do governo federal {ano} em dois mil e vinte e sete.",
+     "legenda": "Esses 100 quadradinhos são o gasto do governo federal em 2027."
+    },
+    {
+     "fala": "{cada} Cada um é um real de cada cem do projeto de Orçamento, {fora} sem contar juros e repasses a estados e municípios.",
+     "legenda": "Cada um é R$ 1 de cada R$ 100 do projeto de Orçamento, sem contar juros e repasses a estados e municípios."
+    },
+    {
+     "fala": "{atencao} Agora presta atenção: quantos já têm dono?",
+     "legenda": "Agora presta atenção: quantos já têm dono?"
+    },
+    {
+     "fala": "{azuis} Os azuis pagam aposentadorias e pensões do INSS. {c43} Quarenta e três.",
+     "legenda": "Os azuis pagam aposentadorias e pensões do INSS. 43."
+    },
+    {
+     "fala": "{roxos} Os roxos, a folha dos servidores federais. {c17} Dezessete.",
+     "legenda": "Os roxos, a folha dos servidores federais. 17."
+    },
+    {
+     "fala": "{cinzas} Os cinzas: BPC, seguro-desemprego, abono, precatórios e outras obrigações. {c30} Mais trinta.",
+     "legenda": "Os cinzas: BPC, seguro-desemprego, abono, precatórios e outras obrigações. Mais 30."
+    },
+    {
+     "fala": "{tranca} Somando, {c90} noventa de cada cem já estão travados por lei.",
+     "legenda": "Somando, 90 de cada 100 já estão travados por lei."
+    },
+    {
+     "fala": "{livres} Sobram esses dez dourados. {maquina} É daqui que sai o custeio da máquina e o investimento.",
+     "legenda": "Sobram esses 10 dourados. É daqui que sai o custeio da máquina e o investimento."
+    },
+    {
+     "fala": "{emendas} E, desses dez, quase quarenta e cinco bilhões já estão reservados para emendas.",
+     "legenda": "E, desses 10, quase R$ 45 bilhões já estão reservados para emendas."
+    },
+    {
+     "fala": "{ouseja} Ou seja: quando o governo precisa cortar, {tesoura} a tesoura só alcança os dourados.",
+     "legenda": "Ou seja: quando o governo precisa cortar, a tesoura só alcança os dourados."
+    },
+    {
+     "fala": "{lei} Para mexer nos outros noventa, só mudando a lei. {const} Às vezes, a Constituição.",
+     "legenda": "Para mexer nos outros 90, só mudando a lei. Às vezes, a Constituição."
+    },
+    {
+     "fala": "{patrimonio} Pra quem tem patrimônio, a pergunta muda. {como} Ele está organizado para quando a regra mudar?",
+     "legenda": "Pra quem tem patrimônio, a pergunta muda. Ele está organizado para quando a regra mudar?"
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "falas": [
+    {
+     "fala": "{cta} Me conta aí: {quantos} quantos quadradinhos você achava que estavam livres?",
+     "legenda": "Me conta aí: quantos quadradinhos você achava que estavam livres?"
+    }
+   ]
+  }
+ ],
+ "sfx": [
+  {
+   "em": "@cem",
+   "tipo": "riser",
+   "ganho": 0.7
+  },
+  {
+   "em": "@cem",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@cem+0.1",
+   "tipo": "varredura",
+   "ganho": 0.8
+  },
+  {
+   "em": "@cada",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@atencao",
+   "tipo": "bip"
+  },
+  {
+   "em": "@azuis",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@azuis+0.1",
+   "tipo": "varredura",
+   "ganho": 0.7
+  },
+  {
+   "em": "@c43",
+   "tipo": "pop"
+  },
+  {
+   "em": "@roxos",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@c17",
+   "tipo": "pop"
+  },
+  {
+   "em": "@cinzas",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@cinzas+0.1",
+   "tipo": "varredura",
+   "ganho": 0.6
+  },
+  {
+   "em": "@c30",
+   "tipo": "pop"
+  },
+  {
+   "em": "@c90",
+   "tipo": "riser",
+   "ganho": 0.6
+  },
+  {
+   "em": "@c90",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@livres",
+   "tipo": "whoosh",
+   "ganho": 1.2
+  },
+  {
+   "em": "@livres+0.2",
+   "tipo": "brilho",
+   "ganho": 0.8
+  },
+  {
+   "em": "@emendas",
+   "tipo": "tique"
+  },
+  {
+   "em": "@ouseja",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@tesoura+0.3",
+   "tipo": "tique"
+  },
+  {
+   "em": "@tesoura+0.9",
+   "tipo": "tique"
+  },
+  {
+   "em": "@lei",
+   "tipo": "impacto",
+   "ganho": 0.7
+  },
+  {
+   "em": "@patrimonio",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@como",
+   "tipo": "brilho",
+   "ganho": 0.8
+  },
+  {
+   "em": "@cta",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@quantos",
+   "tipo": "pop"
+  }
+ ]
+}
