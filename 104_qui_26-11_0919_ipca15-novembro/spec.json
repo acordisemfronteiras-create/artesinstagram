@@ -1,0 +1,32 @@
+{
+ "kicker": "Inflação · IPCA-15",
+ "date": "26.11.2026",
+ "tag": "Urgente",
+ "headline_html": "IPCA-15 desacelera a <em>0,22%</em> em novembro.",
+ "sub": "Abaixo do esperado, mas os alimentos sobem 1,51% e o índice segue acima do teto da meta em 12 meses.",
+ "cells": [
+  {
+   "label": "IPCA-15 de novembro",
+   "value": "0,22%",
+   "arrow": "↓",
+   "note": "outubro: 0,32%"
+  },
+  {
+   "label": "Em 12 meses",
+   "value": "4,64%",
+   "note": "teto da meta: 4,5%"
+  },
+  {
+   "label": "Alimentação e bebidas",
+   "value": "1,51%",
+   "arrow": "↑",
+   "note": "maior impacto: 0,33 p.p."
+  },
+  {
+   "label": "Transportes",
+   "value": "−0,71%",
+   "note": "impacto de −0,14 p.p."
+  }
+ ],
+ "source": "IBGE, Money Times, Exame"
+}
