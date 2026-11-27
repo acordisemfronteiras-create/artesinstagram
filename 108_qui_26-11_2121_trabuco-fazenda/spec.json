@@ -1,0 +1,12 @@
+{
+ "kicker": "Fazenda · 4º mandato",
+ "date": "26.11.2026",
+ "tag": "Urgente",
+ "headline_html": "Trabuco será o ministro da Fazenda em <em>2027</em>.",
+ "sub": "Governo confirma o banqueiro, de 75 anos, como o primeiro nome do próximo mandato de Lula.",
+ "cells": [
+  {"label": "Ibovespa", "value": "+6,07%", "arrow": "↑", "note": "maior alta desde o 1º turno"},
+  {"label": "Dólar", "value": "R$ 5,74", "arrow": "↓", "note": "4ª queda seguida"}
+ ],
+ "source": "Planalto, InfoMoney, Metrópoles, B3"
+}
