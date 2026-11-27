@@ -1,0 +1,13 @@
+{
+ "kicker": "Inflação · IGP-M",
+ "date": "27.11.2026",
+ "headline_html": "IGP-M sobe <em>1,24%</em> em novembro.",
+ "sub": "Alta desacelera, mas supera as projeções, puxada por alimentos in natura afetados pelo El Niño.",
+ "cells": [
+  {"label": "IGP-M de novembro", "value": "1,24%", "arrow": "↑", "note": "acima do esperado"},
+  {"label": "Outubro", "value": "1,47%", "note": "mês anterior"},
+  {"label": "Acumulado em 12 meses", "value": "6,26%", "note": "referência de aluguéis"},
+  {"label": "Próximo Copom", "value": "8 e 9.12", "note": "Selic hoje em 13,75%"}
+ ],
+ "source": "FGV, Reuters, Safras & Mercado"
+}
