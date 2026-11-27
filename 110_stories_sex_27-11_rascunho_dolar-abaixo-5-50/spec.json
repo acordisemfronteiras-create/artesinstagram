@@ -1,0 +1,14 @@
+{
+ "kicker": "Câmbio · Agora",
+ "date": "27.11.2026",
+ "tag": "Urgente",
+ "headline_html": "Dólar chega a cair abaixo de <em>R$ 5,50</em>.",
+ "sub": "Moeda chegou a recuar 4,6% na manhã desta sexta, um dia após a confirmação de Trabuco no comando da Fazenda a partir de 2027.",
+ "cells": [
+  {"label": "Mínima da manhã", "value": "R$ 5,479", "arrow": "↓", "note": "queda de 4,6%"},
+  {"label": "PTAX do BC hoje", "value": "R$ 5,543", "arrow": "↓", "note": "queda de 3,51%"},
+  {"label": "Fechamento de ontem", "value": "R$ 5,74", "note": "tocou R$ 6 na segunda"},
+  {"label": "Ibovespa na manhã", "value": "183 mil", "arrow": "↑", "note": "chegou a subir mais de 3,8%"}
+ ],
+ "source": "IstoÉ, Seu Dinheiro, Folha de Minas, TradeMap"
+}
