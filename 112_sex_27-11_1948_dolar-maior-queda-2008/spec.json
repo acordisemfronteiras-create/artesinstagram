@@ -1,0 +1,14 @@
+{
+ "kicker": "Câmbio · Fechamento",
+ "date": "27.11.2026",
+ "tag": "Urgente",
+ "headline_html": "Dólar tem a maior queda semanal desde <em>2008</em>.",
+ "sub": "Moeda fecha a R$ 5,51 após a confirmação de Trabuco no comando da Fazenda a partir de 2027.",
+ "cells": [
+  {"label": "Fechamento", "value": "R$ 5,51", "arrow": "↓", "note": "queda de quase 4% no dia"},
+  {"label": "Na semana", "value": "−7,07%", "arrow": "↓", "note": "cinco quedas seguidas"},
+  {"label": "Segunda-feira", "value": "R$ 6,00", "note": "tocado durante o pregão"},
+  {"label": "Próximo Copom", "value": "8 e 9.12", "note": "Selic hoje em 13,75%"}
+ ],
+ "source": "Folha BV, BPMoney, JC"
+}
