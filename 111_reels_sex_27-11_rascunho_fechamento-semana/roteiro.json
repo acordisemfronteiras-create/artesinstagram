@@ -1,0 +1,243 @@
+{
+ "titulo": "De R$ 6 a R$ 5,51: a semana em 4 números",
+ "kicker": "Fechamento da semana",
+ "formato": "texto-cinetico",
+ "legenda_na_tela": false,
+ "voz": {
+  "motor": "kokoro",
+  "nome": "pm_alex",
+  "velocidade": 1.06
+ },
+ "ritmo": {
+  "pausa_fala": 0.12,
+  "pausa_cena": 0.3,
+  "intro": 0.4,
+  "final": 2.8
+ },
+ "fontes": [
+  "Dólar passa de R$ 6 no pregão de 23/11 (1ª vez desde abr/2025) e fecha a R$ 5,92 — verificado no post 96 (historico.md, 23/11)",
+  "Câmara aprova o ajuste fiscal (PLP 299/2026) por 353 a 128 em 23-24/11; Lula sanciona sem vetos em 24/11 — posts 97 e 100 (historico.md)",
+  "Ibovespa +6,07% a 176.799,84 em 26/11, maior alta diária desde 5/10; Trabuco aceita a Fazenda a partir de 2027 — posts 107 e 108 (historico.md)",
+  "Dólar fecha 27/11 a R$ 5,5156 (−3,97%), −7,07% na semana — BPMoney: https://bpmoney.com.br/mercado/cambio/dolar-cai-55156-efeito-trabuco-fazenda-queda-semana/",
+  "Dólar fecha a R$ 5,5156 (−3,97%), −7,07% na semana; Ibovespa 177.076,38 (+0,16%) — Misto Brasil: https://mistobrasil.com/2026/11/27/dolar-despenca-4-a-r-551-e-ibovespa-fecha-em-leve-alta/",
+  "Dólar despenca 4% e fecha a R$ 5,51 — Metrópoles: https://www.metropoles.com/brasil/dolar-despenca-4-e-fecha-cotado-a-r-551-com-efeito-trabuco-bolsa-sobe",
+  "Dólar recua 7% na semana e fecha a R$ 5,51; Ibovespa ~177,3 mil às 17h — Vanguarda do Norte: https://vanguardadonorte.com.br/economia/dolar-recua-7-na-semana-e-fecha-a-r-551-com-efeito-trabuco-ibovespa-sobe/"
+ ],
+ "cenas": [
+  {
+   "id": "abre",
+   "falas": [
+    {
+     "fala": "Segunda-feira, o dólar passou de {seis} seis reais.",
+     "legenda": "Segunda, o dólar passou de R$ 6."
+    },
+    {
+     "fala": "Sexta, fechou em {fecha} cinco e cinquenta e um.",
+     "legenda": "Sexta, fechou em R$ 5,51."
+    },
+    {
+     "fala": "No meio, {quatro} quatro números.",
+     "legenda": "No meio, 4 números."
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "falas": [
+    {
+     "fala": "{n1} Número um: {seisr} seis reais.",
+     "legenda": "Número 1: R$ 6."
+    },
+    {
+     "fala": "Na segunda, o dólar {passou} passou dessa marca no pregão.",
+     "legenda": "Na segunda, o dólar passou dessa marca no pregão."
+    },
+    {
+     "fala": "Primeira vez desde {abril} abril do ano passado.",
+     "legenda": "Primeira vez desde abril do ano passado."
+    },
+    {
+     "fala": "Mas fechou o dia {abaixo} abaixo dela.",
+     "legenda": "Mas fechou o dia abaixo dela."
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "falas": [
+    {
+     "fala": "{n2} Número dois: {placar} trezentos e cinquenta e três a cento e vinte e oito.",
+     "legenda": "Número 2: 353 a 128."
+    },
+    {
+     "fala": "Foi o placar da {camara} Câmara no ajuste fiscal.",
+     "legenda": "Foi o placar da Câmara no ajuste fiscal."
+    },
+    {
+     "fala": "Na terça, a lei foi {sancionada} sancionada sem vetos.",
+     "legenda": "Na terça, a lei foi sancionada sem vetos."
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "falas": [
+    {
+     "fala": "{n3} Número três: {seisp} seis por cento.",
+     "legenda": "Número 3: 6%."
+    },
+    {
+     "fala": "Foi a alta da bolsa na {quinta} quinta.",
+     "legenda": "Foi a alta da bolsa na quinta."
+    },
+    {
+     "fala": "A maior em um dia desde o {turno} primeiro turno,",
+     "legenda": "A maior em um dia desde o 1º turno,"
+    },
+    {
+     "fala": "com a notícia de {trabuco} Trabuco na Fazenda.",
+     "legenda": "com a notícia de Trabuco na Fazenda."
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "falas": [
+    {
+     "fala": "{n4} Número quatro: {cinco51} cinco e cinquenta e um.",
+     "legenda": "Número 4: R$ 5,51."
+    },
+    {
+     "fala": "O dólar caiu {dia} quase quatro por cento hoje",
+     "legenda": "O dólar caiu quase 4% hoje"
+    },
+    {
+     "fala": "e {semana} sete por cento na semana.",
+     "legenda": "e 7% na semana."
+    },
+    {
+     "fala": "A bolsa ficou {pontos} perto dos cento e setenta e sete mil pontos.",
+     "legenda": "A bolsa ficou perto dos 177 mil pontos."
+    }
+   ]
+  },
+  {
+   "id": "virada",
+   "falas": [
+    {
+     "fala": "{ouseja} Ou seja: o mercado mudou de {expectativa} expectativa.",
+     "legenda": "Ou seja: o mercado mudou de expectativa."
+    },
+    {
+     "fala": "Mas expectativa {nao} não é entrega: o teste são as {medidas} medidas.",
+     "legenda": "Mas expectativa não é entrega: o teste são as medidas."
+    },
+    {
+     "fala": "E pra quem tem {patrimonio} patrimônio,",
+     "legenda": "E pra quem tem patrimônio,"
+    },
+    {
+     "fala": "semana assim mostra {quanto} quanto dele depende do câmbio.",
+     "legenda": "semana assim mostra quanto dele depende do câmbio."
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "falas": [
+    {
+     "fala": "{cta} Me conta aqui embaixo:",
+     "legenda": "Me conta aqui embaixo:"
+    },
+    {
+     "fala": "qual {numero} número te surpreendeu mais?",
+     "legenda": "qual número te surpreendeu mais?"
+    }
+   ]
+  }
+ ],
+ "sfx": [
+  {
+   "em": "@seis-0.9",
+   "tipo": "riser",
+   "ganho": 0.7
+  },
+  {
+   "em": "@seis",
+   "tipo": "impacto"
+  },
+  {
+   "em": "@fecha",
+   "tipo": "varredura",
+   "ganho": 0.8
+  },
+  {
+   "em": "@quatro",
+   "tipo": "impacto",
+   "ganho": 0.8
+  },
+  {
+   "em": "@n1-0.15",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@seisr",
+   "tipo": "contagem"
+  },
+  {
+   "em": "@abril",
+   "tipo": "pop"
+  },
+  {
+   "em": "@n2-0.15",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@placar",
+   "tipo": "impacto",
+   "ganho": 0.8
+  },
+  {
+   "em": "@sancionada",
+   "tipo": "pop"
+  },
+  {
+   "em": "@n3-0.15",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@seisp",
+   "tipo": "contagem"
+  },
+  {
+   "em": "@turno",
+   "tipo": "pop"
+  },
+  {
+   "em": "@n4-0.15",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@cinco51",
+   "tipo": "varredura"
+  },
+  {
+   "em": "@semana",
+   "tipo": "impacto",
+   "ganho": 0.7
+  },
+  {
+   "em": "@ouseja-0.1",
+   "tipo": "whoosh",
+   "ganho": 0.7
+  },
+  {
+   "em": "@quanto",
+   "tipo": "brilho"
+  },
+  {
+   "em": "@cta",
+   "tipo": "pop"
+  }
+ ]
+}

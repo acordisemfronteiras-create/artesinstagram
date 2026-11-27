@@ -1,0 +1,218 @@
+{
+ "cenas": [
+  {
+   "id": "abre",
+   "ini": 0.0,
+   "fim": 7.111
+  },
+  {
+   "id": "n1",
+   "ini": 7.111,
+   "fim": 16.005
+  },
+  {
+   "id": "n2",
+   "ini": 16.005,
+   "fim": 24.919
+  },
+  {
+   "id": "n3",
+   "ini": 24.919,
+   "fim": 33.83
+  },
+  {
+   "id": "n4",
+   "ini": 33.83,
+   "fim": 44.253
+  },
+  {
+   "id": "virada",
+   "ini": 44.253,
+   "fim": 55.372
+  },
+  {
+   "id": "cta",
+   "ini": 55.372,
+   "fim": 62.002
+  }
+ ],
+ "legendas": [
+  {
+   "cena": "abre",
+   "ini": 0.4,
+   "fim": 3.006,
+   "texto": "Segunda, o dólar passou de R$ 6."
+  },
+  {
+   "cena": "abre",
+   "ini": 3.126,
+   "fim": 5.345,
+   "texto": "Sexta, fechou em R$ 5,51."
+  },
+  {
+   "cena": "abre",
+   "ini": 5.465,
+   "fim": 6.961,
+   "texto": "No meio, 4 números."
+  },
+  {
+   "cena": "n1",
+   "ini": 7.261,
+   "fim": 8.716,
+   "texto": "Número 1: R$ 6."
+  },
+  {
+   "cena": "n1",
+   "ini": 8.836,
+   "fim": 11.482,
+   "texto": "Na segunda, o dólar passou dessa marca no pregão."
+  },
+  {
+   "cena": "n1",
+   "ini": 11.602,
+   "fim": 13.922,
+   "texto": "Primeira vez desde abril do ano passado."
+  },
+  {
+   "cena": "n1",
+   "ini": 14.042,
+   "fim": 15.855,
+   "texto": "Mas fechou o dia abaixo dela."
+  },
+  {
+   "cena": "n2",
+   "ini": 16.155,
+   "fim": 19.758,
+   "texto": "Número 2: 353 a 128."
+  },
+  {
+   "cena": "n2",
+   "ini": 19.878,
+   "fim": 22.191,
+   "texto": "Foi o placar da Câmara no ajuste fiscal."
+  },
+  {
+   "cena": "n2",
+   "ini": 22.311,
+   "fim": 24.769,
+   "texto": "Na terça, a lei foi sancionada sem vetos."
+  },
+  {
+   "cena": "n3",
+   "ini": 25.069,
+   "fim": 26.838,
+   "texto": "Número 3: 6%."
+  },
+  {
+   "cena": "n3",
+   "ini": 26.958,
+   "fim": 28.739,
+   "texto": "Foi a alta da bolsa na quinta."
+  },
+  {
+   "cena": "n3",
+   "ini": 28.859,
+   "fim": 31.179,
+   "texto": "A maior em um dia desde o 1º turno,"
+  },
+  {
+   "cena": "n3",
+   "ini": 31.299,
+   "fim": 33.68,
+   "texto": "com a notícia de Trabuco na Fazenda."
+  },
+  {
+   "cena": "n4",
+   "ini": 33.98,
+   "fim": 36.123,
+   "texto": "Número 4: R$ 5,51."
+  },
+  {
+   "cena": "n4",
+   "ini": 36.243,
+   "fim": 38.687,
+   "texto": "O dólar caiu quase 4% hoje"
+  },
+  {
+   "cena": "n4",
+   "ini": 38.807,
+   "fim": 40.625,
+   "texto": "e 7% na semana."
+  },
+  {
+   "cena": "n4",
+   "ini": 40.745,
+   "fim": 44.103,
+   "texto": "A bolsa ficou perto dos 177 mil pontos."
+  },
+  {
+   "cena": "virada",
+   "ini": 44.403,
+   "fim": 46.86,
+   "texto": "Ou seja: o mercado mudou de expectativa."
+  },
+  {
+   "cena": "virada",
+   "ini": 46.98,
+   "fim": 50.413,
+   "texto": "Mas expectativa não é entrega: o teste são as medidas."
+  },
+  {
+   "cena": "virada",
+   "ini": 50.533,
+   "fim": 52.22,
+   "texto": "E pra quem tem patrimônio,"
+  },
+  {
+   "cena": "virada",
+   "ini": 52.34,
+   "fim": 55.222,
+   "texto": "semana assim mostra quanto dele depende do câmbio."
+  },
+  {
+   "cena": "cta",
+   "ini": 55.522,
+   "fim": 57.028,
+   "texto": "Me conta aqui embaixo:"
+  },
+  {
+   "cena": "cta",
+   "ini": 57.148,
+   "fim": 59.202,
+   "texto": "qual número te surpreendeu mais?"
+  }
+ ],
+ "cues": {
+  "seis": 1.94,
+  "fecha": 3.966,
+  "quatro": 5.845,
+  "n1": 7.261,
+  "seisr": 7.681,
+  "passou": 9.916,
+  "abril": 12.662,
+  "abaixo": 14.982,
+  "n2": 16.155,
+  "placar": 16.975,
+  "camara": 20.598,
+  "sancionada": 23.311,
+  "n3": 25.069,
+  "seisp": 25.429,
+  "quinta": 28.238,
+  "turno": 30.339,
+  "trabuco": 32.339,
+  "n4": 33.98,
+  "cinco51": 34.78,
+  "dia": 36.603,
+  "semana": 38.927,
+  "pontos": 41.445,
+  "ouseja": 44.403,
+  "expectativa": 45.983,
+  "nao": 47.82,
+  "medidas": 49.68,
+  "patrimonio": 51.393,
+  "quanto": 53.46,
+  "cta": 55.522,
+  "numero": 57.288
+ },
+ "duracao": 62.002
+}
