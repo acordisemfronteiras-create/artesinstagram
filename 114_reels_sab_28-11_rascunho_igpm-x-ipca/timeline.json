@@ -1,0 +1,157 @@
+{
+ "cenas": [
+  {
+   "id": "gancho",
+   "ini": 0.0,
+   "fim": 12.157
+  },
+  {
+   "id": "olham",
+   "ini": 12.157,
+   "fim": 19.1
+  },
+  {
+   "id": "receita",
+   "ini": 19.1,
+   "fim": 27.078
+  },
+  {
+   "id": "historia",
+   "ini": 27.078,
+   "fim": 42.223
+  },
+  {
+   "id": "virada",
+   "ini": 42.223,
+   "fim": 50.333
+  },
+  {
+   "id": "patrimonio",
+   "ini": 50.333,
+   "fim": 55.657
+  },
+  {
+   "id": "cta",
+   "ini": 55.657,
+   "fim": 61.256
+  }
+ ],
+ "legendas": [
+  {
+   "cena": "gancho",
+   "ini": 0.45,
+   "fim": 4.881,
+   "texto": "6,26%. É quanto o IGP-M subiu em 12 meses."
+  },
+  {
+   "cena": "gancho",
+   "ini": 5.041,
+   "fim": 8.097,
+   "texto": "A inflação oficial, o IPCA, 4,6%."
+  },
+  {
+   "cena": "gancho",
+   "ini": 8.257,
+   "fim": 11.982,
+   "texto": "E é o índice de muito contrato de aluguel. Por que os dois não batem?"
+  },
+  {
+   "cena": "olham",
+   "ini": 12.332,
+   "fim": 15.515,
+   "texto": "Os dois medem preço, mas olham lugares diferentes."
+  },
+  {
+   "cena": "olham",
+   "ini": 15.675,
+   "fim": 18.925,
+   "texto": "O IPCA olha o caixa do mercado: o que a família paga."
+  },
+  {
+   "cena": "receita",
+   "ini": 19.275,
+   "fim": 24.525,
+   "texto": "Abre o IGP-M: 60% é atacado, o preço na porta da fábrica e da fazenda."
+  },
+  {
+   "cena": "receita",
+   "ini": 24.685,
+   "fim": 26.903,
+   "texto": "30%, consumidor. E 10%, construção."
+  },
+  {
+   "cena": "historia",
+   "ini": 27.253,
+   "fim": 30.436,
+   "texto": "E o atacado sente primeiro o dólar e as commodities."
+  },
+  {
+   "cena": "historia",
+   "ini": 30.596,
+   "fim": 35.758,
+   "texto": "Em 2020, o IGP-M subiu 23%. O IPCA, 4,5%."
+  },
+  {
+   "cena": "historia",
+   "ini": 35.918,
+   "fim": 42.048,
+   "texto": "Em 2023, o IGP-M caiu 3,2%. O IPCA subiu 4,6%."
+  },
+  {
+   "cena": "virada",
+   "ini": 42.398,
+   "fim": 47.055,
+   "texto": "Ou seja: o IGP-M não mede o aluguel. Mede o atacado, que entrou no contrato."
+  },
+  {
+   "cena": "virada",
+   "ini": 47.215,
+   "fim": 50.158,
+   "texto": "Quem paga sente no caixa. Quem recebe, na renda."
+  },
+  {
+   "cena": "patrimonio",
+   "ini": 50.508,
+   "fim": 55.481,
+   "texto": "Pra quem tem imóveis de renda, o índice do contrato pesa tanto quanto o valor do aluguel."
+  },
+  {
+   "cena": "cta",
+   "ini": 55.831,
+   "fim": 58.956,
+   "texto": "No seu contrato, qual é: IGP-M ou IPCA? Comenta."
+  }
+ ],
+ "cues": {
+  "seis": 0.45,
+  "e": 3.47,
+  "ipca": 5.041,
+  "quatro": 6.181,
+  "aluguel": 8.257,
+  "porque": 10.657,
+  "olham": 12.332,
+  "caixa": 15.675,
+  "familia": 17.916,
+  "abre": 19.275,
+  "sessenta": 20.595,
+  "porta": 22.855,
+  "trinta": 24.685,
+  "dez": 25.925,
+  "dolar": 27.253,
+  "vinte": 30.596,
+  "subiu": 32.196,
+  "ipca20": 33.916,
+  "volta": 35.918,
+  "caiu": 37.578,
+  "ipca23": 39.918,
+  "ouseja": 42.398,
+  "mede": 45.378,
+  "paga": 47.215,
+  "recebe": 48.875,
+  "patrimonio": 50.508,
+  "indice": 52.608,
+  "cta": 55.831,
+  "igpm": 56.892
+ },
+ "duracao": 61.256
+}

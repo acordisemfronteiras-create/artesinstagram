@@ -1,0 +1,223 @@
+{
+ "titulo": "Por que o IGP-M sobe mais que a inflação",
+ "kicker": "Entenda em 1 minuto",
+ "formato": "personas",
+ "conceito": "Dois termômetros de preço olhando lugares diferentes: o IPCA mede o caixa do supermercado; o IGP-M é 60% atacado, por isso sente antes o dólar e as commodities, dispara em 2020, cai em 2023, e é esse movimento que entra no contrato de aluguel.",
+ "voz": {
+  "motor": "kokoro",
+  "nome": "pm_alex",
+  "velocidade": 1.06
+ },
+ "fontes": [
+  "IGP-M nov/2026 +1,24% no mês, 6,26% em 12 meses (FGV Ibre, 27/11/2026), via Times Brasil: https://timesbrasil.com.br/brasil/indicadores/igp-m-sobe-124-em-novembro-apos-alta-de-147-em-outubro-revela-fgv/",
+  "Mesmo dado (1,24% no mês, 6,26% em 12 meses, 5,25% até outubro), Atlas Público: https://atlaspublico.com.br/bcb/noticias/igp-m-sobe-1-24pct-em-novembro-e-acumula-6-26pct-em-12-105699",
+  "Pesos do IGP: IPA 60%, IPC 30%, INCC 10% (FGV Ibre, página oficial do índice): https://portalibre.fgv.br/en/estudos-e-pesquisas/indices-de-precos/igp",
+  "IPCA out/2026 0,14%, 12 meses 4,63% (IBGE, 12/11/2026), via A Crítica: https://acritica.net/economia/ipca-outubro-sobe-014-acumula-463-12-meses-ibge/ e Agência Gov: https://agenciagov.ebc.com.br/noticias/202611/inflacao-desacelera-e-fica-em-0-14-em-outubro",
+  "IGP-M 2020: 23,14%, maior desde 2002 (FGV), via Agência Brasil: https://agenciabrasil.ebc.com.br/economia/noticia/2020-12/indice-que-reajusta-alugueis-fecha-o-ano-com-alta-de-2314-diz-fgv e Exame: https://exame.com/economia/igp-m-sobe-096-em-dezembro-e-fecha-ano-com-alta-acumulada-de-2314/",
+  "IPCA 2020: 4,52% (IBGE): https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/29870-em-dezembro-ipca-sobe-1-35-e-fecha-2020-em-4-52.html",
+  "IGP-M 2023: -3,18%, menor da série (FGV), via InfoMoney: https://www.infomoney.com.br/economia/inflacao-do-aluguel-igp-m-acelera-em-dezembro-mas-termina-ano-com-queda-de-318/ e Forbes Brasil: https://forbes.com.br/forbes-money/2023/12/igp-m-fecha-2023-com-queda-de-318-menor-variacao-da-serie-historica/",
+  "IPCA 2023: 4,62% (IBGE): https://agenciadenoticias.ibge.gov.br/pt/agencia-sala-de-imprensa/38884-ipca-chega-a-0-56-em-dezembro-e-fecha-o-ano-em-4-62.html"
+ ],
+ "cenas": [
+  {
+   "id": "gancho",
+   "falas": [
+    {
+     "fala": "{seis} Seis vírgula dois seis por cento. {e} É quanto o i-gê-pê-ême subiu em doze meses.",
+     "legenda": "6,26%. É quanto o IGP-M subiu em 12 meses."
+    },
+    {
+     "fala": "{ipca} A inflação oficial, o i-pê-cê-á, {quatro} quatro vírgula seis.",
+     "legenda": "A inflação oficial, o IPCA, 4,6%."
+    },
+    {
+     "fala": "{aluguel} E é o índice de muito contrato de aluguel. {porque} Por que os dois não batem?",
+     "legenda": "E é o índice de muito contrato de aluguel. Por que os dois não batem?"
+    }
+   ]
+  },
+  {
+   "id": "olham",
+   "falas": [
+    {
+     "fala": "{olham} Os dois medem preço, mas olham lugares diferentes.",
+     "legenda": "Os dois medem preço, mas olham lugares diferentes."
+    },
+    {
+     "fala": "{caixa} O i-pê-cê-á olha o caixa do mercado: {familia} o que a família paga.",
+     "legenda": "O IPCA olha o caixa do mercado: o que a família paga."
+    }
+   ]
+  },
+  {
+   "id": "receita",
+   "falas": [
+    {
+     "fala": "{abre} Abre o i-gê-pê-ême: {sessenta} sessenta por cento é atacado, {porta} o preço na porta da fábrica e da fazenda.",
+     "legenda": "Abre o IGP-M: 60% é atacado, o preço na porta da fábrica e da fazenda."
+    },
+    {
+     "fala": "{trinta} Trinta, consumidor. {dez} E dez, construção.",
+     "legenda": "30%, consumidor. E 10%, construção."
+    }
+   ]
+  },
+  {
+   "id": "historia",
+   "falas": [
+    {
+     "fala": "{dolar} E o atacado sente primeiro o dólar e as commodities.",
+     "legenda": "E o atacado sente primeiro o dólar e as commodities."
+    },
+    {
+     "fala": "{vinte} Em dois mil e vinte, o i-gê-pê-ême {subiu} subiu vinte e três por cento. {ipca20} O i-pê-cê-á, quatro e meio.",
+     "legenda": "Em 2020, o IGP-M subiu 23%. O IPCA, 4,5%."
+    },
+    {
+     "fala": "{volta} Em dois mil e vinte e três, {caiu} o i-gê-pê-ême caiu três vírgula dois. {ipca23} O i-pê-cê-á subiu quatro vírgula seis.",
+     "legenda": "Em 2023, o IGP-M caiu 3,2%. O IPCA subiu 4,6%."
+    }
+   ]
+  },
+  {
+   "id": "virada",
+   "falas": [
+    {
+     "fala": "{ouseja} Ou seja: o i-gê-pê-ême não mede o aluguel. {mede} Mede o atacado, que entrou no contrato.",
+     "legenda": "Ou seja: o IGP-M não mede o aluguel. Mede o atacado, que entrou no contrato."
+    },
+    {
+     "fala": "{paga} Quem paga sente no caixa. {recebe} Quem recebe, na renda.",
+     "legenda": "Quem paga sente no caixa. Quem recebe, na renda."
+    }
+   ]
+  },
+  {
+   "id": "patrimonio",
+   "falas": [
+    {
+     "fala": "{patrimonio} Pra quem tem imóveis de renda, {indice} o índice do contrato pesa tanto quanto o valor do aluguel.",
+     "legenda": "Pra quem tem imóveis de renda, o índice do contrato pesa tanto quanto o valor do aluguel."
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "falas": [
+    {
+     "fala": "{cta} No seu contrato, qual é: {igpm} i-gê-pê-ême ou i-pê-cê-á? Comenta.",
+     "legenda": "No seu contrato, qual é: IGP-M ou IPCA? Comenta."
+    }
+   ]
+  }
+ ],
+ "sfx": [
+  {
+   "em": "@seis-0.05",
+   "tipo": "riser",
+   "ganho": 0.5
+  },
+  {
+   "em": "@seis",
+   "tipo": "impacto",
+   "ganho": 0.7
+  },
+  {
+   "em": "@quatro",
+   "tipo": "pop"
+  },
+  {
+   "em": "@porque",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@olham",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@familia",
+   "tipo": "pop"
+  },
+  {
+   "em": "@abre",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@sessenta",
+   "tipo": "impacto",
+   "ganho": 0.8
+  },
+  {
+   "em": "@trinta",
+   "tipo": "pop"
+  },
+  {
+   "em": "@dez",
+   "tipo": "pop"
+  },
+  {
+   "em": "@dolar",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@subiu",
+   "tipo": "contagem",
+   "ganho": 0.7
+  },
+  {
+   "em": "@subiu+0.9",
+   "tipo": "impacto",
+   "ganho": 0.8
+  },
+  {
+   "em": "@ipca20",
+   "tipo": "pop"
+  },
+  {
+   "em": "@caiu",
+   "tipo": "varredura",
+   "ganho": 0.6
+  },
+  {
+   "em": "@ipca23",
+   "tipo": "pop"
+  },
+  {
+   "em": "@ouseja",
+   "tipo": "bip",
+   "ganho": 0.7
+  },
+  {
+   "em": "@mede",
+   "tipo": "impacto",
+   "ganho": 0.7
+  },
+  {
+   "em": "@paga",
+   "tipo": "tique"
+  },
+  {
+   "em": "@recebe",
+   "tipo": "tique"
+  },
+  {
+   "em": "@patrimonio",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@indice",
+   "tipo": "brilho"
+  },
+  {
+   "em": "@cta",
+   "tipo": "whoosh"
+  },
+  {
+   "em": "@igpm+1.4",
+   "tipo": "pop"
+  }
+ ],
+ "ritmo": {
+  "final": 2.3
+ }
+}
