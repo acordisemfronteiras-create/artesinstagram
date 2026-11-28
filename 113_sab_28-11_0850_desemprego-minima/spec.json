@@ -1,0 +1,13 @@
+{
+ "kicker": "Mercado de trabalho · IBGE",
+ "date": "28.11.2026",
+ "headline_html": "Desemprego iguala a mínima histórica: <em>5,1%</em>.",
+ "sub": "Trimestre até outubro tem recorde de 103,7 milhões de pessoas ocupadas no país.",
+ "cells": [
+  {"label": "Desemprego", "value": "5,1%", "arrow": "↓", "note": "5,3% no trimestre até julho"},
+  {"label": "Ocupados", "value": "103,7 mi", "note": "recorde da série histórica"},
+  {"label": "Renda média real", "value": "R$ 3.812", "arrow": "↑", "note": "+3,5% em 12 meses"},
+  {"label": "Massa de renda", "value": "R$ 390,3 bi", "arrow": "↑", "note": "+4,6% em 12 meses"}
+ ],
+ "source": "IBGE, Agência Gov, Estadão, g1"
+}
